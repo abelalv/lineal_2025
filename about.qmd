@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Cuadernillo de Algebra Lineal"
 ---
 
-About this site
+En este sitio web usted podrá encontrar los apuntes de la clase de Álgebra Lineal, donde se repasan los conceptos fundamentales de los vectores en $\mathbb{R}^2$, la suma de vectores, la multiplicación por escalar, las normas y la proyección de un vector sobre otro.
