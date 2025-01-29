@@ -16,9 +16,9 @@ Sean los vectores \(\mathbf{u} = (3, -1)\) y \(\mathbf{v} = (2, 4)\).
 1. Calcula \(\mathbf{u} + \mathbf{v}\).  
 2. Calcula \(2\mathbf{u} - 3\mathbf{v}\).  
 3. Verifica la propiedad distributiva:  
-   \[
-   \alpha(\mathbf{u} + \mathbf{v}) \stackrel{?}{=} \alpha\mathbf{u} + \alpha\mathbf{v}
-   \]  
+   
+   $$\alpha(\mathbf{u} + \mathbf{v}) \stackrel{?}{=} \alpha\mathbf{u} + \alpha\mathbf{v}$$
+    
    tomando \(\alpha = -1\).  
 
 > **Pista**: Solo necesitas comparar ambos lados de la igualdad para concluir.
@@ -32,9 +32,8 @@ Con los mismos vectores \(\mathbf{u} = (3, -1)\) y \(\mathbf{v} = (2, 4)\):
 1. Halla \(\mathbf{u} \cdot \mathbf{v}\).  
 2. Verifica la propiedad de conmutatividad \(\mathbf{u} \cdot \mathbf{v} = \mathbf{v} \cdot \mathbf{u}\).  
 3. **(Nivel mayor)** Calcula el ángulo \(\theta\) entre \(\mathbf{u}\) y \(\mathbf{v}\) usando la fórmula:  
-   \[
-   \mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\|\,\|\mathbf{v}\|\cos(\theta).
-   \]
+   
+   $$\mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\|\,\|\mathbf{v}\|\cos(\theta).$$
 
 
 
