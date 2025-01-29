@@ -1,5 +1,8 @@
 ---
-title: "Lineal_2025"
+title: Ejercicios $\mathbb{R}^2$
+format: html
+filters:
+  - pyodide
 ---
 
 # Taller de Vectores en \(\mathbb{R}^2\) y Matrices \(2 \times 2\)
