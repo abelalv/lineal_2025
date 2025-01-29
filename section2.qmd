@@ -207,8 +207,112 @@ $$\frac{x-v_1}{P_1} = \frac{y-v_2}{P_2}$$
 De esta forma podemos pasar de una ecuación paramétrica a una ecuación cartesiana.
 
 
-## Distancia entre un punto y una recta
+## Distancia entre dos puntos 
 
+Para calcular la distancia entre dos puntos se debe un vector que una los dos puntos y luego podremos calcular la norma de este vector.
+
+### Ejemplo
+
+Calcular la distancia entre el punto $P(2,3)$ y el punto $Q(4,5)$.
+Para calcular un vector que parta del punto $P$ y llegue al punto $Q$ podemos hacer lo siguiente:
+
+$$\vec{v} = Q - P = (4-2,5-3) = (2,2)$$
+
+Ahora podemos calcular la norma de este vector
+
+$$||\vec{v}|| = \sqrt{2^2+2^2} = \sqrt{8}$$
+
+Este seria la longitud ecludiana de este vector, que es la distancia entre los dos puntos.
+
+
+```{python}
+#| echo: false
+import matplotlib.pyplot as plt
+import numpy as np
+# Definir los puntos P y Q
+P = np.array([2, 3])
+Q = np.array([4, 5])
+
+# Calcular el vector que une P y Q
+vector_v = Q - P
+
+# Calcular la norma del vector
+distancia = np.linalg.norm(vector_v)
+
+# Crear la figura y los ejes
+fig, ax = plt.subplots()
+
+# Dibujar los puntos P y Q
+ax.plot(P[0], P[1], 'ro', label='Punto P (2,3)')
+ax.plot(Q[0], Q[1], 'go', label='Punto Q (4,5)')
+
+# Dibujar el vector que une P y Q
+ax.quiver(P[0], P[1], vector_v[0], vector_v[1], angles='xy', scale_units='xy', scale=1, color='b', label='Vector PQ')
+
+# Configurar los límites del gráfico
+ax.set_xlim(0, 6)
+ax.set_ylim(0, 6)
+
+# Añadir etiquetas
+ax.text(P[0], P[1], '  P', verticalalignment='bottom', horizontalalignment='right')
+ax.text(Q[0], Q[1], '  Q', verticalalignment='bottom', horizontalalignment='right')
+
+# Añadir cuadrícula
+ax.grid()
+
+# Añadir leyenda
+ax.legend()
+
+# Mostrar el gráfico
+plt.show()
+
+# Mostrar la distancia calculada
+print(f"La distancia entre los puntos P y Q es: {distancia}")
 
 ## Distancia entre dos rectas
+```
 
+
+## Angulo entre dos vectores 
+
+Para calcular el ángulo entre dos vectores podemos hacer lo siguiente:
+```{python}
+#| echo: false
+import matplotlib.pyplot as plt
+import numpy as np
+# Definir los vectores
+vector1 = np.array([1, 2])
+vector2 = np.array([2, -1])
+
+# Calcular el ángulo entre los vectores
+cos_theta = np.dot(vector1, vector2) / (np.linalg.norm(vector1) * np.linalg.norm(vector2))
+angulo = np.arccos(cos_theta)
+
+# Crear la figura y los ejes
+fig, ax = plt.subplots()
+
+# Dibujar los vectores
+ax.quiver(0, 0, vector1[0], vector1[1], angles='xy', scale_units='xy', scale=1, color='b', label='Vector 1')
+ax.quiver(0, 0, vector2[0], vector2[1], angles='xy', scale_units='xy', scale=1, color='g', label='Vector 2')
+
+# Configurar los límites del gráfico
+ax.set_xlim(-3, 3)
+ax.set_ylim(-3, 3)
+
+# Añadir etiquetas
+ax.text(vector1[0], vector1[1], '  Vector 1', verticalalignment='bottom', horizontalalignment='right')
+ax.text(vector2[0], vector2[1], '  Vector 2', verticalalignment='bottom', horizontalalignment='right')
+
+# Añadir cuadrícula
+ax.grid()
+
+# Añadir leyenda
+ax.legend()
+
+# Mostrar el gráfico
+plt.show()
+
+# Mostrar el ángulo calculado en grados
+angulo_grados = np.degrees(angulo)
+print(f"El ángulo entre los vectores es: {angulo_grados} grados")
+```

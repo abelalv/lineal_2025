@@ -1,0 +1,87 @@
+---
+title: "Lineal_2025"
+---
+
+# Taller de Vectores en \(\mathbb{R}^2\) y Matrices \(2 \times 2\)
+
+
+
+
+
+### Ejercicio 1  
+Sean los vectores \(\mathbf{u} = (3, -1)\) y \(\mathbf{v} = (2, 4)\).  
+1. Calcula \(\mathbf{u} + \mathbf{v}\).  
+2. Calcula \(2\mathbf{u} - 3\mathbf{v}\).  
+3. Verifica la propiedad distributiva:  
+   \[
+   \alpha(\mathbf{u} + \mathbf{v}) \stackrel{?}{=} \alpha\mathbf{u} + \alpha\mathbf{v}
+   \]  
+   tomando \(\alpha = -1\).  
+
+> **Pista**: Solo necesitas comparar ambos lados de la igualdad para concluir.
+
+
+
+
+
+### Ejercicio 2  
+Con los mismos vectores \(\mathbf{u} = (3, -1)\) y \(\mathbf{v} = (2, 4)\):  
+1. Halla \(\mathbf{u} \cdot \mathbf{v}\).  
+2. Verifica la propiedad de conmutatividad \(\mathbf{u} \cdot \mathbf{v} = \mathbf{v} \cdot \mathbf{u}\).  
+3. **(Nivel mayor)** Calcula el ángulo \(\theta\) entre \(\mathbf{u}\) y \(\mathbf{v}\) usando la fórmula:  
+   \[
+   \mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\|\,\|\mathbf{v}\|\cos(\theta).
+   \]
+
+
+
+### Ejercicio 3  
+Dada la recta que pasa por el punto \(\mathbf{P} = (1, -2)\) y que **tiene como dirección** el vector \(\mathbf{d} = (2, 3)\):
+
+1. Escribe su **ecuación paramétrica** en \(\mathbb{R}^2\).  
+   > Recuerda que la forma paramétrica se describe como:  
+   > \[
+   > \mathbf{r}(t) = \mathbf{P} + t\,\mathbf{d}, \quad t \in \mathbb{R}.
+   > \]
+
+2. Verifica que el punto \(\mathbf{Q} = (3,1)\) **no** pertenece a dicha recta (sustituyendo en la forma paramétrica y comprobando si existe un valor de \(t\) que lo satisfaga).
+
+3. Escribe la ecuación de forma cartesiana, es decir de la forma \(ax + by = c\).
+
+
+### Ejercicio 4  
+Considera la recta \(r_1\) en forma paramétrica:
+\[
+r_1: \quad \mathbf{r}(t) = (2, 1) + t \, (3, -1).
+\]
+
+1. Encuentra la **ecuación paramétrica** de la recta \(r_2\) **paralela** a \(r_1\) y que pase por el punto \((4,2)\).  
+   > Dos rectas son paralelas si sus vectores direccionales son múltiplos.  
+
+2. Encuentra la **ecuación paramétrica** de la recta \(r_3\) **perpendicular** a \(r_1\) que pase por \((4,2)\).  
+   > Dos rectas en \(\mathbb{R}^2\) son perpendiculares si sus vectores direccionales \(\mathbf{d_1}\) y \(\mathbf{d_2}\) cumplen \(\mathbf{d_1}\cdot \mathbf{d_2} = 0\).
+
+3. Determina el **punto de intersección** entre \(r_3\) y la recta \(r_1\).
+
+
+
+### Ejercicio 5  
+Sea \(\{\mathbf{w}_1, \mathbf{w}_2\}\) con \(\mathbf{w}_1 = (1, 3)\) y \(\mathbf{w}_2 = (2, 6)\).  
+
+1. Determina si \(\mathbf{w}_1\) y \(\mathbf{w}_2\) son linealmente **dependientes** o **independientes**. Explica tu proceso.  
+2. Si son dependientes, describe la relación de dependencia. Si son independientes, justifica por qué.  
+
+
+
+### Ejercicio 6  
+1. Explica en tus propias palabras qué significa que un conjunto de vectores sea **base** de \(\mathbb{R}^2\).  
+2. Dados los vectores \(\mathbf{a} = (1, 2)\) y \(\mathbf{b} = (2, 1)\), **¿son una base de** \(\mathbb{R}^2\)?  
+   - Justifica tu respuesta usando **independencia lineal**
+
+
+### Ejercicio 7  
+1. ¿Por qué \(\{(0,0)\}\) (el conjunto que solo contiene al vector cero) es un **subespacio** de \(\mathbb{R}^2\)?  
+2. Si \(S\) es el conjunto de todos los vectores \((x, y)\) tales que \(x + y = 0\), demuestra que **\(S\) es un subespacio** de \(\mathbb{R}^2\).  
+3.  Determina una **base** para el subespacio \(S\).
+
+
