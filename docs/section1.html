@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.45">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -228,7 +228,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"code":"import numpy as np\nu = np.array([3, -6])\nv = np.array([-1, 4])\nprint(\"Vector u:\", u)\nprint(\"Vector v:\", v)\nprint(\"Suma de vectores u + v:\", u + v)\nprint(\"Vector u multiplicado por 2:\", 2 * u)\nprint(\"Norma del vector u:\", np.linalg.norm(u))\nprint(\"Proyección de u sobre v:\", np.dot(u, v) / np.dot(v, v) * v)","id":1,"options":{"fig-cap":"","output":"true","out-width":"700px","classes":"","warning":"true","message":"true","autorun":"","read-only":"false","comment":"","fig-height":5,"context":"interactive","results":"markup","dpi":72,"out-height":"","label":"","fig-width":7}}];
+globalThis.qpyodideCellDetails = [{"id":1,"code":"import numpy as np\nu = np.array([3, -6])\nv = np.array([-1, 4])\nprint(\"Vector u:\", u)\nprint(\"Vector v:\", v)\nprint(\"Suma de vectores u + v:\", u + v)\nprint(\"Vector u multiplicado por 2:\", 2 * u)\nprint(\"Norma del vector u:\", np.linalg.norm(u))\nprint(\"Proyección de u sobre v:\", np.dot(u, v) / np.dot(v, v) * v)","options":{"fig-width":7,"read-only":"false","warning":"true","label":"","message":"true","results":"markup","dpi":72,"out-height":"","out-width":"700px","output":"true","classes":"","comment":"","autorun":"","fig-cap":"","context":"interactive","fig-height":5}}];
 
 
 </script>
@@ -687,7 +687,7 @@ window.Quarto = {
 </ul>
 <p>Para la mayor parte de los casos en geometría básica y proyecciones, la <strong>norma euclidiana</strong> es la más utilizada.</p>
 <p>De esta forma podemos visualizar las diferencias entre las normas de un vector en <span class="math inline">\(\mathbb{R}^2\)</span>. Para ello veremos como se puede interpretar una circunferencia en cada una de las normas.</p>
-<div id="aa2968d3" class="cell" data-execution_count="1">
+<div id="43c66bf2" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -696,10 +696,22 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<section id="ejercicio" class="level4">
-<h4 class="anchored" data-anchor-id="ejercicio">Ejercicio</h4>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ejercicio
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>¿Cómo se debería dibujar la circunferencia en el caso de la norma infinito?</p>
-</section>
+</div>
+</div>
+</div>
 </section>
 <section id="propiedades-de-la-norma" class="level3">
 <h3 class="anchored" data-anchor-id="propiedades-de-la-norma">Propiedades de la Norma</h3>
@@ -753,7 +765,7 @@ window.Quarto = {
 <li><strong>Proyección:</strong> <span class="math inline">\(\text{proj}_{\mathbf{v}}(\mathbf{u})\)</span> calcula la componente de <span class="math inline">\(\mathbf{u}\)</span> en la dirección de <span class="math inline">\(\mathbf{v}\)</span>.</li>
 </ol>
 <p>Con estos conceptos, ya tienes las bases para entender y trabajar con operaciones vectoriales fundamentales en <span class="math inline">\(\mathbb{R}^2\)</span>. ¡Sigue practicando con ejemplos para reforzar tu comprensión!</p>
-<div id="bd553bb0" class="cell" data-execution_count="2">
+<div id="e78484fe" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-stdout">
 <pre><code>Vector u: [3 2]
 Vector v: [1 4]
