@@ -5,7 +5,7 @@ filters:
   - pyodide
 ---
 
-# Taller de Vectores en \(\mathbb{R}^2\) y Matrices \(2 \times 2\)
+# Taller de Vectores en $\mathbb{R}^2$ y Matrices $2 \times 2$
 
 ### Ejercicio 1  
 Sean los vectores $\mathbf{u} = (3, -1)$ y $\mathbf{v} = (2, 4)$.  
