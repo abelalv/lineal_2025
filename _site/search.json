@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "taller2.html",
+    "href": "taller2.html",
+    "title": "Ejercicios \\(\\mathbb{R}^2\\)",
+    "section": "",
+    "text": "En una ciudad se úed modelar mediante un plano cartesiano, en ella existen doa avenidas, La avenida A pasa por el punto \\((2,5)\\) y tiene dirección \\((6,9)\\), mientras que La avenida B pasa por el punto \\((5,8)\\) y tiene dirección \\((1,\\dfrac{3}{2})\\).\n\n\nEncuentra la distancia mínima entre ellas."
+  },
+  {
+    "objectID": "taller2.html#problema-1",
+    "href": "taller2.html#problema-1",
+    "title": "Ejercicios \\(\\mathbb{R}^2\\)",
+    "section": "",
+    "text": "En una ciudad se úed modelar mediante un plano cartesiano, en ella existen doa avenidas, La avenida A pasa por el punto \\((2,5)\\) y tiene dirección \\((6,9)\\), mientras que La avenida B pasa por el punto \\((5,8)\\) y tiene dirección \\((1,\\dfrac{3}{2})\\).\n\n\nEncuentra la distancia mínima entre ellas."
+  },
+  {
+    "objectID": "taller2.html#problema-2",
+    "href": "taller2.html#problema-2",
+    "title": "Ejercicios \\(\\mathbb{R}^2\\)",
+    "section": "Problema 2",
+    "text": "Problema 2\nUn ingeniero está analizando un sistema mecánico en el que dos fuerzas actúan sobre un punto en el plano ( ^2 ). Estas fuerzas están representadas por los siguientes vectores en Newtons:\n\nFuerza 1:\n\\[\n\\mathbf{F}_1 = (5, 2)\n\\]\nFuerza 2:\n\\[\n\\mathbf{F}_2 = (3, 6)\n\\]\n\nEl ingeniero necesita determinar el ángulo entre estas dos fuerzas para analizar su efecto combinado sobre la estructura.\n\nPreguntas:\n\nCalcula el ángulo ( ) entre los dos vectores\n¿Cómo influiría este ángulo en la estabilidad del sistema si ambas fuerzas estuvieran actuando sobre un mismo punto?"
+  },
+  {
+    "objectID": "taller1.html",
+    "href": "taller1.html",
+    "title": "Ejercicios \\(\\mathbb{R}^2\\)",
+    "section": "",
+    "text": "Taller de Vectores en \\(\\mathbb{R}^2\\) y Matrices \\(2 \\times 2\\)\n\nEjercicio 1\nSean los vectores \\(\\mathbf{u} = (3, -1)\\) y \\(\\mathbf{v} = (2, 4)\\).\n1. Calcula \\(\\mathbf{u} + \\mathbf{v}\\).\n2. Calcula \\(2\\mathbf{u} - 3\\mathbf{v}\\).\n\nVerifica la propiedad distributiva:\n\\[\\alpha(\\mathbf{u} + \\mathbf{v}) \\stackrel{?}{=} \\alpha\\mathbf{u} + \\alpha\\mathbf{v}\\]\ntomando \\(\\alpha = -1\\).\n\n\nPista: Solo necesitas comparar ambos lados de la igualdad para concluir.\n\n\n\nEjercicio 2\nCon los mismos vectores \\(\\mathbf{u} = (3, -1)\\) y \\(\\mathbf{v} = (2, 4)\\):\n1. Halla \\(\\mathbf{u} \\cdot \\mathbf{v}\\).\n2. Verifica la propiedad de conmutatividad \\(\\mathbf{u} \\cdot \\mathbf{v} = \\mathbf{v} \\cdot \\mathbf{u}\\).\n3. Encuentra el vector \\(\\mathbf{v}\\) y comprueba que \\[\\mathbf{v}\\cdot\\mathbf{v}=||\\mathbf{v}||^2.\\] 4. Calcula el vector proyección de \\(\\mathbf{u}\\) sobre \\(\\mathbf{v}\\), es decir, \\(\\text{proj}_{\\mathbf{v}}\\mathbf{u}\\).\n\nPista: Usa la fórmula:\n\\[\\text{proj}_{\\mathbf{v}}\\mathbf{u} = \\left(\\frac{\\mathbf{u} \\cdot \\mathbf{v}}{\\|\\mathbf{v}\\|^2}\\right)\\mathbf{v}.\\]\n\nInterpreta geometricamente que significa la proyección de un vector sobre otro.\n\n\n\nDescriba si la siguiente afirmaciones son es verdaderas o falsas:\n\nSi \\(\\mathbf{u} \\cdot \\mathbf{v} = 0\\), entonces \\(\\mathbf{u}\\) y \\(\\mathbf{v}\\) son ortogonales.\n\n\n\\[\\Big|\\Big|\\frac{\\mathbf{u}\\cdot\\mathbf{v}}{||v||^2}\\mathbf{v}\\Big|\\Big| = \\frac{|\\mathbf{u}\\cdot\\mathbf{v}|}{||\\mathbf{v}||}\\]\n\nUse el procedimiento anterior para calcular el ángulo entre los vectores \\(\\mathbf{u}\\) y \\(\\mathbf{v}\\).\n\n\n\n\n\n\n\n\n\n\n\nCalcula el ángulo \\(\\theta\\) entre \\(\\mathbf{u}\\) y \\(\\mathbf{v}\\) usando la fórmula:\n\\[\\mathbf{u} \\cdot \\mathbf{v} = \\|\\mathbf{u}\\|\\,\\|\\mathbf{v}\\|\\cos(\\theta).\\]\n\n\n\nEjercicio 3\nDada la recta que pasa por el punto \\(\\mathbf{P} = (1, -2)\\) y que tiene como dirección el vector \\(\\mathbf{P} = (2, 3)\\):\n\nEscribe su ecuación paramétrica en \\(\\mathbb{R}^2\\).\n\nRecuerda que la forma paramétrica se describe como:\n\\[\\mathbf{r}(t) = \\mathbf{P} + t\\,\\mathbf{v}, \\quad t \\in \\mathbb{R}.\\]\n\nVerifica que el punto \\(\\mathbf{Q} = (3,1)\\) no pertenece a dicha recta (sustituyendo en la forma paramétrica y comprobando si existe un valor de \\(t\\) que lo satisfaga).\nEscribe la ecuación de forma cartesiana, es decir de la forma \\(y =ax+b\\).\n\n\n\nEjercicio 4\nConsidera la recta \\(r_1\\) en forma paramétrica:\n\\[r_1: \\quad \\mathbf{r}(t) = (2, 1) + t \\, (3, -1).\\]\n\nEncuentra la ecuación paramétrica de la recta \\(r_2\\) paralela a \\(r_1\\) y que pase por el punto \\((4,2)\\).\n\nDos rectas son paralelas si sus vectores direccionales son múltiplos.\n\nEncuentra la ecuación paramétrica de la recta \\(r_3\\) perpendicular a \\(r_1\\) que pase por \\((4,2)\\).\n\nDos rectas en \\(\\mathbb{R}^2\\) son perpendiculares si sus vectores direccionales \\(\\mathbf{d_1}\\) y \\(\\mathbf{d_2}\\) cumplen \\(\\mathbf{d_1}\\cdot \\mathbf{d_2} = 0\\).\n\nDetermina el punto de intersección entre \\(r_3\\) y la recta \\(r_1\\).\n\n\n\nEjercicio 5\nSea \\(\\{\\mathbf{w}_1, \\mathbf{w}_2\\}\\) con \\(\\mathbf{w}_1 = (1, 3)\\) y \\(\\mathbf{w}_2 = (2, 6)\\).\n\nDetermina si \\(\\mathbf{w}_1\\) y \\(\\mathbf{w}_2\\) son linealmente dependientes o independientes. Explica tu proceso.\n\nSi son dependientes, describe la relación de dependencia. Si son independientes, justifica por qué.\n\n\n\nEjercicio 6\n\nExplica en tus propias palabras qué significa que un conjunto de vectores sea base de \\(\\mathbb{R}^2\\).\n\nDados los vectores \\(\\mathbf{a} = (1, 2)\\) y \\(\\mathbf{b} = (2, 1)\\), ¿son una base de \\(\\mathbb{R}^2\\)?\n\nJustifica tu respuesta usando independencia lineal\n\n\n\n\nEjercicio 7\n\n¿Por qué \\(\\{(0,0)\\}\\) (el conjunto que solo contiene al vector cero) es un subespacio de \\(\\mathbb{R}^2\\)?\n\nSi \\(S\\) es el conjunto de todos los vectores \\((x, y)\\) tales que \\(x + y = 0\\), demuestra que \\(S\\) es un subespacio de \\(\\mathbb{R}^2\\).\n\nDetermina una base para el subespacio \\(S\\)."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Cuadernillo de Algebra Lineal",
+    "section": "",
+    "text": "En este sitio web usted podrá encontrar los apuntes de la clase de Álgebra Lineal, donde se repasan los conceptos fundamentales de los vectores en \\(\\mathbb{R}^2\\), la suma de vectores, la multiplicación por escalar, las normas y la proyección de un vector sobre otro."
+  },
+  {
+    "objectID": "section1.html",
+    "href": "section1.html",
+    "title": "Operaciones en \\(\\mathbb{R}^2\\)",
+    "section": "",
+    "text": "En esta clase, vamos a repasar los conceptos fundamentales de los vectores en \\(\\mathbb{R}^2\\), la suma de vectores, la multiplicación por escalar, las normas y la proyección de un vector sobre otro."
+  },
+  {
+    "objectID": "section1.html#clase-de-álgebra-lineal-operaciones-en-mathbbr2",
+    "href": "section1.html#clase-de-álgebra-lineal-operaciones-en-mathbbr2",
+    "title": "Operaciones en \\(\\mathbb{R}^2\\)",
+    "section": "",
+    "text": "En esta clase, vamos a repasar los conceptos fundamentales de los vectores en \\(\\mathbb{R}^2\\), la suma de vectores, la multiplicación por escalar, las normas y la proyección de un vector sobre otro."
+  },
+  {
+    "objectID": "section1.html#vectores-en-mathbbr2",
+    "href": "section1.html#vectores-en-mathbbr2",
+    "title": "Operaciones en \\(\\mathbb{R}^2\\)",
+    "section": "Vectores en \\(\\mathbb{R}^2\\)",
+    "text": "Vectores en \\(\\mathbb{R}^2\\)\n\nDefinición\n\nUn vector en \\(\\mathbb{R}^2\\) es un par ordenado de números reales.\nPodemos denotarlo como \\(\\mathbf{v}=(v_1,v_2)\\) o como columna: \\[\n\\mathbf{v}=\\begin{pmatrix}v_1\\\\v_2\\end{pmatrix}\n\\] donde \\(v_1,v_2\\in\\mathbb{R}\\).\n\n\n\nInterpretación Geométrica\n\nCada vector en \\(\\mathbb{R}^2\\) puede representarse como un segmento dirigido en el plano cartesiano, con origen en \\((0,0)\\) y extremo en \\((v_1,v_2)\\).\nSu longitud (o magnitud) y dirección permiten describir el vector de forma geométrica."
+  },
+  {
+    "objectID": "section1.html#suma-de-vectores",
+    "href": "section1.html#suma-de-vectores",
+    "title": "Operaciones en \\(\\mathbb{R}^2\\)",
+    "section": "Suma de Vectores",
+    "text": "Suma de Vectores\n\nDefinición de la Suma\nDadas dos vectores \\(\\mathbf{u}=(u_1,u_2)\\) y \\(\\mathbf{v}=(v_1,v_2)\\) en \\(\\mathbb{R}^2\\), su suma se define como: \\[\n\\mathbf{u}+\\mathbf{v}=(u_1+v_1,u_2+v_2)\n\\]\n\n\nInterpretación Geométrica\n\nPara sumar los vectores \\(\\mathbf{u}\\) y \\(\\mathbf{v}\\) en el plano, se utiliza la regla del paralelogramo o el método cabeza-cola:\n\nTrasladar (sin rotar) el vector \\(\\mathbf{v}\\) de modo que su cola coincida con la cabeza de \\(\\mathbf{u}\\).\nEl vector resultante va desde la cola de \\(\\mathbf{u}\\) hasta la cabeza de \\(\\mathbf{v}\\).\n\n\n\n\nEjemplo\nSupongamos: \\[\n\\mathbf{u}=(2,3),\\mathbf{v}=(-1,5).\n\\] Entonces: \\[\n\\mathbf{u}+\\mathbf{v}=(2+(-1),3+5)=(1,8).\n\\]\n\n\n\nMultiplicación por un Escalar\n\n\nDefinición\nDado un vector \\(\\mathbf{v}=(v_1,v_2)\\) y un número real \\(\\alpha\\in\\mathbb{R}\\) (llamado escalar), la multiplicación por escalar se define como: \\[\n\\alpha\\mathbf{v}=(\\alpha v_1,\\alpha v_2)\n\\]\n\n\nInterpretación Geométrica\n\nMultiplicar un vector por un escalar estira o encoge al vector (cambiando su magnitud) y, si \\(\\alpha&lt;0\\), también invierte su dirección.\n\n\n\nEjemplo\nSea \\(\\mathbf{v}=(2,-1)\\) y \\(\\alpha=3\\). Entonces: \\[\n3\\mathbf{v}=3\\cdot(2,-1)=(6,-3).\n\\]"
+  },
+  {
+    "objectID": "section1.html#propiedades-de-la-suma-y-la-multiplicación-por-escalar-en-mathbbr2",
+    "href": "section1.html#propiedades-de-la-suma-y-la-multiplicación-por-escalar-en-mathbbr2",
+    "title": "Operaciones en \\(\\mathbb{R}^2\\)",
+    "section": "Propiedades de la Suma y la Multiplicación por Escalar en \\(\\mathbb{R}^2\\)",
+    "text": "Propiedades de la Suma y la Multiplicación por Escalar en \\(\\mathbb{R}^2\\)\nLas operaciones de suma de vectores y multiplicación por escalar en \\(\\mathbb{R}^2\\) cumplen con las siguientes propiedades:\n\nConmutatividad de la Suma: \\[\n\\mathbf{u}+\\mathbf{v}=\\mathbf{v}+\\mathbf{u}.\n\\]\nAsociatividad de la Suma: \\[\n(\\mathbf{u}+\\mathbf{v})+\\mathbf{w}=\\mathbf{u}+(\\mathbf{v}+\\mathbf{w}).\n\\]\nElemento Neutro de la Suma: \\[\n\\mathbf{v}+\\mathbf{0}=\\mathbf{v},\n\\] donde \\(\\mathbf{0}=(0,0)\\) es el vector nulo.\nInverso Aditivo: \\[\n\\mathbf{v}+(-\\mathbf{v})=\\mathbf{0}.\n\\]\nDistributividad de la Multiplicación por Escalar: \\[\n\\alpha(\\mathbf{u}+\\mathbf{v})=\\alpha\\mathbf{u}+\\alpha\\mathbf{v}.\n\\]\nAsociatividad de la Multiplicación por Escalar: \\[\n\\alpha(\\beta\\mathbf{v})=(\\alpha\\beta)\\mathbf{v}.\n\\]\nIdentidad de la Multiplicación por Escalar: \\[\n1\\mathbf{v}=\\mathbf{v}.\n\\]"
+  },
+  {
+    "objectID": "section1.html#normas-de-un-vector",
+    "href": "section1.html#normas-de-un-vector",
+    "title": "Operaciones en \\(\\mathbb{R}^2\\)",
+    "section": "Normas de un Vector",
+    "text": "Normas de un Vector\nLa norma de un vector se refiere a la “longitud” o “magnitud” de dicho vector. Existen varias normas, pero la más común en \\(\\mathbb{R}^2\\) es la norma Euclidiana.\n\nNorma Euclidiana (\\(\\|\\cdot\\|_2\\)), llamada norma \\(L_2\\)\nPara un vector \\(\\mathbf{v}=(v_1,v_2)\\), la norma euclidiana se define como: \\[\n\\|\\mathbf{v}\\|_2=\\sqrt{v_1^2+v_2^2}.\n\\] - Ejemplo: Si \\(\\mathbf{v}=(3,4)\\), \\[\n  \\|\\mathbf{v}\\|_2=\\sqrt{3^2+4^2}=\\sqrt{9+16}=\\sqrt{25}=5.\n  \\]\n\n\nOtras Normas (opcional)\n\nNorma 1: \\(\\|\\mathbf{v}\\|_1=|v_1|+|v_2|\\).\nNorma Infinito: \\(\\|\\mathbf{v}\\|_\\infty=\\max(|v_1|,|v_2|)\\).\n\nPara la mayor parte de los casos en geometría básica y proyecciones, la norma euclidiana es la más utilizada.\nDe esta forma podemos visualizar las diferencias entre las normas de un vector en \\(\\mathbb{R}^2\\). Para ello veremos como se puede interpretar una circunferencia en cada una de las normas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEjercicio\n\n\n\n\n\n¿Cómo se debería dibujar la circunferencia en el caso de la norma infinito?\n\n\n\n\n\nPropiedades de la Norma\nLa norma euclidiana en \\(\\mathbb{R}^2\\) cumple con las siguientes propiedades:\n\nPositividad: \\[\n\\|\\mathbf{v}\\|_2\\geq 0,\\quad\\text{y}\\quad\\|\\mathbf{v}\\|_2=0\\text{ si y solo si }\\mathbf{v}=\\mathbf{0}.\n\\]\nHomogeneidad: \\[\n\\|\\alpha\\mathbf{v}\\|_2=|\\alpha|\\|\\mathbf{v}\\|_2.\n\\]\nDesigualdad Triangular: \\[\n\\|\\mathbf{u}+\\mathbf{v}\\|_2\\leq\\|\\mathbf{u}\\|_2+\\|\\mathbf{v}\\|_2.\n\\]"
+  },
+  {
+    "objectID": "section1.html#proyección-de-un-vector-en-mathbbr2",
+    "href": "section1.html#proyección-de-un-vector-en-mathbbr2",
+    "title": "Operaciones en \\(\\mathbb{R}^2\\)",
+    "section": "Proyección de un Vector en \\(\\mathbb{R}^2\\)",
+    "text": "Proyección de un Vector en \\(\\mathbb{R}^2\\)\nLa proyección de un vector \\(\\mathbf{u}\\) sobre otro vector \\(\\mathbf{v}\\) (asumiendo \\(\\mathbf{v}\\neq\\mathbf{0}\\)) es el vector en la dirección de \\(\\mathbf{v}\\) que representa la parte de \\(\\mathbf{u}\\) en esa dirección.\n\n5.1 Definición\nLa proyección de \\(\\mathbf{u}\\) sobre \\(\\mathbf{v}\\), denotada como \\(\\text{proj}_{\\mathbf{v}}(\\mathbf{u})\\), se define como: \\[\n\\text{proj}_{\\mathbf{v}}(\\mathbf{u})=\\left(\\frac{\\mathbf{u}\\cdot\\mathbf{v}}{\\mathbf{v}\\cdot\\mathbf{v}}\\right)\\mathbf{v}.\n\\] - \\(\\mathbf{u}\\cdot\\mathbf{v}\\) es el producto punto: \\[\n  \\mathbf{u}\\cdot\\mathbf{v}=u_1v_1+u_2v_2.\n  \\] - \\(\\mathbf{v}\\cdot\\mathbf{v}=\\|\\mathbf{v}\\|_2^2=v_1^2+v_2^2\\).\n\n\n5.2 Ejemplo\nSean: \\[\n\\mathbf{u}=(2,1),\\mathbf{v}=(3,0).\n\\] 1. Calcular el producto punto \\(\\mathbf{u}\\cdot\\mathbf{v}\\): \\[\n   \\mathbf{u}\\cdot\\mathbf{v}=(2)(3)+(1)(0)=6.\n   \\] 2. Calcular \\(\\mathbf{v}\\cdot\\mathbf{v}\\): \\[\n   \\mathbf{v}\\cdot\\mathbf{v}=(3)(3)+(0)(0)=9.\n   \\] 3. Hallar la proyección: \\[\n   \\text{proj}_{\\mathbf{v}}(\\mathbf{u})=\\left(\\frac{6}{9}\\right)(3,0)=\\left(\\frac{2}{3}\\right)(3,0)=(2,0).\n   \\]\nGeométricamente, \\(\\mathbf{u}\\) se proyecta sobre \\(\\mathbf{v}\\) y el vector resultante es paralelo a \\(\\mathbf{v}\\)."
+  },
+  {
+    "objectID": "section1.html#resumen",
+    "href": "section1.html#resumen",
+    "title": "Operaciones en \\(\\mathbb{R}^2\\)",
+    "section": "6. Resumen",
+    "text": "6. Resumen\n\nVectores en \\(\\mathbb{R}^2\\): Se representan como pares ordenados \\((v_1,v_2)\\).\nSuma de Vectores: Suma componente a componente.\nMultiplicación por Escalar: Escala la magnitud del vector y puede invertir su dirección (si el escalar es negativo).\nNormas: Principalmente la norma euclidiana \\(\\sqrt{v_1^2+v_2^2}\\) para medir la “longitud” del vector.\nProyección: \\(\\text{proj}_{\\mathbf{v}}(\\mathbf{u})\\) calcula la componente de \\(\\mathbf{u}\\) en la dirección de \\(\\mathbf{v}\\).\n\nCon estos conceptos, ya tienes las bases para entender y trabajar con operaciones vectoriales fundamentales en \\(\\mathbb{R}^2\\). ¡Sigue practicando con ejemplos para reforzar tu comprensión!\n\n\nVector u: [3 2]\nVector v: [1 4]\nSuma de vectores u + v: [4 6]\nVector u multiplicado por 2: [6 4]\nNorma del vector u: 3.605551275463989\nProyección de u sobre v: [0.64705882 2.58823529]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPara realizar las anteriores operaciones con vectores en \\(\\mathbb{R}^2\\), podemos utilizar la librería NumPy en Python. A continuación, se muestra un ejemplo de código que realiza la suma de vectores, la multiplicación por escalar, el cálculo de la norma de un vector y la proyección de un vector sobre otro en \\(\\mathbb{R}^2\\):\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "section2.html",
+    "href": "section2.html",
+    "title": "Rectas en \\(\\mathbb{R}^2\\)",
+    "section": "",
+    "text": "Nosotros podemos dibujar una recta en \\(\\mathbb{R}^2\\) si conocemos un punto de la recta y su pendiente. La ecuación de la recta es:\n\\[y = m \\cdot x + b\\]\nDonde \\(m\\) es la pendiente y \\(b\\) es la ordenada al origen, esta ecuación se llama una ecuación cartesiana de la recta. Existe otra forma de escribir la ecuación de la recta, que es llamada una recta paramétrica, para poder intuir como podemos escribir una recta paramétrica, vamos a ver un ejemplo. Para ello necesitamos un punto por donde pase la recta y un vector director.\n\n\n\n\n\n\n\n\n\nAhora supongamos que tenemos un punto \\(P\\) y un vector director \\(\\vec{v}\\), entonces la recta que pasa por el punto \\(P\\) y tiene dirección \\(\\vec{v}\\) se puede escribir como:\n\\[\\vec{l}(t) = \\vec{P} + t \\cdot \\vec{v}\\]\nde esta forma podriamos dibujar la recta que pasa por el punto \\(P\\) y tiene dirección \\(\\vec{v}\\).\n\n\n\n\n\n\n\n\n\nDe esta forma podríamos definir una recta en \\(\\mathbb{R}^2\\) de forma paramétrica.\n\n\n\n\n\n\nEjercicio\n\n\n\n\n\nDibuja la recta que pasa por el punto \\(P(3,2)\\) y tiene dirección \\(\\vec{v} = (1,2)\\).\n\n\n\nAquí tenemos una pregunta que nos podemos hacer, ¿cómo podemos saber si dos rectas son paralelas o perpendiculares? Para ello necesitamos saber que dos rectas son paralelas si sus vectores directores son proporcionales, es decir, si \\(\\vec{v}_1 = k \\cdot \\vec{v}_2\\) entonces las rectas son paralelas. Por otro lado, dos rectas son perpendiculares si sus vectores directores son ortogonales, es decir, si \\(\\vec{v}_1 \\cdot \\vec{v}_2 = 0\\) entonces las rectas son perpendiculares.\n\n\n\n\n\n\n\n\n\n\n\nPara pasar de una ecuación cartesiana a una ecuación paramétrica, lo podemos hacer de la siguiente forma:\n\nDespejamos \\(y\\) de la ecuación cartesiana:\n\n\\[y = m \\cdot x + b\\]\n\nAhora igualamos a \\(t\\) a \\(x\\), de esta forma tenemos dos nuevas ecuaciones:\n\n\\[x = t\\] \\[y = m \\cdot t + b\\]\n\nDe aquí podemos obtener el vector directriz\n\n\\[\\vec{v} = (1,m)\\]\ny el punto \\(P = (0,b)\\), de esta forma la ecuación paramétrica de la recta es:\n\\[\\vec{l}(t) = \\vec{P} + t \\cdot \\vec{v}\\]\n\n\n\nPara pasar de una ecuación paramétrica a una ecuación cartesiana, lo podemos hacer de la siguiente forma:\n\nReescribimos nuestra ecuación paramétrica de la siguiente forma:\n\n\\[\\vec{l}(t) = \\vec{P} + t \\cdot \\vec{v}=\\Big(P_1t+v_1,P_2t+v_2\\Big)\\]\n\nAhora igualamos cada término al vector \\((x,y)\\), de esta forma tenemos dos nuevas ecuaciones:\n\n\\[x = P_1t+v_1\\] \\[y = P_2t+v_2\\]\n\nDespejamos \\(t\\) en las ecuaciones anteriores:\n\n\\[t = \\frac{x-v_1}{P_1}\\] \\[t = \\frac{y-v_2}{P_2}\\]\n\nIgualamos las dos ecuaciones anteriores y obtenemos la ecuación cartesiana de la recta:\n\n\\[\\frac{x-v_1}{P_1} = \\frac{y-v_2}{P_2}\\]\nDe esta forma podemos pasar de una ecuación paramétrica a una ecuación cartesiana.\n\n\n\nPara calcular la distancia entre dos puntos se debe un vector que una los dos puntos y luego podremos calcular la norma de este vector.\n\n\nCalcular la distancia entre el punto \\(P(2,3)\\) y el punto \\(Q(4,5)\\). Para calcular un vector que parta del punto \\(P\\) y llegue al punto \\(Q\\) podemos hacer lo siguiente:\n\\[\\vec{v} = Q - P = (4-2,5-3) = (2,2)\\]\nAhora podemos calcular la norma de este vector\n\\[||\\vec{v}|| = \\sqrt{2^2+2^2} = \\sqrt{8}\\]\nEste seria la longitud ecludiana de este vector, que es la distancia entre los dos puntos.\n\n\n\n\n\n\n\n\n\nLa distancia entre los puntos P y Q es: 2.8284271247461903\n\n\n\n\n\n\nPara calcular el ángulo entre dos vectores podemos hacer lo siguiente:\n\n\n\n\n\n\n\n\n\nEl ángulo entre los vectores es: 90.0 grados"
+  },
+  {
+    "objectID": "section2.html#pasar-de-la-forma-cartesiana-a-la-forma-paramétrica",
+    "href": "section2.html#pasar-de-la-forma-cartesiana-a-la-forma-paramétrica",
+    "title": "Rectas en \\(\\mathbb{R}^2\\)",
+    "section": "",
+    "text": "Para pasar de una ecuación cartesiana a una ecuación paramétrica, lo podemos hacer de la siguiente forma:\n\nDespejamos \\(y\\) de la ecuación cartesiana:\n\n\\[y = m \\cdot x + b\\]\n\nAhora igualamos a \\(t\\) a \\(x\\), de esta forma tenemos dos nuevas ecuaciones:\n\n\\[x = t\\] \\[y = m \\cdot t + b\\]\n\nDe aquí podemos obtener el vector directriz\n\n\\[\\vec{v} = (1,m)\\]\ny el punto \\(P = (0,b)\\), de esta forma la ecuación paramétrica de la recta es:\n\\[\\vec{l}(t) = \\vec{P} + t \\cdot \\vec{v}\\]"
+  },
+  {
+    "objectID": "section2.html#pasar-de-la-forma-paramétrica-a-la-forma-cartesiana",
+    "href": "section2.html#pasar-de-la-forma-paramétrica-a-la-forma-cartesiana",
+    "title": "Rectas en \\(\\mathbb{R}^2\\)",
+    "section": "",
+    "text": "Para pasar de una ecuación paramétrica a una ecuación cartesiana, lo podemos hacer de la siguiente forma:\n\nReescribimos nuestra ecuación paramétrica de la siguiente forma:\n\n\\[\\vec{l}(t) = \\vec{P} + t \\cdot \\vec{v}=\\Big(P_1t+v_1,P_2t+v_2\\Big)\\]\n\nAhora igualamos cada término al vector \\((x,y)\\), de esta forma tenemos dos nuevas ecuaciones:\n\n\\[x = P_1t+v_1\\] \\[y = P_2t+v_2\\]\n\nDespejamos \\(t\\) en las ecuaciones anteriores:\n\n\\[t = \\frac{x-v_1}{P_1}\\] \\[t = \\frac{y-v_2}{P_2}\\]\n\nIgualamos las dos ecuaciones anteriores y obtenemos la ecuación cartesiana de la recta:\n\n\\[\\frac{x-v_1}{P_1} = \\frac{y-v_2}{P_2}\\]\nDe esta forma podemos pasar de una ecuación paramétrica a una ecuación cartesiana."
+  },
+  {
+    "objectID": "section2.html#distancia-entre-dos-puntos",
+    "href": "section2.html#distancia-entre-dos-puntos",
+    "title": "Rectas en \\(\\mathbb{R}^2\\)",
+    "section": "",
+    "text": "Para calcular la distancia entre dos puntos se debe un vector que una los dos puntos y luego podremos calcular la norma de este vector.\n\n\nCalcular la distancia entre el punto \\(P(2,3)\\) y el punto \\(Q(4,5)\\). Para calcular un vector que parta del punto \\(P\\) y llegue al punto \\(Q\\) podemos hacer lo siguiente:\n\\[\\vec{v} = Q - P = (4-2,5-3) = (2,2)\\]\nAhora podemos calcular la norma de este vector\n\\[||\\vec{v}|| = \\sqrt{2^2+2^2} = \\sqrt{8}\\]\nEste seria la longitud ecludiana de este vector, que es la distancia entre los dos puntos.\n\n\n\n\n\n\n\n\n\nLa distancia entre los puntos P y Q es: 2.8284271247461903"
+  },
+  {
+    "objectID": "section2.html#angulo-entre-dos-vectores",
+    "href": "section2.html#angulo-entre-dos-vectores",
+    "title": "Rectas en \\(\\mathbb{R}^2\\)",
+    "section": "",
+    "text": "Para calcular el ángulo entre dos vectores podemos hacer lo siguiente:\n\n\n\n\n\n\n\n\n\nEl ángulo entre los vectores es: 90.0 grados"
+  }
+]
