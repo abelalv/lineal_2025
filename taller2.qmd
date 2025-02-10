@@ -29,5 +29,5 @@ Un ingeniero está analizando un sistema mecánico en el que dos fuerzas actúan
 El ingeniero necesita determinar el ángulo entre estas dos fuerzas para analizar su efecto combinado sobre la estructura.  
 
 ### **Preguntas:**  
-a. Calcula el ángulo \( \theta \) entre los dos vectores 
+a. Calcula el ángulo $\theta$ entre los dos vectores 
 b. ¿Cómo influiría este ángulo en la estabilidad del sistema si ambas fuerzas estuvieran actuando sobre un mismo punto?  

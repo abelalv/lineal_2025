@@ -10,7 +10,9 @@ website:
       - about.qmd
       - section1.qmd
       - section2.qmd
+      - section3.qmd
       - taller1.qmd
+      - taller2.qmd
 
 format:
   html:

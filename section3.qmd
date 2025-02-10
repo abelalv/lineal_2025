@@ -1,6 +1,42 @@
 ---
-title: Rectas en $\mathbb{R}^2$
+title: Independecia lienal
 format: html
 filters:
   - pyodide
 ---
+
+
+# Combinación lineal
+
+En $\mathbb{R}^2$ se pude establecer la combinación lineal, si se tiene el vector $\mathbf{v} = (x, y)$ no nulo y $\alpha$ un número real entonces la combinación lienal seria un nuevo vector $\mathbf{w} = \alpha \mathbf{v} = (\alpha x, \alpha y)$. Note que de esta forma podemos decir que la recta que pasa por el origen y tiene como vector dirección a $\mathbf{v}$ es el conjunto de todos los vectores que se pueden obtener mediante la combinación lineal de $\mathbf{v}$.
+
+```{python}
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Vector v definition
+v = np.array([1, 2])
+
+# Parameter t for linear combination
+t = np.linspace(-10, 10, 400)
+
+# Calculate points along the line
+points = np.outer(t, v)
+
+# Create the plot
+plt.figure(figsize=(6, 6))
+plt.plot(points[:, 0], points[:, 1], label='Recta generada por v', color='blue')
+plt.quiver(0, 0, v[0], v[1], angles='xy', scale_units='xy', scale=1, color='red', label='Vector v')
+plt.axhline(0, color='black', linewidth=0.5)
+plt.axvline(0, color='black', linewidth=0.5)
+plt.xlabel('Eje X')
+plt.ylabel('Eje Y')
+plt.legend()
+plt.grid(True)
+plt.title('Combinación lineal: recta a través del origen con dirección v')
+plt.show()
+
+```
+
+De la misma forma podremos mostrar que si tenemos dos vectores $\mathbf{u}$ y $\mathbf{v}$, entonces 
