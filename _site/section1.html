@@ -23,16 +23,49 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="section1_files/libs/clipboard/clipboard.min.js"></script>
-<script src="section1_files/libs/quarto-html/quarto.js"></script>
-<script src="section1_files/libs/quarto-html/popper.min.js"></script>
-<script src="section1_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="section1_files/libs/quarto-html/anchor.min.js"></script>
-<link href="section1_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="section1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="section1_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="section1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="section1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.46.0/min/vs/editor/editor.main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   
@@ -195,7 +228,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"options":{"read-only":"false","message":"true","warning":"true","comment":"","fig-width":7,"fig-cap":"","label":"","results":"markup","context":"interactive","dpi":72,"out-width":"700px","autorun":"","output":"true","out-height":"","classes":"","fig-height":5},"id":1,"code":"import numpy as np\nu = np.array([3, -6])\nv = np.array([-1, 4])\nprint(\"Vector u:\", u)\nprint(\"Vector v:\", v)\nprint(\"Suma de vectores u + v:\", u + v)\nprint(\"Vector u multiplicado por 2:\", 2 * u)\nprint(\"Norma del vector u:\", np.linalg.norm(u))\nprint(\"Proyección de u sobre v:\", np.dot(u, v) / np.dot(v, v) * v)"}];
+globalThis.qpyodideCellDetails = [{"id":1,"options":{"output":"true","results":"markup","context":"interactive","dpi":72,"label":"","message":"true","fig-width":7,"warning":"true","read-only":"false","out-height":"","autorun":"","classes":"","fig-cap":"","out-width":"700px","fig-height":5,"comment":""},"code":"import numpy as np\nu = np.array([3, -6])\nv = np.array([-1, 4])\nprint(\"Vector u:\", u)\nprint(\"Vector v:\", v)\nprint(\"Suma de vectores u + v:\", u + v)\nprint(\"Vector u multiplicado por 2:\", 2 * u)\nprint(\"Norma del vector u:\", np.linalg.norm(u))\nprint(\"Proyección de u sobre v:\", np.dot(u, v) / np.dot(v, v) * v)"}];
 
 
 </script>
@@ -416,12 +449,123 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="fullcontent">
+<body class="nav-sidebar docked">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./section1.html">Operaciones en <span class="math inline">\(\mathbb{R}^2\)</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cuadernillo de Algebra Lineal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./section1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Operaciones en <span class="math inline">\(\mathbb{R}^2\)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./section2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rectas en <span class="math inline">\(\mathbb{R}^2\)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./section3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Independencia lineal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./taller1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ejercicios <span class="math inline">\(\mathbb{R}^2\)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./taller2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ejercicios <span class="math inline">\(\mathbb{R}^2\)</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#clase-de-álgebra-lineal-operaciones-en-mathbbr2" id="toc-clase-de-álgebra-lineal-operaciones-en-mathbbr2" class="nav-link active" data-scroll-target="#clase-de-álgebra-lineal-operaciones-en-mathbbr2">Clase de Álgebra Lineal: Operaciones en <span class="math inline">\(\mathbb{R}^2\)</span></a></li>
+  <li><a href="#vectores-en-mathbbr2" id="toc-vectores-en-mathbbr2" class="nav-link" data-scroll-target="#vectores-en-mathbbr2">Vectores en <span class="math inline">\(\mathbb{R}^2\)</span></a>
+  <ul class="collapse">
+  <li><a href="#definición" id="toc-definición" class="nav-link" data-scroll-target="#definición">Definición</a></li>
+  <li><a href="#interpretación-geométrica" id="toc-interpretación-geométrica" class="nav-link" data-scroll-target="#interpretación-geométrica">Interpretación Geométrica</a></li>
+  </ul></li>
+  <li><a href="#suma-de-vectores" id="toc-suma-de-vectores" class="nav-link" data-scroll-target="#suma-de-vectores">Suma de Vectores</a>
+  <ul class="collapse">
+  <li><a href="#definición-de-la-suma" id="toc-definición-de-la-suma" class="nav-link" data-scroll-target="#definición-de-la-suma">Definición de la Suma</a></li>
+  <li><a href="#interpretación-geométrica-1" id="toc-interpretación-geométrica-1" class="nav-link" data-scroll-target="#interpretación-geométrica-1">Interpretación Geométrica</a></li>
+  <li><a href="#ejemplo" id="toc-ejemplo" class="nav-link" data-scroll-target="#ejemplo">Ejemplo</a></li>
+  <li><a href="#multiplicación-por-un-escalar" id="toc-multiplicación-por-un-escalar" class="nav-link" data-scroll-target="#multiplicación-por-un-escalar">Multiplicación por un Escalar</a></li>
+  <li><a href="#definición-1" id="toc-definición-1" class="nav-link" data-scroll-target="#definición-1">Definición</a></li>
+  <li><a href="#interpretación-geométrica-2" id="toc-interpretación-geométrica-2" class="nav-link" data-scroll-target="#interpretación-geométrica-2">Interpretación Geométrica</a></li>
+  <li><a href="#ejemplo-1" id="toc-ejemplo-1" class="nav-link" data-scroll-target="#ejemplo-1">Ejemplo</a></li>
+  </ul></li>
+  <li><a href="#propiedades-de-la-suma-y-la-multiplicación-por-escalar-en-mathbbr2" id="toc-propiedades-de-la-suma-y-la-multiplicación-por-escalar-en-mathbbr2" class="nav-link" data-scroll-target="#propiedades-de-la-suma-y-la-multiplicación-por-escalar-en-mathbbr2">Propiedades de la Suma y la Multiplicación por Escalar en <span class="math inline">\(\mathbb{R}^2\)</span></a></li>
+  <li><a href="#normas-de-un-vector" id="toc-normas-de-un-vector" class="nav-link" data-scroll-target="#normas-de-un-vector">Normas de un Vector</a>
+  <ul class="collapse">
+  <li><a href="#norma-euclidiana-cdot_2-llamada-norma-l_2" id="toc-norma-euclidiana-cdot_2-llamada-norma-l_2" class="nav-link" data-scroll-target="#norma-euclidiana-cdot_2-llamada-norma-l_2">Norma Euclidiana (<span class="math inline">\(\|\cdot\|_2\)</span>), llamada norma <span class="math inline">\(L_2\)</span></a></li>
+  <li><a href="#otras-normas-opcional" id="toc-otras-normas-opcional" class="nav-link" data-scroll-target="#otras-normas-opcional">Otras Normas (opcional)</a></li>
+  <li><a href="#propiedades-de-la-norma" id="toc-propiedades-de-la-norma" class="nav-link" data-scroll-target="#propiedades-de-la-norma">Propiedades de la Norma</a></li>
+  </ul></li>
+  <li><a href="#proyección-de-un-vector-en-mathbbr2" id="toc-proyección-de-un-vector-en-mathbbr2" class="nav-link" data-scroll-target="#proyección-de-un-vector-en-mathbbr2">Proyección de un Vector en <span class="math inline">\(\mathbb{R}^2\)</span></a>
+  <ul class="collapse">
+  <li><a href="#definición-2" id="toc-definición-2" class="nav-link" data-scroll-target="#definición-2">5.1 Definición</a></li>
+  <li><a href="#ejemplo-2" id="toc-ejemplo-2" class="nav-link" data-scroll-target="#ejemplo-2">5.2 Ejemplo</a></li>
+  </ul></li>
+  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen">6. Resumen</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
 <main class="content" id="quarto-document-content">
 <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.46.0/min/vs/loader.js"></script>
 <script type="module" id="qpyodide-monaco-editor-init">
@@ -687,10 +831,11 @@ Proyección de u sobre v: [0.64705882 2.58823529]</code></pre>
 <p>Para realizar las anteriores operaciones con vectores en <span class="math inline">\(\mathbb{R}^2\)</span>, podemos utilizar la librería NumPy en Python. A continuación, se muestra un ejemplo de código que realiza la suma de vectores, la multiplicación por escalar, el cálculo de la norma de un vector y la proyección de un vector sobre otro en <span class="math inline">\(\mathbb{R}^2\)</span>:</p>
 <div id="qpyodide-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+
+
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

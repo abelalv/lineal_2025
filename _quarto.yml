@@ -12,8 +12,12 @@ website:
       - section1.qmd
       - section2.qmd
       - section3.qmd
+    contents: 
+      - href: talleres.qmd
+        text: Talleres
       - taller1.qmd
       - taller2.qmd
+
 
 format:
   html:
