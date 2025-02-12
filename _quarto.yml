@@ -2,11 +2,12 @@ project:
   type: website
 
 website:
-  title: "lineal"
-  navbar:
-    left:
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
       - href: index.qmd
-        text: Home
+        text: Contenido
       - about.qmd
       - section1.qmd
       - section2.qmd
