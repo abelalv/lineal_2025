@@ -22,5 +22,17 @@
   "taller2.qmd": {
     "taller2.html": "fd9ec175",
     "taller2.tex": "81dac035"
+  },
+  "enunciado_grua.md": {
+    "enunciado_grua.html": "d0bc4e45"
+  },
+  "analisis_fuerzas_grua.ipynb": {
+    "analisis_fuerzas_grua.html": "16461f17"
+  },
+  "ejerciocio.ipynb": {
+    "ejerciocio.html": "7ebd5283"
+  },
+  "animaciones.ipynb": {
+    "animaciones.html": "c54104de"
   }
 }
