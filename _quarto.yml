@@ -6,19 +6,24 @@ website:
     style: "docked"
     search: true
     contents:
-      - href: index.qmd
-        text: Contenido
-      - about.qmd
-      - section1.qmd
-      - section2.qmd
-      - section3.qmd
-    contents: 
-      - href: talleres.qmd
-        text: Talleres
-      - taller1.qmd
-      - taller2.qmd
-
-
+      - text: Contenido
+        href: index.qmd
+      - section: "Plano"
+        contents:
+          - href: about.qmd
+            text: Acerca de
+          - href: section1.qmd
+            text: Sección 1
+          - href: section2.qmd
+            text: Sección 2
+          - href: section3.qmd
+            text: Sección 3
+      - section: "Talleres"
+        contents:
+          - href: taller1.qmd
+            text: Taller 1
+          - href: taller2.qmd
+            text: Taller 2
 format:
   html:
     theme: cosmo
