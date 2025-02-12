@@ -15,9 +15,11 @@ website:
           - href: section1.qmd
             text: Sección 1
           - href: section2.qmd
-            text: Sección 2
+            text: Rectas
           - href: section3.qmd
-            text: Sección 3
+            text: Independencia lineal
+          - href: section4.qmd
+            text: Matrices
       - section: "Talleres"
         contents:
           - href: taller1.qmd
