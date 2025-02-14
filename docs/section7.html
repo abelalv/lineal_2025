@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Primer taller computacional</title>
+<title>Eliminación de Gauss-Jordan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -101,35 +67,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -143,7 +80,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Primer taller computacional</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Eliminación de Gauss-Jordan</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -204,7 +141,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./section4.qmd" class="sidebar-item-text sidebar-link">
+  <a href="./section4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Matrices</span></a>
   </div>
 </li>
@@ -238,30 +175,15 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#taller-análisis-de-movimiento-en-una-ciudad" id="toc-taller-análisis-de-movimiento-en-una-ciudad" class="nav-link active" data-scroll-target="#taller-análisis-de-movimiento-en-una-ciudad">Taller: Análisis de Movimiento en una Ciudad</a>
-  <ul class="collapse">
-  <li><a href="#contexto" id="toc-contexto" class="nav-link" data-scroll-target="#contexto">Contexto</a>
-  <ul class="collapse">
-  <li><a href="#se-quiere-determinar" id="toc-se-quiere-determinar" class="nav-link" data-scroll-target="#se-quiere-determinar">Se quiere determinar</a></li>
-  </ul></li>
-  <li><a href="#preparandose-para-la-solución" id="toc-preparandose-para-la-solución" class="nav-link" data-scroll-target="#preparandose-para-la-solución">Preparandose para la solución</a></li>
-  <li><a href="#calculando-la-solución" id="toc-calculando-la-solución" class="nav-link" data-scroll-target="#calculando-la-solución">Calculando la solución</a></li>
-  <li><a href="#interpretación-de-la-solución" id="toc-interpretación-de-la-solución" class="nav-link" data-scroll-target="#interpretación-de-la-solución">Interpretación de la solución</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Primer taller computacional</h1>
+<h1 class="title">Eliminación de Gauss-Jordan</h1>
 </div>
 
 
@@ -278,54 +200,8 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Objetivo:</strong> El objetivo de la unidad es aplicar operaciones con vectores en <span class="math inline">\(\mathbb{R}^2\)</span> para analizar el movimiento y trayectoria de objetos, utilizando álgebra lineal y programación en Python para resolver problemas de intersección, optimización de rutas y distancia mínima en un contexto práctico.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="ciclista.jpg" class="img-fluid figure-img"></p>
-<figcaption>Ciclista</figcaption>
-</figure>
-</div>
-<section id="taller-análisis-de-movimiento-en-una-ciudad" class="level1">
-<h1>Taller: Análisis de Movimiento en una Ciudad</h1>
-<section id="contexto" class="level2">
-<h2 class="anchored" data-anchor-id="contexto">Contexto</h2>
-<p>En una ciudad con un sistema de coordenadas cartesiano en <span class="math inline">\(\mathbb{R}^2\)</span>, se están analizando las rutas de dos mensajeros que se desplazan en bicicleta. Cada uno sigue un trayecto definido por un vector de desplazamiento, y se requiere analizar su relación espacial y eficiencia.</p>
-<p>Dadas las posiciones iniciales y direcciones de movimiento de los dos ciclistas: - Mensajero A parte de <strong><span class="math inline">\(P_A = (2,3)\)</span></strong> con dirección de movimiento <strong><span class="math inline">\(v_A = (4,2)\)</span></strong>. - Mensajero B parte de <strong><span class="math inline">\(P_B = (-1,5)\)</span></strong> con dirección <strong><span class="math inline">\(v_B = (6,3)\)</span></strong>.</p>
-<section id="se-quiere-determinar" class="level3">
-<h3 class="anchored" data-anchor-id="se-quiere-determinar">Se quiere determinar</h3>
-<ol type="1">
-<li>Determina la nueva posición de cada ciclista después de <strong>1 unidades de tiempo</strong>, suponiendo que sus desplazamientos siguen sus vectores dirección.</li>
-<li>Si el mensajero A decide moverse al doble de su velocidad, ¿cuál es su nuevo vector de desplazamiento?</li>
-<li>Se quiere determinar si los camios de los mensajeros A y B se cruzarán en algún momento. y si se cruzan, ¿en qué punto lo harán y a qué distancia de la posición inicial del mensajero A?</li>
-<li>Suponiendo que los dos mensajeros siguen la misma trayectoria en la que partieron inicialmente, Existe un paquete que debe ser entregado en la posición <strong><span class="math inline">\(P = (10,10)\)</span></strong>. ¿Cuál de los dos mensajeros tendría que desviarse menos de la trayectoria para desplazarse a la posición de entrega?</li>
-</ol>
-</section>
-</section>
-<section id="preparandose-para-la-solución" class="level2">
-<h2 class="anchored" data-anchor-id="preparandose-para-la-solución">Preparandose para la solución</h2>
-<p>Antes de resolver el problema debes escribir que estrategia usarás para resolver cada uno de los puntos anteriores y su justificación en la celda siguiente.</p>
-</section>
-<section id="calculando-la-solución" class="level2">
-<h2 class="anchored" data-anchor-id="calculando-la-solución">Calculando la solución</h2>
-<p>En la siguiente celda escribe el código que te permita resolver el problema planteado. Puedes agregar todas las celdas que consideres necesarias.</p>
-</section>
-<section id="interpretación-de-la-solución" class="level2">
-<h2 class="anchored" data-anchor-id="interpretación-de-la-solución">Interpretación de la solución</h2>
-<p>La solución que propongas debes interpretarla si consideras que es correcta o no y por qué. Si no es correcta, debes explicar que es lo que está mal y por qué.</p>
-<p>Recuerda que para resolver el problema usando Python, puedes hacer uso de la librería Numpy para realizar operaciones matriciales y de algebra lineal. Para esta actividad son necesarias las siguientes operaciones:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>u <span class="op">=</span> np.array([<span class="dv">3</span>, <span class="op">-</span><span class="dv">6</span>])</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>v <span class="op">=</span> np.array([<span class="op">-</span><span class="dv">1</span>, <span class="dv">4</span>])</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Vector u:"</span>, u)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Vector v:"</span>, v)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Suma de vectores u + v:"</span>, u <span class="op">+</span> v)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Vector u multiplicado por 2:"</span>, <span class="dv">2</span> <span class="op">*</span> u)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Norma del vector u:"</span>, np.linalg.norm(u))</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Proyección de u sobre v:"</span>, np.dot(u, v) <span class="op">/</span> np.dot(v, v) <span class="op">*</span> v)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

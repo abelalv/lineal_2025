@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ejercicios \mathbb{R}^2</title>
+<title>Matrices</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -109,7 +109,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taller1.html">Talleres</a></li><li class="breadcrumb-item"><a href="./taller1.html">Taller 1</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./section4.html">Matrices</a></li><li class="breadcrumb-item"><a href="./section4.html">Matrices</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -168,18 +168,12 @@ window.Quarto = {
  <span class="menu-text">Independencia lineal</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./section4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Matrices</span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Talleres</span></a>
+ <span class="menu-text">Matrices</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -187,7 +181,36 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./taller1.html" class="sidebar-item-text sidebar-link active">
+  <a href="./section4.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Matrices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./section5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Solución de sistema de ecuaciones</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./section6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Trabajo computacional</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Talleres</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./taller1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Taller 1</span></a>
   </div>
 </li>
@@ -195,6 +218,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="./taller2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Taller 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./taller3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taller 3 (matrices)</span></a>
   </div>
 </li>
       </ul>
@@ -209,15 +238,13 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#taller-de-vectores-en-mathbbr2-y-matrices-2-times-2" id="toc-taller-de-vectores-en-mathbbr2-y-matrices-2-times-2" class="nav-link active" data-scroll-target="#taller-de-vectores-en-mathbbr2-y-matrices-2-times-2">Taller de Vectores en <span class="math inline">\(\mathbb{R}^2\)</span> y Matrices <span class="math inline">\(2 \times 2\)</span></a>
+  <li><a href="#operaciones-con-matrices" id="toc-operaciones-con-matrices" class="nav-link active" data-scroll-target="#operaciones-con-matrices">Operaciones con matrices</a>
   <ul class="collapse">
-  <li><a href="#ejercicio-1" id="toc-ejercicio-1" class="nav-link" data-scroll-target="#ejercicio-1">Ejercicio 1</a></li>
-  <li><a href="#ejercicio-2" id="toc-ejercicio-2" class="nav-link" data-scroll-target="#ejercicio-2">Ejercicio 2</a></li>
-  <li><a href="#ejercicio-3" id="toc-ejercicio-3" class="nav-link" data-scroll-target="#ejercicio-3">Ejercicio 3</a></li>
-  <li><a href="#ejercicio-4" id="toc-ejercicio-4" class="nav-link" data-scroll-target="#ejercicio-4">Ejercicio 4</a></li>
-  <li><a href="#ejercicio-5" id="toc-ejercicio-5" class="nav-link" data-scroll-target="#ejercicio-5">Ejercicio 5</a></li>
-  <li><a href="#ejercicio-6" id="toc-ejercicio-6" class="nav-link" data-scroll-target="#ejercicio-6">Ejercicio 6</a></li>
-  <li><a href="#ejercicio-7" id="toc-ejercicio-7" class="nav-link" data-scroll-target="#ejercicio-7">Ejercicio 7</a></li>
+  <li><a href="#suma-de-matrices" id="toc-suma-de-matrices" class="nav-link" data-scroll-target="#suma-de-matrices">Suma de matrices</a></li>
+  <li><a href="#multiplicación-por-escalar" id="toc-multiplicación-por-escalar" class="nav-link" data-scroll-target="#multiplicación-por-escalar">Multiplicación por escalar</a></li>
+  <li><a href="#multiplicación-de-matrices" id="toc-multiplicación-de-matrices" class="nav-link" data-scroll-target="#multiplicación-de-matrices">Multiplicación de matrices</a></li>
+  <li><a href="#matriz-identidad" id="toc-matriz-identidad" class="nav-link" data-scroll-target="#matriz-identidad">Matriz identidad</a></li>
+  <li><a href="#inversa-de-una-matriz" id="toc-inversa-de-una-matriz" class="nav-link" data-scroll-target="#inversa-de-una-matriz">Inversa de una matriz</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -225,9 +252,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taller1.html">Talleres</a></li><li class="breadcrumb-item"><a href="./taller1.html">Taller 1</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./section4.html">Matrices</a></li><li class="breadcrumb-item"><a href="./section4.html">Matrices</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Ejercicios <span class="math inline">\(\mathbb{R}^2\)</span></h1>
+<h1 class="title">Matrices</h1>
 </div>
 
 
@@ -244,117 +271,85 @@ window.Quarto = {
 </header>
 
 
-<section id="taller-de-vectores-en-mathbbr2-y-matrices-2-times-2" class="level1">
-<h1>Taller de Vectores en <span class="math inline">\(\mathbb{R}^2\)</span> y Matrices <span class="math inline">\(2 \times 2\)</span></h1>
-<section id="ejercicio-1" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicio-1">Ejercicio 1</h3>
-<p>Sean los vectores <span class="math inline">\(\mathbf{u} = (3, -1)\)</span> y <span class="math inline">\(\mathbf{v} = (2, 4)\)</span>.<br>
-1. Calcula <span class="math inline">\(\mathbf{u} + \mathbf{v}\)</span>.<br>
-2. Calcula <span class="math inline">\(2\mathbf{u} - 3\mathbf{v}\)</span>.</p>
-<ol start="3" type="1">
-<li><p>Verifica la propiedad distributiva:</p>
-<p><span class="math display">\[\alpha(\mathbf{u} + \mathbf{v}) \stackrel{?}{=} \alpha\mathbf{u} + \alpha\mathbf{v}\]</span></p>
-<p>tomando <span class="math inline">\(\alpha = -1\)</span>.</p></li>
-</ol>
-<blockquote class="blockquote">
-<p><strong>Pista</strong>: Solo necesitas comparar ambos lados de la igualdad para concluir.</p>
-</blockquote>
-</section>
-<section id="ejercicio-2" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicio-2">Ejercicio 2</h3>
-<p>Con los mismos vectores <span class="math inline">\(\mathbf{u} = (3, -1)\)</span> y <span class="math inline">\(\mathbf{v} = (2, 4)\)</span>:<br>
-1. Halla <span class="math inline">\(\mathbf{u} \cdot \mathbf{v}\)</span>.<br>
-2. Verifica la propiedad de conmutatividad <span class="math inline">\(\mathbf{u} \cdot \mathbf{v} = \mathbf{v} \cdot \mathbf{u}\)</span>.<br>
-3. Encuentra el vector <span class="math inline">\(\mathbf{v}\)</span> y comprueba que <span class="math display">\[\mathbf{v}\cdot\mathbf{v}=||\mathbf{v}||^2.\]</span> 4. Calcula el vector proyección de <span class="math inline">\(\mathbf{u}\)</span> sobre <span class="math inline">\(\mathbf{v}\)</span>, es decir, <span class="math inline">\(\text{proj}_{\mathbf{v}}\mathbf{u}\)</span>.</p>
-<blockquote class="blockquote">
-<p><strong>Pista</strong>: Usa la fórmula:</p>
-<p><span class="math display">\[\text{proj}_{\mathbf{v}}\mathbf{u} = \left(\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{v}\|^2}\right)\mathbf{v}.\]</span></p>
-<ol start="5" type="1">
-<li>Interpreta geometricamente que significa la proyección de un vector sobre otro.</li>
-</ol>
-</blockquote>
-<ol start="6" type="1">
-<li><p>Describa si la siguiente afirmaciones son es verdaderas o falsas:</p>
-<blockquote class="blockquote">
-<p>Si <span class="math inline">\(\mathbf{u} \cdot \mathbf{v} = 0\)</span>, entonces <span class="math inline">\(\mathbf{u}\)</span> y <span class="math inline">\(\mathbf{v}\)</span> son ortogonales.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><span class="math display">\[\Big|\Big|\frac{\mathbf{u}\cdot\mathbf{v}}{||v||^2}\mathbf{v}\Big|\Big| = \frac{|\mathbf{u}\cdot\mathbf{v}|}{||\mathbf{v}||}\]</span></p>
-</blockquote></li>
-<li><p>Use el procedimiento anterior para calcular el ángulo entre los vectores <span class="math inline">\(\mathbf{u}\)</span> y <span class="math inline">\(\mathbf{v}\)</span>.</p></li>
-</ol>
-<div id="2469572f" class="cell" data-execution_count="1">
+<p>Supongamos que tenemos una ciudad solo con 4 casas, podemos colocar una nomenclatura para cada una de la casa usando solo números de la siguiente forma:</p>
+<div id="f47f2bba" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-stderr">
+<pre><code>No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.</code></pre>
+</div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="taller1_files/figure-html/cell-2-output-1.png" width="600" height="472" class="figure-img"></p>
+<p><img src="section4_files/figure-html/cell-2-output-2.png" width="594" height="401" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<ol start="8" type="1">
-<li><p>Calcula el ángulo <span class="math inline">\(\theta\)</span> entre <span class="math inline">\(\mathbf{u}\)</span> y <span class="math inline">\(\mathbf{v}\)</span> usando la fórmula:</p>
-<p><span class="math display">\[\mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\|\,\|\mathbf{v}\|\cos(\theta).\]</span></p></li>
-</ol>
+<p>Note que en la casa 1 la dirección sería (1,1), en la casa 2 la dirección sería (1,2), en la casa 3 la dirección sería (2,1) y en la casa 4 la dirección sería (2,2). De esta forma podemos decir encontrar que esta “viviendo” en cada casa. Podemos suponer que en la casa 1 vive el número 1, en la casa 2 el número 2 y así sucesivamente. Para representar esto podemos usar una notación matricial de la siguiente forma:</p>
+<p><span class="math display">\[
+A=\begin{bmatrix}
+1 &amp; 2 \\
+3 &amp; 4 \\
+\end{bmatrix}
+\]</span></p>
+<p>De esta forma podemos definir que en la dirección <span class="math inline">\((1,1)\)</span> esta viviendo el número 1, esto lo podemos representar de la forma</p>
+<p><span class="math display">\[A(1,1)=1,\]</span></p>
+<p>similarmente</p>
+<p><span class="math display">\[A(1,2)=2, \ A(2,1)=3 \text{ y } A(2,2)=4\]</span></p>
+<p>El elememto <span class="math inline">\(A\)</span> se llama una matriz, cuya dimensión es <span class="math inline">\(2\times 2\)</span> que representan las casas de la ciudad. Llamaremos filas de la matriz <span class="math inline">\(A\)</span> a los elementos que están en la misma fila y columnas a los elementos que están en la misma columna. Por ejemplo la fila 1 de la matriz <span class="math inline">\(A\)</span> es <span class="math inline">\((1,2)\)</span> y la columna 1 de la matriz <span class="math inline">\(A\)</span> es <span class="math inline">\(\begin{bmatrix}1\\3\end{bmatrix}\)</span>.</p>
+<section id="operaciones-con-matrices" class="level1">
+<h1>Operaciones con matrices</h1>
+<section id="suma-de-matrices" class="level2">
+<h2 class="anchored" data-anchor-id="suma-de-matrices">Suma de matrices</h2>
+<p>Para sumar dos matrixces <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> <strong>de la misma dimensión</strong>, se suman los elementos correspondientes de cada matriz. Por ejemplo, si tenemos dos matrices <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> de dimensión <span class="math inline">\(2\times 2\)</span>:</p>
+<p><span class="math display">\[ A=\begin{bmatrix}1 &amp; 2\\3 &amp; 4\end{bmatrix} \text{ y } B=\begin{bmatrix}5 &amp; 6\\7 &amp; 8\end{bmatrix}\]</span></p>
+<p>La suma de estas dos matrices sería:</p>
+<p><span class="math display">\[ A+B=\begin{bmatrix}1+5 &amp; 2+6\\3+7 &amp; 4+8\end{bmatrix}=\begin{bmatrix}6 &amp; 8\\10 &amp; 12\end{bmatrix}\]</span></p>
 </section>
-<section id="ejercicio-3" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicio-3">Ejercicio 3</h3>
-<p>Dada la recta que pasa por el punto <span class="math inline">\(\mathbf{P} = (1, -2)\)</span> y que <strong>tiene como dirección</strong> el vector <span class="math inline">\(\mathbf{P} = (2, 3)\)</span>:</p>
-<ol type="1">
-<li><p>Escribe su <strong>ecuación paramétrica</strong> en <span class="math inline">\(\mathbb{R}^2\)</span>.</p>
-<blockquote class="blockquote">
-<p>Recuerda que la forma paramétrica se describe como:</p>
-<p><span class="math display">\[\mathbf{r}(t) = \mathbf{P} + t\,\mathbf{v}, \quad t \in \mathbb{R}.\]</span></p>
-</blockquote></li>
-<li><p>Verifica que el punto <span class="math inline">\(\mathbf{Q} = (3,1)\)</span> <strong>no</strong> pertenece a dicha recta (sustituyendo en la forma paramétrica y comprobando si existe un valor de <span class="math inline">\(t\)</span> que lo satisfaga).</p></li>
-<li><p>Escribe la ecuación de forma cartesiana, es decir de la forma <span class="math inline">\(y =ax+b\)</span>.</p></li>
-</ol>
+<section id="multiplicación-por-escalar" class="level2">
+<h2 class="anchored" data-anchor-id="multiplicación-por-escalar">Multiplicación por escalar</h2>
+<p>La multiplicación de una matriz por un escalar <span class="math inline">\(\alpha\)</span> (recuerda que un número escalar es un real) se realiza multiplicando cada elemento de la matriz por el escalar. Por ejemplo, si tenemos una matriz <span class="math inline">\(A\)</span> de dimensión <span class="math inline">\(2\times 2\)</span>:</p>
+<p><span class="math display">\[ A=\begin{bmatrix}1 &amp; 2\\3 &amp; 4\end{bmatrix}\]</span></p>
+<p>y multiplicamos la matriz <span class="math inline">\(A\)</span> por el escalar <span class="math inline">\(\alpha=2\)</span>:</p>
+<p><span class="math display">\[ 2A=\begin{bmatrix}2 &amp; 4\\6 &amp; 8\end{bmatrix}\]</span></p>
 </section>
-<section id="ejercicio-4" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicio-4">Ejercicio 4</h3>
-<p>Considera la recta <span class="math inline">\(r_1\)</span> en forma paramétrica:</p>
-<p><span class="math display">\[r_1: \quad \mathbf{r}(t) = (2, 1) + t \, (3, -1).\]</span></p>
-<ol type="1">
-<li><p>Encuentra la <strong>ecuación paramétrica</strong> de la recta <span class="math inline">\(r_2\)</span> <strong>paralela</strong> a <span class="math inline">\(r_1\)</span> y que pase por el punto <span class="math inline">\((4,2)\)</span>.</p>
-<blockquote class="blockquote">
-<p>Dos rectas son paralelas si sus vectores direccionales son múltiplos.</p>
-</blockquote></li>
-<li><p>Encuentra la <strong>ecuación paramétrica</strong> de la recta <span class="math inline">\(r_3\)</span> <strong>perpendicular</strong> a <span class="math inline">\(r_1\)</span> que pase por <span class="math inline">\((4,2)\)</span>.</p>
-<blockquote class="blockquote">
-<p>Dos rectas en <span class="math inline">\(\mathbb{R}^2\)</span> son perpendiculares si sus vectores direccionales <span class="math inline">\(\mathbf{d_1}\)</span> y <span class="math inline">\(\mathbf{d_2}\)</span> cumplen <span class="math inline">\(\mathbf{d_1}\cdot \mathbf{d_2} = 0\)</span>.</p>
-</blockquote></li>
-<li><p>Determina el <strong>punto de intersección</strong> entre <span class="math inline">\(r_3\)</span> y la recta <span class="math inline">\(r_1\)</span>.</p></li>
-</ol>
+<section id="multiplicación-de-matrices" class="level2">
+<h2 class="anchored" data-anchor-id="multiplicación-de-matrices">Multiplicación de matrices</h2>
+<p>La multiplicación de matrices es un poco más complicada que la suma de matrices. Para multiplicar dos matrices <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> se debe cumplir que el número de columnas de la matriz <span class="math inline">\(A\)</span> sea igual al número de filas de la matriz <span class="math inline">\(B\)</span>. Por ejemplo, si tenemos dos matrices <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> de dimensión <span class="math inline">\(2\times 2\)</span>:</p>
+<p><span class="math display">\[ A=\begin{bmatrix}1 &amp; 2\\3 &amp; 4\end{bmatrix} \text{ y } B=\begin{bmatrix}5 &amp; 6\\7 &amp; 8\end{bmatrix}\]</span></p>
+<p>La multiplicación de estas dos matrices sería:</p>
+<p><span class="math display">\[ AB=\begin{bmatrix}1\cdot 5+2\cdot 7 &amp; 1\cdot 6+2\cdot 8\\3\cdot 5+4\cdot 7 &amp; 3\cdot 6+4\cdot 8\end{bmatrix}=\begin{bmatrix}19 &amp; 22\\43 &amp; 50\end{bmatrix}\]</span></p>
+<p>Ahora notemos que la multiplicación no es conmutativa, es decir, en general <span class="math inline">\(AB\neq BA\)</span>.</p>
+<p><span class="math display">\[ BA=\begin{bmatrix}5\cdot 1+6\cdot 3 &amp; 5\cdot 2+6\cdot 4\\7\cdot 1+8\cdot 3 &amp; 7\cdot 2+8\cdot 4\end{bmatrix}=\begin{bmatrix}23 &amp; 34\\31 &amp; 46\end{bmatrix}\]</span></p>
+<p>Sea <span class="math inline">\(X=\begin{bmatrix}1 \\ 2\end{bmatrix}\)</span> un vector columna, note que su diemnsión es <span class="math inline">\(2\times 1\)</span>. Si multiplicamos la matriz <span class="math inline">\(A\)</span> por el vector <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display">\[ AX=\begin{bmatrix}1\cdot 1+2\cdot 2\\3\cdot 1+4\cdot 2\end{bmatrix}=\begin{bmatrix}5\\11\end{bmatrix}\]</span></p>
+<p><strong>Note</strong> que la multiplicación de la <span class="math inline">\(XA\)</span> no esta definida ya que el número de columnas de la matriz <span class="math inline">\(X\)</span> no es igual al número de filas de la matriz <span class="math inline">\(A\)</span>.</p>
+<p>De la misma forma podemos ver el vector fila <span class="math inline">\(Y=\begin{bmatrix}1 &amp; 2\end{bmatrix}\)</span>, que su dimensión es <span class="math inline">\(1\times 2\)</span>. Si multiplicamos la matriz <span class="math inline">\(A\)</span> por el vector <span class="math inline">\(YA\)</span> así:</p>
+<p><span class="math display">\[ YA=\begin{bmatrix}1\cdot 1+2\cdot 3 &amp; 1\cdot 2+2\cdot 4\end{bmatrix}=\begin{bmatrix}7 &amp; 10\end{bmatrix}\]</span></p>
+<p><strong>Note</strong> que la multiplicación de la <span class="math inline">\(AY\)</span> no esta definida ya que el número de columnas de la matriz <span class="math inline">\(A\)</span> no es igual al número de filas de la matriz <span class="math inline">\(Y\)</span>. ## Transpuesta de una matriz</p>
+<p>La transpuesta de una matriz <span class="math inline">\(A\)</span> se denota por <span class="math inline">\(A^T\)</span> y se obtiene intercambiando las filas por las columnas. Por ejemplo, si tenemos una matriz <span class="math inline">\(A\)</span> de dimensión <span class="math inline">\(2\times 3\)</span>:</p>
+<p><span class="math display">\[ A=\begin{bmatrix}1 &amp; 2 &amp; 3\\4 &amp; 5 &amp; 6\end{bmatrix}\]</span></p>
+<p>La transpuesta de la matriz <span class="math inline">\(A\)</span> sería:</p>
+<p><span class="math display">\[ A^T=\begin{bmatrix}1 &amp; 4\\2 &amp; 5\\3 &amp; 6\end{bmatrix}\]</span></p>
 </section>
-<section id="ejercicio-5" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicio-5">Ejercicio 5</h3>
-<p>Sea <span class="math inline">\(\{\mathbf{w}_1, \mathbf{w}_2\}\)</span> con <span class="math inline">\(\mathbf{w}_1 = (1, 3)\)</span> y <span class="math inline">\(\mathbf{w}_2 = (2, 6)\)</span>.</p>
-<ol type="1">
-<li>Determina si <span class="math inline">\(\mathbf{w}_1\)</span> y <span class="math inline">\(\mathbf{w}_2\)</span> son linealmente <strong>dependientes</strong> o <strong>independientes</strong>. Explica tu proceso.<br>
-</li>
-<li>Si son dependientes, describe la relación de dependencia. Si son independientes, justifica por qué.</li>
-</ol>
+<section id="matriz-identidad" class="level2">
+<h2 class="anchored" data-anchor-id="matriz-identidad">Matriz identidad</h2>
+<p>La matriz identidad es una matriz cuadrada cuyos elementos de la diagonal principal son 1 y los demás elementos son 0. La matriz identidad de dimensión <span class="math inline">\(n\)</span> se denota por <span class="math inline">\(I_n\)</span>. Por ejemplo, la matriz identidad de dimensión <span class="math inline">\(2\)</span> es:</p>
+<p><span class="math display">\[ I_2=\begin{bmatrix}1 &amp; 0\\0 &amp; 1\end{bmatrix}\]</span></p>
 </section>
-<section id="ejercicio-6" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicio-6">Ejercicio 6</h3>
-<ol type="1">
-<li>Explica en tus propias palabras qué significa que un conjunto de vectores sea <strong>base</strong> de <span class="math inline">\(\mathbb{R}^2\)</span>.<br>
-</li>
-<li>Dados los vectores <span class="math inline">\(\mathbf{a} = (1, 2)\)</span> y <span class="math inline">\(\mathbf{b} = (2, 1)\)</span>, <strong>¿son una base de</strong> <span class="math inline">\(\mathbb{R}^2\)</span>?
-<ul>
-<li>Justifica tu respuesta usando <strong>independencia lineal</strong></li>
-</ul></li>
-</ol>
-</section>
-<section id="ejercicio-7" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicio-7">Ejercicio 7</h3>
-<ol type="1">
-<li>¿Por qué <span class="math inline">\(\{(0,0)\}\)</span> (el conjunto que solo contiene al vector cero) es un <strong>subespacio</strong> de <span class="math inline">\(\mathbb{R}^2\)</span>?<br>
-</li>
-<li>Si <span class="math inline">\(S\)</span> es el conjunto de todos los vectores <span class="math inline">\((x, y)\)</span> tales que <span class="math inline">\(x + y = 0\)</span>, demuestra que <strong><span class="math inline">\(S\)</span> es un subespacio</strong> de <span class="math inline">\(\mathbb{R}^2\)</span>.<br>
-</li>
-<li>Determina una <strong>base</strong> para el subespacio <span class="math inline">\(S\)</span>.</li>
-</ol>
+<section id="inversa-de-una-matriz" class="level2">
+<h2 class="anchored" data-anchor-id="inversa-de-una-matriz">Inversa de una matriz</h2>
+<p>La inversa de una matriz <span class="math inline">\(A\)</span> se denota por <span class="math inline">\(A^{-1}\)</span> y se define únicamente para una matriz cuadrada, como la matriz que al multiplicarla por la matriz <span class="math inline">\(A\)</span> nos da la matriz identidad. Es decir, si <span class="math inline">\(A\)</span> es una matriz cuadrada, entonces <span class="math inline">\(A^{-1}\)</span> es la matriz tal que:</p>
+<p><span class="math display">\[ A\cdot A^{-1}=I\]</span></p>
+<p>y</p>
+<p><span class="math display">\[ A^{-1}\cdot A=I\]</span></p>
+<p><strong>Note</strong> únicamente en este caso se tiene que <span class="math inline">\(A^{-1}\cdot A=A\cdot A^{-1}\)</span>.</p>
+<p>Cuando tenemos una matriz de <span class="math inline">\(2\times 2\)</span> existe una formula para calcular la inversa de una matriz y esta determinada por</p>
+<p>La inversa de la matriz <span class="math inline">\(A\)</span> sería:</p>
+<p>Si <span class="math inline">\(A=\begin{bmatrix}a &amp; b\\c &amp; d\end{bmatrix}\)</span>, entonces la inversa de la matriz <span class="math inline">\(A\)</span> se define como:</p>
+<p><span class="math display">\[ A^{-1}=\frac{1}{ad-bc}\begin{bmatrix}d &amp; -b\\-c &amp; a\end{bmatrix}\]</span></p>
+<p>donde <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span> y <span class="math inline">\(d\)</span> son los elementos de la matriz <span class="math inline">\(A\)</span>.</p>
+<p>Ejemplo si tenemos la matriz <span class="math inline">\(A=\begin{bmatrix}1 &amp; 2\\3 &amp; 4\end{bmatrix}\)</span>, entonces la inversa de la matriz <span class="math inline">\(A\)</span> sería:</p>
+<p><span class="math display">\[ A^{-1}=\frac{1}{1\cdot 4-2\cdot 3}\begin{bmatrix}4 &amp; -2\\-3 &amp; 1\end{bmatrix}=\frac{1}{-2}\begin{bmatrix}4 &amp; -2\\-3 &amp; 1\end{bmatrix}=\begin{bmatrix}-2 &amp; 1.\\1.5 &amp; -0.5\end{bmatrix}\]</span></p>
 
 
 </section>
