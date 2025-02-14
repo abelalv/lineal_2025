@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Operaciones con matrices y vectores</title>
+<title>Taller 3</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -109,7 +109,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taller1.html">Talleres</a></li><li class="breadcrumb-item"><a href="./taller3.html">Matrices</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taller1.html">Talleres</a></li><li class="breadcrumb-item"><a href="./taller3.html">Taller 3 (matrices)</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -168,6 +168,17 @@ window.Quarto = {
  <span class="menu-text">Independencia lineal</span></a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Matrices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./section4.html" class="sidebar-item-text sidebar-link">
@@ -190,13 +201,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Talleres</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./taller1.html" class="sidebar-item-text sidebar-link">
@@ -212,7 +223,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./taller3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Matrices</span></a>
+ <span class="menu-text">Taller 3 (matrices)</span></a>
   </div>
 </li>
       </ul>
@@ -228,9 +239,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taller1.html">Talleres</a></li><li class="breadcrumb-item"><a href="./taller3.html">Matrices</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taller1.html">Talleres</a></li><li class="breadcrumb-item"><a href="./taller3.html">Taller 3 (matrices)</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Operaciones con matrices y vectores</h1>
+<h1 class="title">Taller 3</h1>
 </div>
 
 
@@ -248,34 +259,34 @@ window.Quarto = {
 
 
 <ol type="1">
-<li>Sea la matriz <span class="math inline">\(A = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix}\)</span> y el vector <span class="math inline">\(\mathbf{v} = \begin{pmatrix} 1 \\ 2 \end{pmatrix}\)</span>.
+<li><p>Sea la matriz <span class="math inline">\(A = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix}\)</span> y el vector <span class="math inline">\(\mathbf{v} = \begin{pmatrix} 1 \\ 2 \end{pmatrix}\)</span>.</p>
 <ol type="1">
 <li>Calcula <span class="math inline">\(A\mathbf{v}\)</span>.<br>
 </li>
 <li>Calcula <span class="math inline">\(A^2\mathbf{v}\)</span>.<br>
 </li>
-<li>Calcula <span class="math inline">\(A\mathbf{v} + A^2\mathbf{v}\)</span>.<br>
-</li>
-<li>Calcula <span class="math inline">\(A(A\mathbf{v})\)</span>.<br>
-</li>
-<li>Calcula <span class="math inline">\(A^2\mathbf{v} - A(A\mathbf{v})\)</span>.<br>
-</li>
-<li>Calcula <span class="math inline">\(A^2\mathbf{v} - A(A\mathbf{v}) + A\mathbf{v}\)</span>.<br>
-</li>
-<li>Calcula <span class="math inline">\(A(A\mathbf{v} + A\mathbf{v})\)</span>.<br>
-</li>
-<li>Calcula <span class="math inline">\(A(A\mathbf{v}) + A(A\mathbf{v})\)</span>.<br>
-</li>
-<li>Calcula <span class="math inline">\(A(A\mathbf{v}) + A(A\mathbf{v}) - A\mathbf{v}\)</span>.<br>
-</li>
-<li>Calcula <span class="math inline">\(A(A\mathbf{v}) + A(A\mathbf{v}) - A\mathbf{v} + A^2\mathbf{v}\)</span>.<br>
-</li>
-<li>Calcula <span class="math inline">\(A(A\mathbf{v}) + A(A\mathbf{v}) - A\mathbf{v} + A^2\mathbf{v} - A(A\mathbf{v})\)</span>.<br>
-</li>
-<li>Calcula <span class="math inline">\(A(A\mathbf{v}) + A(A\mathbf{v}) - A\mathbf{v} + A^2\mathbf{v} - A(A\mathbf{v}) + A\mathbf{v}\)</span>.<br>
-</li>
-<li>Calcula <span class="math inline">\(A(A\mathbf{v}) + A(A\mathbf{v}) - A\mathbf{v} + A^2\mathbf{v} - A(A\mathbf{v}) + A\mathbf{v} - A^2\mathbf{v}\)</span>.</li>
+<li>Calcula <span class="math inline">\(A\mathbf{v} + A^2\mathbf{v}\)</span>.</li>
 </ol></li>
+<li><p><strong>Problema en Contexto: Compra de Frutas</strong></p>
+<p>Un comerciante de frutas desea determinar el precio de cada unidad de manzanas y naranjas. Sabe que si compra 4 manzanas y 3 naranjas, el gasto total es de $26, y que si compra 2 manzanas y 5 naranjas, el gasto es de $23.</p>
+<ol type="a">
+<li>¿Cuánto costaría comprar 3 manzanas y 4 naranjas?<br>
+</li>
+<li>Verifica la solución sustituyendo los valores en ambas ecuaciones.</li>
+</ol></li>
+<li><p><strong>Problema en Contexto: Producción de Camisas y Pantalones</strong></p>
+<p>Una fábrica produce camisas y pantalones. La producción de una camisa requiere 2 horas de trabajo y la de un pantalón 1 hora. El tiempo total de trabajo disponible es de 100 horas por semana. Si la fábrica produce 40 camisas y 60 pantalones, el beneficio semanal es de 3000 dólares, y si produce 60 camisas y 40 pantalones, el beneficio es de 3100 dólares.</p>
+<ol type="a">
+<li>¿Cuál es el beneficio de producir 50 camisas y 50 pantalones?</li>
+<li>Verifica la solución sustituyendo los valores en ambas ecuaciones.</li>
+</ol></li>
+<li><p>Si una matriz <span class="math inline">\(A\)</span> de <span class="math inline">\(2\times 2\)</span> tiene columnas linealmente independientes, ¿es cierto que <span class="math inline">\(A\)</span> tiene filas linealmente independientes? Justifica tu respuesta.</p></li>
+<li><p>Escribe 3 formas diferentes de saber si una matriz invertible.</p></li>
+<li><p>Si <span class="math inline">\(X=(3,6)\)</span> y <span class="math inline">\(Y=(-2,3)\)</span>, que representaría <span class="math display">\[proy_{X}Y\]</span> y <span class="math display">\[proy_{Y}X\]</span> Grafica la situación.</p></li>
+<li><p>Como podemos interpretar el determinante de una matriz? ¿Qué significa que el determinante sea igual a cero?</p></li>
+<li><p>Los vectores <span class="math inline">\(\mathbf{v}_1 = (1, 2)\)</span> y <span class="math inline">\(\mathbf{v}_2 = (-2, 1)\)</span> ortogonales (verifique) entonces son linealmente dependientes. De esta forma, ¿podemos decir que dos vectores ortogonales son linealmente independientes? Justifica tu respuesta. El reciproco ¿es cierto?</p></li>
+<li><p>Sea el sistema de ecuaciones lineales <span class="math display">\[Ax=b\]</span> y <span class="math inline">\(A\)</span> una matriz cuadrada de <span class="math inline">\(2\times 2\)</span> con determinante distinto de cero. ¿Cuál es la condición para que el sistema tenga solución única? Justifica tu respuesta. ¿Qué sucede si el determinante de <span class="math inline">\(A\)</span> es igual a cero?</p></li>
+<li><p>¿Qué significa que un conjunto de vectores sea linealmente independiente? ¿Qué significa que un conjunto de vectores sea linealmente dependiente? Da un ejemplo de cada uno.</p></li>
 </ol>
 
 
