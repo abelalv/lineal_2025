@@ -415,7 +415,7 @@
     "href": "section4.html#suma-de-matrices",
     "title": "Matrices",
     "section": "Suma de matrices",
-    "text": "Suma de matrices",
+    "text": "Suma de matrices\nPara sumar dos matrixces \\(A\\) y \\(B\\) de la misma dimensión, se suman los elementos correspondientes de cada matriz. Por ejemplo, si tenemos dos matrices \\(A\\) y \\(B\\) de dimensión \\(2\\times 2\\):\n\\[ A=\\begin{bmatrix}1 & 2\\\\3 & 4\\end{bmatrix} \\text{ y } B=\\begin{bmatrix}5 & 6\\\\7 & 8\\end{bmatrix}\\]\nLa suma de estas dos matrices sería:\n\\[ A+B=\\begin{bmatrix}1+5 & 2+6\\\\3+7 & 4+8\\end{bmatrix}=\\begin{bmatrix}6 & 8\\\\10 & 12\\end{bmatrix}\\]",
     "crumbs": [
       "Plano",
       "Matrices"
@@ -426,7 +426,7 @@
     "href": "section4.html#multiplicación-por-escalar",
     "title": "Matrices",
     "section": "Multiplicación por escalar",
-    "text": "Multiplicación por escalar",
+    "text": "Multiplicación por escalar\nLa multiplicación de una matriz por un escalar \\(\\alpha\\) (recuerda que un número escalar es un real) se realiza multiplicando cada elemento de la matriz por el escalar. Por ejemplo, si tenemos una matriz \\(A\\) de dimensión \\(2\\times 2\\):\n\\[ A=\\begin{bmatrix}1 & 2\\\\3 & 4\\end{bmatrix}\\]\ny multiplicamos la matriz \\(A\\) por el escalar \\(\\alpha=2\\):\n\\[ 2A=\\begin{bmatrix}2 & 4\\\\6 & 8\\end{bmatrix}\\]",
     "crumbs": [
       "Plano",
       "Matrices"
@@ -437,7 +437,7 @@
     "href": "section4.html#multiplicación-de-matrices",
     "title": "Matrices",
     "section": "Multiplicación de matrices",
-    "text": "Multiplicación de matrices",
+    "text": "Multiplicación de matrices\nLa multiplicación de matrices es un poco más complicada que la suma de matrices. Para multiplicar dos matrices \\(A\\) y \\(B\\) se debe cumplir que el número de columnas de la matriz \\(A\\) sea igual al número de filas de la matriz \\(B\\). Por ejemplo, si tenemos dos matrices \\(A\\) y \\(B\\) de dimensión \\(2\\times 2\\):\n\\[ A=\\begin{bmatrix}1 & 2\\\\3 & 4\\end{bmatrix} \\text{ y } B=\\begin{bmatrix}5 & 6\\\\7 & 8\\end{bmatrix}\\]\nLa multiplicación de estas dos matrices sería:\n\\[ AB=\\begin{bmatrix}1\\cdot 5+2\\cdot 7 & 1\\cdot 6+2\\cdot 8\\\\3\\cdot 5+4\\cdot 7 & 3\\cdot 6+4\\cdot 8\\end{bmatrix}=\\begin{bmatrix}19 & 22\\\\43 & 50\\end{bmatrix}\\]\nAhora notemos que la multiplicación no es conmutativa, es decir, en general \\(AB\\neq BA\\).\n\\[ BA=\\begin{bmatrix}5\\cdot 1+6\\cdot 3 & 5\\cdot 2+6\\cdot 4\\\\7\\cdot 1+8\\cdot 3 & 7\\cdot 2+8\\cdot 4\\end{bmatrix}=\\begin{bmatrix}23 & 34\\\\31 & 46\\end{bmatrix}\\]\nSea \\(X=\\begin{bmatrix}1 \\\\ 2\\end{bmatrix}\\) un vector columna, note que su diemnsión es \\(2\\times 1\\). Si multiplicamos la matriz \\(A\\) por el vector \\(X\\):\n\\[ AX=\\begin{bmatrix}1\\cdot 1+2\\cdot 2\\\\3\\cdot 1+4\\cdot 2\\end{bmatrix}=\\begin{bmatrix}5\\\\11\\end{bmatrix}\\]\nNote que la multiplicación de la \\(XA\\) no esta definida ya que el número de columnas de la matriz \\(X\\) no es igual al número de filas de la matriz \\(A\\).\nDe la misma forma podemos ver el vector fila \\(Y=\\begin{bmatrix}1 & 2\\end{bmatrix}\\), que su dimensión es \\(1\\times 2\\). Si multiplicamos la matriz \\(A\\) por el vector \\(YA\\) así:\n\\[ YA=\\begin{bmatrix}1\\cdot 1+2\\cdot 3 & 1\\cdot 2+2\\cdot 4\\end{bmatrix}=\\begin{bmatrix}7 & 10\\end{bmatrix}\\]\nNote que la multiplicación de la \\(AY\\) no esta definida ya que el número de columnas de la matriz \\(A\\) no es igual al número de filas de la matriz \\(Y\\). ## Transpuesta de una matriz\nLa transpuesta de una matriz \\(A\\) se denota por \\(A^T\\) y se obtiene intercambiando las filas por las columnas. Por ejemplo, si tenemos una matriz \\(A\\) de dimensión \\(2\\times 3\\):\n\\[ A=\\begin{bmatrix}1 & 2 & 3\\\\4 & 5 & 6\\end{bmatrix}\\]\nLa transpuesta de la matriz \\(A\\) sería:\n\\[ A^T=\\begin{bmatrix}1 & 4\\\\2 & 5\\\\3 & 6\\end{bmatrix}\\]",
     "crumbs": [
       "Plano",
       "Matrices"
@@ -459,7 +459,7 @@
     "href": "section4.html#matriz-identidad",
     "title": "Matrices",
     "section": "Matriz identidad",
-    "text": "Matriz identidad",
+    "text": "Matriz identidad\nLa matriz identidad es una matriz cuadrada cuyos elementos de la diagonal principal son 1 y los demás elementos son 0. La matriz identidad de dimensión \\(n\\) se denota por \\(I_n\\). Por ejemplo, la matriz identidad de dimensión \\(2\\) es:\n\\[ I_2=\\begin{bmatrix}1 & 0\\\\0 & 1\\end{bmatrix}\\]",
     "crumbs": [
       "Plano",
       "Matrices"
@@ -470,10 +470,31 @@
     "href": "section4.html#inversa-de-una-matriz",
     "title": "Matrices",
     "section": "Inversa de una matriz",
-    "text": "Inversa de una matriz",
+    "text": "Inversa de una matriz\nLa inversa de una matriz \\(A\\) se denota por \\(A^{-1}\\) y se define únicamente para una matriz cuadrada, como la matriz que al multiplicarla por la matriz \\(A\\) nos da la matriz identidad. Es decir, si \\(A\\) es una matriz cuadrada, entonces \\(A^{-1}\\) es la matriz tal que:\n\\[ A\\cdot A^{-1}=I\\]\ny\n\\[ A^{-1}\\cdot A=I\\]\nNote únicamente en este caso se tiene que \\(A^{-1}\\cdot A=A\\cdot A^{-1}\\).\nCuando tenemos una matriz de \\(2\\times 2\\) existe una formula para calcular la inversa de una matriz y esta determinada por\nLa inversa de la matriz \\(A\\) sería:\nSi \\(A=\\begin{bmatrix}a & b\\\\c & d\\end{bmatrix}\\), entonces la inversa de la matriz \\(A\\) se define como:\n\\[ A^{-1}=\\frac{1}{ad-bc}\\begin{bmatrix}d & -b\\\\-c & a\\end{bmatrix}\\]\ndonde \\(a\\), \\(b\\), \\(c\\) y \\(d\\) son los elementos de la matriz \\(A\\).\nEjemplo si tenemos la matriz \\(A=\\begin{bmatrix}1 & 2\\\\3 & 4\\end{bmatrix}\\), entonces la inversa de la matriz \\(A\\) sería:\n\\[ A^{-1}=\\frac{1}{1\\cdot 4-2\\cdot 3}\\begin{bmatrix}4 & -2\\\\-3 & 1\\end{bmatrix}=\\frac{1}{-2}\\begin{bmatrix}4 & -2\\\\-3 & 1\\end{bmatrix}=\\begin{bmatrix}-2 & 1.\\\\1.5 & -0.5\\end{bmatrix}\\]",
     "crumbs": [
       "Plano",
       "Matrices"
     ]
+  },
+  {
+    "objectID": "section5.html",
+    "href": "section5.html",
+    "title": "Matrices Solución de sistema de ecuaciones",
+    "section": "",
+    "text": "Queremos encontrar dos números tales que sumados sean 45 y restados sean 21, para resolver este problema deberíamos plantear las incógnitas de la siguiente forma:\n\\(X:=\\) número mayor\n\\(Y:=\\) número menor\nasí debemos plantear el sistema de ecuaciones:\n\\[X+Y=45\\] \\[X-Y=21\\]\nEste sistema lo podemos resolver de la usando el método de sustitución, para ello despejamos \\(X\\) de la segunda ecuación:\n\\[X=21+Y\\]\ny sustituimos en la primera ecuación:\n\\[21+Y+Y=45\\]\nAhora despejamos \\(Y\\):\n\\[2Y=24\\]\n\\[Y=12\\]\nSustituimos el valor de \\(Y\\) en la ecuación \\(X=21+Y\\):\n\\[X=21+12\\]\n\\[X=33\\]\nPor lo tanto los números son 33 y 12.\nAunque, este es un camino para resolver el problema, también podemos resolverlo de forma matricial, para ello planteamos el sistema de ecuaciones de la siguiente forma:\n\\[\\begin{bmatrix}\n1 & 1 \\\\\n1 & -1 \\\\\n\\end{bmatrix}\n\\begin{bmatrix}\nX \\\\\nY \\\\\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n45 \\\\\n21 \\\\\n\\end{bmatrix}\n\\]\nDe esta forma podemos definir la matriz \\(A\\) y el vector \\(B\\):\n\\[A=\\begin{bmatrix}\n1 & 1 \\\\\n1 & -1 \\\\\n\\end{bmatrix}\n\\text{ y }\nB=\\begin{bmatrix}\n45 \\\\\n21 \\\\\n\\end{bmatrix}\n\\]\nPara encontrar la solución del sistema de ecuaciones \\(AX=B\\) debemos encontrar la matriz \\(X\\) que cumpla con la ecuación anterior, para ello multiplicamos ambos lados de la ecuación por la inversa de la matriz \\(A\\), donde la matriz inversa de \\(A\\) es:\n\\[A^{-1}=\\begin{bmatrix}\n\\frac{1}{2} & \\frac{1}{2} \\\\\n\\frac{1}{2} & -\\frac{1}{2} \\\\\n\\end{bmatrix}\n\\] Comprueba que es la inversa de la matriz \\(A\\)\nDe esta forma tenemos que el sistema se puede escribir como: \\[\\begin{bmatrix}\n\\frac{1}{2} & \\frac{1}{2} \\\\\n\\frac{1}{2} & -\\frac{1}{2} \\\\\n\\end{bmatrix}\\begin{bmatrix}\n1 & 1 \\\\\n1 & -1 \\\\\n\\end{bmatrix}\n\\begin{bmatrix}\nX \\\\\nY \\\\\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n\\frac{1}{2} & \\frac{1}{2} \\\\\n\\frac{1}{2} & -\\frac{1}{2} \\\\\n\\end{bmatrix}\\begin{bmatrix}\n45 \\\\\n21 \\\\\n\\end{bmatrix}\n\\]\nAsí obtenemos que:\n\\[\\begin{bmatrix}\n1 & 0 \\\\\n0 & 1 \\\\\n\\end{bmatrix}\n\\begin{bmatrix}\nX \\\\\nY \\\\\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n33 \\\\\n12 \\\\\n\\end{bmatrix}\n\\]\ny\n\\[\\begin{bmatrix}\nX \\\\\nY \\\\\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n33 \\\\\n12 \\\\\n\\end{bmatrix}\n\\]\nPor lo tanto los números son 33 y 12, como lo habíamos encontrado anteriormente."
+  },
+  {
+    "objectID": "section5.html#independencia-en-la-la-columna-de-una-matriz",
+    "href": "section5.html#independencia-en-la-la-columna-de-una-matriz",
+    "title": "Matrices Solución de sistema de ecuaciones",
+    "section": "Independencia en la la columna de una matriz",
+    "text": "Independencia en la la columna de una matriz\nLa matriz \\(A=\\begin{bmatrix}a_{11} & a_{12}\\\\a_{21} & a_{22}\\end{bmatrix}\\), al multiplicar por el vector columna \\(\\begin{bmatrix}\\alpha_1 \\\\ \\alpha_2\\end{bmatrix}\\), obtenemos\n\\[\\begin{bmatrix}a_{11} & a_{12}\\\\a_{21} & a_{22}\\end{bmatrix}\\begin{bmatrix}\\alpha_1 \\\\ \\alpha_2\\end{bmatrix}=\\begin{bmatrix}a_{11}\\alpha_1+a_{12}\\alpha_2\\\\a_{21}\\alpha_1+a_{22}\\alpha_2\\end{bmatrix},\\]\nagrupando términos tenemos:\n\\[A\\begin{bmatrix}\\alpha_1 \\\\ \\alpha_2\\end{bmatrix}=\\alpha_1\\begin{bmatrix}a_{11}\\\\a_{21}\\end{bmatrix}+\\alpha_2\\begin{bmatrix}a_{12}\\\\a_{22}\\end{bmatrix}\\]\nDe esta forma podemos ver que esta multiplicación es una combinación lineal de la s columnas de la matriz \\(A\\).\nVamos a analizar que sucede si la matriz \\(A\\) tiene columnas linealmente dependientes, para estudiar esto vamos a considerar el siguiente ejemplo\n\\[A=\\begin{bmatrix}1 & 2\\\\2 & 4\\end{bmatrix}\\]\nNote que la segunda columna es el doble de la primera columna, por lo tanto las columnas de la matriz \\(A\\) son linealmente dependientes.\nAhora si vamos a calcular la inversa de la matriz \\(A\\), con la formula que vimos anteriormente, obtenemos:\n\\[A^{-1}=\\frac{1}{1\\cdot 4-2\\cdot 2}\\begin{bmatrix}4 & -2\\\\-2 & 1\\end{bmatrix}=\\frac{1}{0}\\begin{bmatrix}4 & -2\\\\-2 & 1\\end{bmatrix}\\]\nPodemos ver que la inversa no existe. Ahora vamos a explorar que sucede si la matriz \\(A\\) tiene columnas linealmente independientes, para ello consideremos la matriz \\(A=\\begin{bmatrix}1 & 2\\\\3 & 4\\end{bmatrix}\\), en este caso las columnas de la matriz \\(A\\) son linealmente independientes.\nAhora vamos a calcular la inversa de la matriz \\(A\\), con la formula que vimos anteriormente, obtenemos:\n\\[A^{-1}=\\frac{1}{1\\cdot 4-2\\cdot 3}\\begin{bmatrix}4 & -2\\\\-3 & 1\\end{bmatrix}=\\frac{1}{-2}\\begin{bmatrix}4 & -2\\\\-3 & 1\\end{bmatrix}=\\begin{bmatrix}-2 & 1\\\\1.5 & -0.5\\end{bmatrix}\\]\nPor lo tanto la inversa de la matriz \\(A\\) existe.\nEsto nos lleva al siguiente resultado:\nProposición Si la matriz \\(A\\) tiene columnas linealmente independientes, entonces la matriz \\(A\\) tiene inversa.\nProposición Si la matriz \\(A\\) de \\(2\\times 2\\) tiene columnas linealmente independientes, el sistema \\(Ax=b\\) una única solución. ¿Cómo podemos justificar este resultado?\nPara saber si una matriz tiene inversa vamos a introducir el siguiente concepto."
+  },
+  {
+    "objectID": "section5.html#determinantes",
+    "href": "section5.html#determinantes",
+    "title": "Matrices Solución de sistema de ecuaciones",
+    "section": "Determinantes",
+    "text": "Determinantes\nEl determinante de una matriz \\(A\\) de dimensión \\(2\\times 2\\) se denota por \\(|A|\\) y se define como:\n\\[|A|=a_{11}a_{22}-a_{12}a_{21}\\]\nPara la matriz \\(A=\\begin{bmatrix}1 & 2\\\\2 & 4\\end{bmatrix}\\), el determinante de la matriz \\(A\\) es:\n\\[|A|=1\\cdot 4-2\\cdot 2=0\\]\nNote que el determinante de una matriz cuadrada es igual a cero si las columnas de la matriz son linealmente dependientes.\nLa interpretación geométrica del determinante de una matriz \\(A\\) de dimensión \\(2\\times 2\\) es que el determinante de la matriz \\(A\\) es igual al área del paralelogramo que se forma con los vectores columna de la matriz \\(A\\).\nEjemplo Veamos la interpretación geométrica del determinante de la matriz \\(A=\\begin{bmatrix}1/2 & 1/2\\\\1 & 0\\end{bmatrix}\\) note que el determinante de la matriz \\(A\\) es:\n\\[|A|=1/2\\cdot 0-1/2\\cdot 1=1/2\\] gráficamente podemos ver que el área del paralelogramo es igual a 1/2.\n\n\n\n\n\n\n\n\n\nNote que con esta definición podemos modificar la formula de la inversa de una matriz \\(A\\) de dimensión \\(2\\times 2\\) como:\n\\[A^{-1}=\\frac{1}{|A|}\\begin{bmatrix}a_{22} & -a_{12}\\\\-a_{21} & a_{11}\\end{bmatrix}\\]\ny podemos obtener la siguiente proposición:\nProposición Si el determinante de una matriz \\(A\\) de dimensión \\(2\\times 2\\) es diferente de cero, entonces la matriz \\(A\\) tiene inversa.\nProposición Si el determinante de una matriz \\(A\\) de dimensión \\(2\\times 2\\) es diferente de cero, entonces el sistema \\(Ax=b\\) tiene una única solución.\nProposición Si el determinante de una matriz \\(A\\) de dimensión \\(2\\times 2\\) es diferente a cero, entonces \\(A\\) tiene columnas linealmente independientes.\nProposición Si el determinante de una matriz \\(A\\) de dimensión \\(2\\times 2\\) es diferente a cero, entonces \\(A\\) tiene filas linealmente independientes."
   }
 ]

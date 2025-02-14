@@ -214,7 +214,6 @@ window.Quarto = {
   <li><a href="#suma-de-matrices" id="toc-suma-de-matrices" class="nav-link" data-scroll-target="#suma-de-matrices">Suma de matrices</a></li>
   <li><a href="#multiplicación-por-escalar" id="toc-multiplicación-por-escalar" class="nav-link" data-scroll-target="#multiplicación-por-escalar">Multiplicación por escalar</a></li>
   <li><a href="#multiplicación-de-matrices" id="toc-multiplicación-de-matrices" class="nav-link" data-scroll-target="#multiplicación-de-matrices">Multiplicación de matrices</a></li>
-  <li><a href="#transpuesta-de-una-matriz" id="toc-transpuesta-de-una-matriz" class="nav-link" data-scroll-target="#transpuesta-de-una-matriz">Transpuesta de una matriz</a></li>
   <li><a href="#matriz-identidad" id="toc-matriz-identidad" class="nav-link" data-scroll-target="#matriz-identidad">Matriz identidad</a></li>
   <li><a href="#inversa-de-una-matriz" id="toc-inversa-de-una-matriz" class="nav-link" data-scroll-target="#inversa-de-una-matriz">Inversa de una matriz</a></li>
   </ul></li>
@@ -244,7 +243,7 @@ window.Quarto = {
 
 
 <p>Supongamos que tenemos una ciudad solo con 4 casas, podemos colocar una nomenclatura para cada una de la casa usando solo números de la siguiente forma:</p>
-<div id="02abfde1" class="cell" data-execution_count="1">
+<div id="f47f2bba" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-stderr">
 <pre><code>No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.</code></pre>
 </div>
@@ -272,21 +271,56 @@ A=\begin{bmatrix}
 <h1>Operaciones con matrices</h1>
 <section id="suma-de-matrices" class="level2">
 <h2 class="anchored" data-anchor-id="suma-de-matrices">Suma de matrices</h2>
+<p>Para sumar dos matrixces <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> <strong>de la misma dimensión</strong>, se suman los elementos correspondientes de cada matriz. Por ejemplo, si tenemos dos matrices <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> de dimensión <span class="math inline">\(2\times 2\)</span>:</p>
+<p><span class="math display">\[ A=\begin{bmatrix}1 &amp; 2\\3 &amp; 4\end{bmatrix} \text{ y } B=\begin{bmatrix}5 &amp; 6\\7 &amp; 8\end{bmatrix}\]</span></p>
+<p>La suma de estas dos matrices sería:</p>
+<p><span class="math display">\[ A+B=\begin{bmatrix}1+5 &amp; 2+6\\3+7 &amp; 4+8\end{bmatrix}=\begin{bmatrix}6 &amp; 8\\10 &amp; 12\end{bmatrix}\]</span></p>
 </section>
 <section id="multiplicación-por-escalar" class="level2">
 <h2 class="anchored" data-anchor-id="multiplicación-por-escalar">Multiplicación por escalar</h2>
+<p>La multiplicación de una matriz por un escalar <span class="math inline">\(\alpha\)</span> (recuerda que un número escalar es un real) se realiza multiplicando cada elemento de la matriz por el escalar. Por ejemplo, si tenemos una matriz <span class="math inline">\(A\)</span> de dimensión <span class="math inline">\(2\times 2\)</span>:</p>
+<p><span class="math display">\[ A=\begin{bmatrix}1 &amp; 2\\3 &amp; 4\end{bmatrix}\]</span></p>
+<p>y multiplicamos la matriz <span class="math inline">\(A\)</span> por el escalar <span class="math inline">\(\alpha=2\)</span>:</p>
+<p><span class="math display">\[ 2A=\begin{bmatrix}2 &amp; 4\\6 &amp; 8\end{bmatrix}\]</span></p>
 </section>
 <section id="multiplicación-de-matrices" class="level2">
 <h2 class="anchored" data-anchor-id="multiplicación-de-matrices">Multiplicación de matrices</h2>
-</section>
-<section id="transpuesta-de-una-matriz" class="level2">
-<h2 class="anchored" data-anchor-id="transpuesta-de-una-matriz">Transpuesta de una matriz</h2>
+<p>La multiplicación de matrices es un poco más complicada que la suma de matrices. Para multiplicar dos matrices <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> se debe cumplir que el número de columnas de la matriz <span class="math inline">\(A\)</span> sea igual al número de filas de la matriz <span class="math inline">\(B\)</span>. Por ejemplo, si tenemos dos matrices <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> de dimensión <span class="math inline">\(2\times 2\)</span>:</p>
+<p><span class="math display">\[ A=\begin{bmatrix}1 &amp; 2\\3 &amp; 4\end{bmatrix} \text{ y } B=\begin{bmatrix}5 &amp; 6\\7 &amp; 8\end{bmatrix}\]</span></p>
+<p>La multiplicación de estas dos matrices sería:</p>
+<p><span class="math display">\[ AB=\begin{bmatrix}1\cdot 5+2\cdot 7 &amp; 1\cdot 6+2\cdot 8\\3\cdot 5+4\cdot 7 &amp; 3\cdot 6+4\cdot 8\end{bmatrix}=\begin{bmatrix}19 &amp; 22\\43 &amp; 50\end{bmatrix}\]</span></p>
+<p>Ahora notemos que la multiplicación no es conmutativa, es decir, en general <span class="math inline">\(AB\neq BA\)</span>.</p>
+<p><span class="math display">\[ BA=\begin{bmatrix}5\cdot 1+6\cdot 3 &amp; 5\cdot 2+6\cdot 4\\7\cdot 1+8\cdot 3 &amp; 7\cdot 2+8\cdot 4\end{bmatrix}=\begin{bmatrix}23 &amp; 34\\31 &amp; 46\end{bmatrix}\]</span></p>
+<p>Sea <span class="math inline">\(X=\begin{bmatrix}1 \\ 2\end{bmatrix}\)</span> un vector columna, note que su diemnsión es <span class="math inline">\(2\times 1\)</span>. Si multiplicamos la matriz <span class="math inline">\(A\)</span> por el vector <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display">\[ AX=\begin{bmatrix}1\cdot 1+2\cdot 2\\3\cdot 1+4\cdot 2\end{bmatrix}=\begin{bmatrix}5\\11\end{bmatrix}\]</span></p>
+<p><strong>Note</strong> que la multiplicación de la <span class="math inline">\(XA\)</span> no esta definida ya que el número de columnas de la matriz <span class="math inline">\(X\)</span> no es igual al número de filas de la matriz <span class="math inline">\(A\)</span>.</p>
+<p>De la misma forma podemos ver el vector fila <span class="math inline">\(Y=\begin{bmatrix}1 &amp; 2\end{bmatrix}\)</span>, que su dimensión es <span class="math inline">\(1\times 2\)</span>. Si multiplicamos la matriz <span class="math inline">\(A\)</span> por el vector <span class="math inline">\(YA\)</span> así:</p>
+<p><span class="math display">\[ YA=\begin{bmatrix}1\cdot 1+2\cdot 3 &amp; 1\cdot 2+2\cdot 4\end{bmatrix}=\begin{bmatrix}7 &amp; 10\end{bmatrix}\]</span></p>
+<p><strong>Note</strong> que la multiplicación de la <span class="math inline">\(AY\)</span> no esta definida ya que el número de columnas de la matriz <span class="math inline">\(A\)</span> no es igual al número de filas de la matriz <span class="math inline">\(Y\)</span>. ## Transpuesta de una matriz</p>
+<p>La transpuesta de una matriz <span class="math inline">\(A\)</span> se denota por <span class="math inline">\(A^T\)</span> y se obtiene intercambiando las filas por las columnas. Por ejemplo, si tenemos una matriz <span class="math inline">\(A\)</span> de dimensión <span class="math inline">\(2\times 3\)</span>:</p>
+<p><span class="math display">\[ A=\begin{bmatrix}1 &amp; 2 &amp; 3\\4 &amp; 5 &amp; 6\end{bmatrix}\]</span></p>
+<p>La transpuesta de la matriz <span class="math inline">\(A\)</span> sería:</p>
+<p><span class="math display">\[ A^T=\begin{bmatrix}1 &amp; 4\\2 &amp; 5\\3 &amp; 6\end{bmatrix}\]</span></p>
 </section>
 <section id="matriz-identidad" class="level2">
 <h2 class="anchored" data-anchor-id="matriz-identidad">Matriz identidad</h2>
+<p>La matriz identidad es una matriz cuadrada cuyos elementos de la diagonal principal son 1 y los demás elementos son 0. La matriz identidad de dimensión <span class="math inline">\(n\)</span> se denota por <span class="math inline">\(I_n\)</span>. Por ejemplo, la matriz identidad de dimensión <span class="math inline">\(2\)</span> es:</p>
+<p><span class="math display">\[ I_2=\begin{bmatrix}1 &amp; 0\\0 &amp; 1\end{bmatrix}\]</span></p>
 </section>
 <section id="inversa-de-una-matriz" class="level2">
 <h2 class="anchored" data-anchor-id="inversa-de-una-matriz">Inversa de una matriz</h2>
+<p>La inversa de una matriz <span class="math inline">\(A\)</span> se denota por <span class="math inline">\(A^{-1}\)</span> y se define únicamente para una matriz cuadrada, como la matriz que al multiplicarla por la matriz <span class="math inline">\(A\)</span> nos da la matriz identidad. Es decir, si <span class="math inline">\(A\)</span> es una matriz cuadrada, entonces <span class="math inline">\(A^{-1}\)</span> es la matriz tal que:</p>
+<p><span class="math display">\[ A\cdot A^{-1}=I\]</span></p>
+<p>y</p>
+<p><span class="math display">\[ A^{-1}\cdot A=I\]</span></p>
+<p><strong>Note</strong> únicamente en este caso se tiene que <span class="math inline">\(A^{-1}\cdot A=A\cdot A^{-1}\)</span>.</p>
+<p>Cuando tenemos una matriz de <span class="math inline">\(2\times 2\)</span> existe una formula para calcular la inversa de una matriz y esta determinada por</p>
+<p>La inversa de la matriz <span class="math inline">\(A\)</span> sería:</p>
+<p>Si <span class="math inline">\(A=\begin{bmatrix}a &amp; b\\c &amp; d\end{bmatrix}\)</span>, entonces la inversa de la matriz <span class="math inline">\(A\)</span> se define como:</p>
+<p><span class="math display">\[ A^{-1}=\frac{1}{ad-bc}\begin{bmatrix}d &amp; -b\\-c &amp; a\end{bmatrix}\]</span></p>
+<p>donde <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span> y <span class="math inline">\(d\)</span> son los elementos de la matriz <span class="math inline">\(A\)</span>.</p>
+<p>Ejemplo si tenemos la matriz <span class="math inline">\(A=\begin{bmatrix}1 &amp; 2\\3 &amp; 4\end{bmatrix}\)</span>, entonces la inversa de la matriz <span class="math inline">\(A\)</span> sería:</p>
+<p><span class="math display">\[ A^{-1}=\frac{1}{1\cdot 4-2\cdot 3}\begin{bmatrix}4 &amp; -2\\-3 &amp; 1\end{bmatrix}=\frac{1}{-2}\begin{bmatrix}4 &amp; -2\\-3 &amp; 1\end{bmatrix}=\begin{bmatrix}-2 &amp; 1.\\1.5 &amp; -0.5\end{bmatrix}\]</span></p>
 
 
 </section>

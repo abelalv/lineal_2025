@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ejercicios \mathbb{R}^2</title>
+<title>Matrices Solución de sistema de ecuaciones</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -109,7 +109,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taller1.html">Talleres</a></li><li class="breadcrumb-item"><a href="./taller1.html">Taller 1</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Matrices Solución de sistema de ecuaciones</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -187,7 +187,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./taller1.html" class="sidebar-item-text sidebar-link active">
+  <a href="./taller1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Taller 1</span></a>
   </div>
 </li>
@@ -209,25 +209,17 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#taller-de-vectores-en-mathbbr2-y-matrices-2-times-2" id="toc-taller-de-vectores-en-mathbbr2-y-matrices-2-times-2" class="nav-link active" data-scroll-target="#taller-de-vectores-en-mathbbr2-y-matrices-2-times-2">Taller de Vectores en <span class="math inline">\(\mathbb{R}^2\)</span> y Matrices <span class="math inline">\(2 \times 2\)</span></a>
-  <ul class="collapse">
-  <li><a href="#ejercicio-1" id="toc-ejercicio-1" class="nav-link" data-scroll-target="#ejercicio-1">Ejercicio 1</a></li>
-  <li><a href="#ejercicio-2" id="toc-ejercicio-2" class="nav-link" data-scroll-target="#ejercicio-2">Ejercicio 2</a></li>
-  <li><a href="#ejercicio-3" id="toc-ejercicio-3" class="nav-link" data-scroll-target="#ejercicio-3">Ejercicio 3</a></li>
-  <li><a href="#ejercicio-4" id="toc-ejercicio-4" class="nav-link" data-scroll-target="#ejercicio-4">Ejercicio 4</a></li>
-  <li><a href="#ejercicio-5" id="toc-ejercicio-5" class="nav-link" data-scroll-target="#ejercicio-5">Ejercicio 5</a></li>
-  <li><a href="#ejercicio-6" id="toc-ejercicio-6" class="nav-link" data-scroll-target="#ejercicio-6">Ejercicio 6</a></li>
-  <li><a href="#ejercicio-7" id="toc-ejercicio-7" class="nav-link" data-scroll-target="#ejercicio-7">Ejercicio 7</a></li>
-  </ul></li>
+  <li><a href="#independencia-en-la-la-columna-de-una-matriz" id="toc-independencia-en-la-la-columna-de-una-matriz" class="nav-link active" data-scroll-target="#independencia-en-la-la-columna-de-una-matriz">Independencia en la la columna de una matriz</a></li>
+  <li><a href="#determinantes" id="toc-determinantes" class="nav-link" data-scroll-target="#determinantes">Determinantes</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taller1.html">Talleres</a></li><li class="breadcrumb-item"><a href="./taller1.html">Taller 1</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ejercicios <span class="math inline">\(\mathbb{R}^2\)</span></h1>
+<h1 class="title">Matrices Solución de sistema de ecuaciones</h1>
 </div>
 
 
@@ -244,120 +236,150 @@ window.Quarto = {
 </header>
 
 
-<section id="taller-de-vectores-en-mathbbr2-y-matrices-2-times-2" class="level1">
-<h1>Taller de Vectores en <span class="math inline">\(\mathbb{R}^2\)</span> y Matrices <span class="math inline">\(2 \times 2\)</span></h1>
-<section id="ejercicio-1" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicio-1">Ejercicio 1</h3>
-<p>Sean los vectores <span class="math inline">\(\mathbf{u} = (3, -1)\)</span> y <span class="math inline">\(\mathbf{v} = (2, 4)\)</span>.<br>
-1. Calcula <span class="math inline">\(\mathbf{u} + \mathbf{v}\)</span>.<br>
-2. Calcula <span class="math inline">\(2\mathbf{u} - 3\mathbf{v}\)</span>.</p>
-<ol start="3" type="1">
-<li><p>Verifica la propiedad distributiva:</p>
-<p><span class="math display">\[\alpha(\mathbf{u} + \mathbf{v}) \stackrel{?}{=} \alpha\mathbf{u} + \alpha\mathbf{v}\]</span></p>
-<p>tomando <span class="math inline">\(\alpha = -1\)</span>.</p></li>
-</ol>
-<blockquote class="blockquote">
-<p><strong>Pista</strong>: Solo necesitas comparar ambos lados de la igualdad para concluir.</p>
-</blockquote>
+<p>Queremos encontrar dos números tales que sumados sean 45 y restados sean 21, para resolver este problema deberíamos plantear las incógnitas de la siguiente forma:</p>
+<p><span class="math inline">\(X:=\)</span> número mayor</p>
+<p><span class="math inline">\(Y:=\)</span> número menor</p>
+<p>así debemos plantear el sistema de ecuaciones:</p>
+<p><span class="math display">\[X+Y=45\]</span> <span class="math display">\[X-Y=21\]</span></p>
+<p>Este sistema lo podemos resolver de la usando el método de sustitución, para ello despejamos <span class="math inline">\(X\)</span> de la segunda ecuación:</p>
+<p><span class="math display">\[X=21+Y\]</span></p>
+<p>y sustituimos en la primera ecuación:</p>
+<p><span class="math display">\[21+Y+Y=45\]</span></p>
+<p>Ahora despejamos <span class="math inline">\(Y\)</span>:</p>
+<p><span class="math display">\[2Y=24\]</span></p>
+<p><span class="math display">\[Y=12\]</span></p>
+<p>Sustituimos el valor de <span class="math inline">\(Y\)</span> en la ecuación <span class="math inline">\(X=21+Y\)</span>:</p>
+<p><span class="math display">\[X=21+12\]</span></p>
+<p><span class="math display">\[X=33\]</span></p>
+<p>Por lo tanto los números son 33 y 12.</p>
+<p>Aunque, este es un camino para resolver el problema, también podemos resolverlo de forma matricial, para ello planteamos el sistema de ecuaciones de la siguiente forma:</p>
+<p><span class="math display">\[\begin{bmatrix}
+1 &amp; 1 \\
+1 &amp; -1 \\
+\end{bmatrix}
+\begin{bmatrix}
+X \\
+Y \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+45 \\
+21 \\
+\end{bmatrix}
+\]</span></p>
+<p>De esta forma podemos definir la matriz <span class="math inline">\(A\)</span> y el vector <span class="math inline">\(B\)</span>:</p>
+<p><span class="math display">\[A=\begin{bmatrix}
+1 &amp; 1 \\
+1 &amp; -1 \\
+\end{bmatrix}
+\text{ y }
+B=\begin{bmatrix}
+45 \\
+21 \\
+\end{bmatrix}
+\]</span></p>
+<p>Para encontrar la solución del sistema de ecuaciones <span class="math inline">\(AX=B\)</span> debemos encontrar la matriz <span class="math inline">\(X\)</span> que cumpla con la ecuación anterior, para ello multiplicamos ambos lados de la ecuación por la inversa de la matriz <span class="math inline">\(A\)</span>, donde la matriz inversa de <span class="math inline">\(A\)</span> es:</p>
+<p><span class="math display">\[A^{-1}=\begin{bmatrix}
+\frac{1}{2} &amp; \frac{1}{2} \\
+\frac{1}{2} &amp; -\frac{1}{2} \\
+\end{bmatrix}
+\]</span> <strong>Comprueba que es la inversa de la matriz <span class="math inline">\(A\)</span></strong></p>
+<p>De esta forma tenemos que el sistema se puede escribir como: <span class="math display">\[\begin{bmatrix}
+\frac{1}{2} &amp; \frac{1}{2} \\
+\frac{1}{2} &amp; -\frac{1}{2} \\
+\end{bmatrix}\begin{bmatrix}
+1 &amp; 1 \\
+1 &amp; -1 \\
+\end{bmatrix}
+\begin{bmatrix}
+X \\
+Y \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+\frac{1}{2} &amp; \frac{1}{2} \\
+\frac{1}{2} &amp; -\frac{1}{2} \\
+\end{bmatrix}\begin{bmatrix}
+45 \\
+21 \\
+\end{bmatrix}
+\]</span></p>
+<p>Así obtenemos que:</p>
+<p><span class="math display">\[\begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; 1 \\
+\end{bmatrix}
+\begin{bmatrix}
+X \\
+Y \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+33 \\
+12 \\
+\end{bmatrix}
+\]</span></p>
+<p>y</p>
+<p><span class="math display">\[\begin{bmatrix}
+X \\
+Y \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+33 \\
+12 \\
+\end{bmatrix}
+\]</span></p>
+<p>Por lo tanto los números son 33 y 12, como lo habíamos encontrado anteriormente.</p>
+<section id="independencia-en-la-la-columna-de-una-matriz" class="level2">
+<h2 class="anchored" data-anchor-id="independencia-en-la-la-columna-de-una-matriz">Independencia en la la columna de una matriz</h2>
+<p>La matriz <span class="math inline">\(A=\begin{bmatrix}a_{11} &amp; a_{12}\\a_{21} &amp; a_{22}\end{bmatrix}\)</span>, al multiplicar por el vector columna <span class="math inline">\(\begin{bmatrix}\alpha_1 \\ \alpha_2\end{bmatrix}\)</span>, obtenemos</p>
+<p><span class="math display">\[\begin{bmatrix}a_{11} &amp; a_{12}\\a_{21} &amp; a_{22}\end{bmatrix}\begin{bmatrix}\alpha_1 \\ \alpha_2\end{bmatrix}=\begin{bmatrix}a_{11}\alpha_1+a_{12}\alpha_2\\a_{21}\alpha_1+a_{22}\alpha_2\end{bmatrix},\]</span></p>
+<p>agrupando términos tenemos:</p>
+<p><span class="math display">\[A\begin{bmatrix}\alpha_1 \\ \alpha_2\end{bmatrix}=\alpha_1\begin{bmatrix}a_{11}\\a_{21}\end{bmatrix}+\alpha_2\begin{bmatrix}a_{12}\\a_{22}\end{bmatrix}\]</span></p>
+<p>De esta forma podemos ver que esta multiplicación es una combinación lineal de la s columnas de la matriz <span class="math inline">\(A\)</span>.</p>
+<p>Vamos a analizar que sucede si la matriz <span class="math inline">\(A\)</span> tiene columnas linealmente dependientes, para estudiar esto vamos a considerar el siguiente ejemplo</p>
+<p><span class="math display">\[A=\begin{bmatrix}1 &amp; 2\\2 &amp; 4\end{bmatrix}\]</span></p>
+<p><strong>Note</strong> que la segunda columna es el doble de la primera columna, por lo tanto las columnas de la matriz <span class="math inline">\(A\)</span> son linealmente dependientes.</p>
+<p>Ahora si vamos a calcular la inversa de la matriz <span class="math inline">\(A\)</span>, con la formula que vimos anteriormente, obtenemos:</p>
+<p><span class="math display">\[A^{-1}=\frac{1}{1\cdot 4-2\cdot 2}\begin{bmatrix}4 &amp; -2\\-2 &amp; 1\end{bmatrix}=\frac{1}{0}\begin{bmatrix}4 &amp; -2\\-2 &amp; 1\end{bmatrix}\]</span></p>
+<p>Podemos ver que la inversa no existe. Ahora vamos a explorar que sucede si la matriz <span class="math inline">\(A\)</span> tiene columnas linealmente independientes, para ello consideremos la matriz <span class="math inline">\(A=\begin{bmatrix}1 &amp; 2\\3 &amp; 4\end{bmatrix}\)</span>, en este caso las columnas de la matriz <span class="math inline">\(A\)</span> son linealmente independientes.</p>
+<p>Ahora vamos a calcular la inversa de la matriz <span class="math inline">\(A\)</span>, con la formula que vimos anteriormente, obtenemos:</p>
+<p><span class="math display">\[A^{-1}=\frac{1}{1\cdot 4-2\cdot 3}\begin{bmatrix}4 &amp; -2\\-3 &amp; 1\end{bmatrix}=\frac{1}{-2}\begin{bmatrix}4 &amp; -2\\-3 &amp; 1\end{bmatrix}=\begin{bmatrix}-2 &amp; 1\\1.5 &amp; -0.5\end{bmatrix}\]</span></p>
+<p>Por lo tanto la inversa de la matriz <span class="math inline">\(A\)</span> existe.</p>
+<p>Esto nos lleva al siguiente resultado:</p>
+<p><strong>Proposición</strong> Si la matriz <span class="math inline">\(A\)</span> tiene columnas linealmente independientes, entonces la matriz <span class="math inline">\(A\)</span> tiene inversa.</p>
+<p><strong>Proposición</strong> Si la matriz <span class="math inline">\(A\)</span> de <span class="math inline">\(2\times 2\)</span> tiene columnas linealmente independientes, el sistema <span class="math inline">\(Ax=b\)</span> una única solución. <strong>¿Cómo podemos justificar este resultado</strong>?</p>
+<p>Para saber si una matriz tiene inversa vamos a introducir el siguiente concepto.</p>
 </section>
-<section id="ejercicio-2" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicio-2">Ejercicio 2</h3>
-<p>Con los mismos vectores <span class="math inline">\(\mathbf{u} = (3, -1)\)</span> y <span class="math inline">\(\mathbf{v} = (2, 4)\)</span>:<br>
-1. Halla <span class="math inline">\(\mathbf{u} \cdot \mathbf{v}\)</span>.<br>
-2. Verifica la propiedad de conmutatividad <span class="math inline">\(\mathbf{u} \cdot \mathbf{v} = \mathbf{v} \cdot \mathbf{u}\)</span>.<br>
-3. Encuentra el vector <span class="math inline">\(\mathbf{v}\)</span> y comprueba que <span class="math display">\[\mathbf{v}\cdot\mathbf{v}=||\mathbf{v}||^2.\]</span> 4. Calcula el vector proyección de <span class="math inline">\(\mathbf{u}\)</span> sobre <span class="math inline">\(\mathbf{v}\)</span>, es decir, <span class="math inline">\(\text{proj}_{\mathbf{v}}\mathbf{u}\)</span>.</p>
-<blockquote class="blockquote">
-<p><strong>Pista</strong>: Usa la fórmula:</p>
-<p><span class="math display">\[\text{proj}_{\mathbf{v}}\mathbf{u} = \left(\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{v}\|^2}\right)\mathbf{v}.\]</span></p>
-<ol start="5" type="1">
-<li>Interpreta geometricamente que significa la proyección de un vector sobre otro.</li>
-</ol>
-</blockquote>
-<ol start="6" type="1">
-<li><p>Describa si la siguiente afirmaciones son es verdaderas o falsas:</p>
-<blockquote class="blockquote">
-<p>Si <span class="math inline">\(\mathbf{u} \cdot \mathbf{v} = 0\)</span>, entonces <span class="math inline">\(\mathbf{u}\)</span> y <span class="math inline">\(\mathbf{v}\)</span> son ortogonales.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><span class="math display">\[\Big|\Big|\frac{\mathbf{u}\cdot\mathbf{v}}{||v||^2}\mathbf{v}\Big|\Big| = \frac{|\mathbf{u}\cdot\mathbf{v}|}{||\mathbf{v}||}\]</span></p>
-</blockquote></li>
-<li><p>Use el procedimiento anterior para calcular el ángulo entre los vectores <span class="math inline">\(\mathbf{u}\)</span> y <span class="math inline">\(\mathbf{v}\)</span>.</p></li>
-</ol>
-<div id="2469572f" class="cell" data-execution_count="1">
+<section id="determinantes" class="level2">
+<h2 class="anchored" data-anchor-id="determinantes">Determinantes</h2>
+<p>El determinante de una matriz <span class="math inline">\(A\)</span> de dimensión <span class="math inline">\(2\times 2\)</span> se denota por <span class="math inline">\(|A|\)</span> y se define como:</p>
+<p><span class="math display">\[|A|=a_{11}a_{22}-a_{12}a_{21}\]</span></p>
+<p>Para la matriz <span class="math inline">\(A=\begin{bmatrix}1 &amp; 2\\2 &amp; 4\end{bmatrix}\)</span>, el determinante de la matriz <span class="math inline">\(A\)</span> es:</p>
+<p><span class="math display">\[|A|=1\cdot 4-2\cdot 2=0\]</span></p>
+<p><strong>Note</strong> que el determinante de una matriz cuadrada es igual a cero si las columnas de la matriz son linealmente dependientes.</p>
+<p>La interpretación geométrica del determinante de una matriz <span class="math inline">\(A\)</span> de dimensión <span class="math inline">\(2\times 2\)</span> es que el determinante de la matriz <span class="math inline">\(A\)</span> es igual al área del paralelogramo que se forma con los vectores columna de la matriz <span class="math inline">\(A\)</span>.</p>
+<p><strong>Ejemplo</strong> Veamos la interpretación geométrica del determinante de la matriz <span class="math inline">\(A=\begin{bmatrix}1/2 &amp; 1/2\\1 &amp; 0\end{bmatrix}\)</span> note que el determinante de la matriz <span class="math inline">\(A\)</span> es:</p>
+<p><span class="math display">\[|A|=1/2\cdot 0-1/2\cdot 1=1/2\]</span> gráficamente podemos ver que el área del paralelogramo es igual a 1/2.</p>
+<div id="11944202" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="taller1_files/figure-html/cell-2-output-1.png" width="600" height="472" class="figure-img"></p>
+<p><img src="section5_files/figure-html/cell-2-output-1.png" width="518" height="381" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<ol start="8" type="1">
-<li><p>Calcula el ángulo <span class="math inline">\(\theta\)</span> entre <span class="math inline">\(\mathbf{u}\)</span> y <span class="math inline">\(\mathbf{v}\)</span> usando la fórmula:</p>
-<p><span class="math display">\[\mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\|\,\|\mathbf{v}\|\cos(\theta).\]</span></p></li>
-</ol>
-</section>
-<section id="ejercicio-3" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicio-3">Ejercicio 3</h3>
-<p>Dada la recta que pasa por el punto <span class="math inline">\(\mathbf{P} = (1, -2)\)</span> y que <strong>tiene como dirección</strong> el vector <span class="math inline">\(\mathbf{P} = (2, 3)\)</span>:</p>
-<ol type="1">
-<li><p>Escribe su <strong>ecuación paramétrica</strong> en <span class="math inline">\(\mathbb{R}^2\)</span>.</p>
-<blockquote class="blockquote">
-<p>Recuerda que la forma paramétrica se describe como:</p>
-<p><span class="math display">\[\mathbf{r}(t) = \mathbf{P} + t\,\mathbf{v}, \quad t \in \mathbb{R}.\]</span></p>
-</blockquote></li>
-<li><p>Verifica que el punto <span class="math inline">\(\mathbf{Q} = (3,1)\)</span> <strong>no</strong> pertenece a dicha recta (sustituyendo en la forma paramétrica y comprobando si existe un valor de <span class="math inline">\(t\)</span> que lo satisfaga).</p></li>
-<li><p>Escribe la ecuación de forma cartesiana, es decir de la forma <span class="math inline">\(y =ax+b\)</span>.</p></li>
-</ol>
-</section>
-<section id="ejercicio-4" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicio-4">Ejercicio 4</h3>
-<p>Considera la recta <span class="math inline">\(r_1\)</span> en forma paramétrica:</p>
-<p><span class="math display">\[r_1: \quad \mathbf{r}(t) = (2, 1) + t \, (3, -1).\]</span></p>
-<ol type="1">
-<li><p>Encuentra la <strong>ecuación paramétrica</strong> de la recta <span class="math inline">\(r_2\)</span> <strong>paralela</strong> a <span class="math inline">\(r_1\)</span> y que pase por el punto <span class="math inline">\((4,2)\)</span>.</p>
-<blockquote class="blockquote">
-<p>Dos rectas son paralelas si sus vectores direccionales son múltiplos.</p>
-</blockquote></li>
-<li><p>Encuentra la <strong>ecuación paramétrica</strong> de la recta <span class="math inline">\(r_3\)</span> <strong>perpendicular</strong> a <span class="math inline">\(r_1\)</span> que pase por <span class="math inline">\((4,2)\)</span>.</p>
-<blockquote class="blockquote">
-<p>Dos rectas en <span class="math inline">\(\mathbb{R}^2\)</span> son perpendiculares si sus vectores direccionales <span class="math inline">\(\mathbf{d_1}\)</span> y <span class="math inline">\(\mathbf{d_2}\)</span> cumplen <span class="math inline">\(\mathbf{d_1}\cdot \mathbf{d_2} = 0\)</span>.</p>
-</blockquote></li>
-<li><p>Determina el <strong>punto de intersección</strong> entre <span class="math inline">\(r_3\)</span> y la recta <span class="math inline">\(r_1\)</span>.</p></li>
-</ol>
-</section>
-<section id="ejercicio-5" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicio-5">Ejercicio 5</h3>
-<p>Sea <span class="math inline">\(\{\mathbf{w}_1, \mathbf{w}_2\}\)</span> con <span class="math inline">\(\mathbf{w}_1 = (1, 3)\)</span> y <span class="math inline">\(\mathbf{w}_2 = (2, 6)\)</span>.</p>
-<ol type="1">
-<li>Determina si <span class="math inline">\(\mathbf{w}_1\)</span> y <span class="math inline">\(\mathbf{w}_2\)</span> son linealmente <strong>dependientes</strong> o <strong>independientes</strong>. Explica tu proceso.<br>
-</li>
-<li>Si son dependientes, describe la relación de dependencia. Si son independientes, justifica por qué.</li>
-</ol>
-</section>
-<section id="ejercicio-6" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicio-6">Ejercicio 6</h3>
-<ol type="1">
-<li>Explica en tus propias palabras qué significa que un conjunto de vectores sea <strong>base</strong> de <span class="math inline">\(\mathbb{R}^2\)</span>.<br>
-</li>
-<li>Dados los vectores <span class="math inline">\(\mathbf{a} = (1, 2)\)</span> y <span class="math inline">\(\mathbf{b} = (2, 1)\)</span>, <strong>¿son una base de</strong> <span class="math inline">\(\mathbb{R}^2\)</span>?
-<ul>
-<li>Justifica tu respuesta usando <strong>independencia lineal</strong></li>
-</ul></li>
-</ol>
-</section>
-<section id="ejercicio-7" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicio-7">Ejercicio 7</h3>
-<ol type="1">
-<li>¿Por qué <span class="math inline">\(\{(0,0)\}\)</span> (el conjunto que solo contiene al vector cero) es un <strong>subespacio</strong> de <span class="math inline">\(\mathbb{R}^2\)</span>?<br>
-</li>
-<li>Si <span class="math inline">\(S\)</span> es el conjunto de todos los vectores <span class="math inline">\((x, y)\)</span> tales que <span class="math inline">\(x + y = 0\)</span>, demuestra que <strong><span class="math inline">\(S\)</span> es un subespacio</strong> de <span class="math inline">\(\mathbb{R}^2\)</span>.<br>
-</li>
-<li>Determina una <strong>base</strong> para el subespacio <span class="math inline">\(S\)</span>.</li>
-</ol>
+<p>Note que con esta definición podemos modificar la formula de la inversa de una matriz <span class="math inline">\(A\)</span> de dimensión <span class="math inline">\(2\times 2\)</span> como:</p>
+<p><span class="math display">\[A^{-1}=\frac{1}{|A|}\begin{bmatrix}a_{22} &amp; -a_{12}\\-a_{21} &amp; a_{11}\end{bmatrix}\]</span></p>
+<p>y podemos obtener la siguiente proposición:</p>
+<p><strong>Proposición</strong> Si el determinante de una matriz <span class="math inline">\(A\)</span> de dimensión <span class="math inline">\(2\times 2\)</span> es diferente de cero, entonces la matriz <span class="math inline">\(A\)</span> tiene inversa.</p>
+<p><strong>Proposición</strong> Si el determinante de una matriz <span class="math inline">\(A\)</span> de dimensión <span class="math inline">\(2\times 2\)</span> es diferente de cero, entonces el sistema <span class="math inline">\(Ax=b\)</span> tiene una única solución.</p>
+<p><strong>Proposición</strong> Si el determinante de una matriz <span class="math inline">\(A\)</span> de dimensión <span class="math inline">\(2\times 2\)</span> es diferente a cero, entonces <span class="math inline">\(A\)</span> tiene columnas linealmente independientes.</p>
+<p><strong>Proposición</strong> Si el determinante de una matriz <span class="math inline">\(A\)</span> de dimensión <span class="math inline">\(2\times 2\)</span> es diferente a cero, entonces <span class="math inline">\(A\)</span> tiene filas linealmente independientes.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

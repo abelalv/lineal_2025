@@ -1,0 +1,6 @@
+---
+title: Trabajo computacional
+format: html
+filters:
+  - pyodide
+---

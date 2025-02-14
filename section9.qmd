@@ -1,0 +1,6 @@
+---
+title: Autovalores y autovectores
+format: html
+filters:
+  - pyodide
+---
