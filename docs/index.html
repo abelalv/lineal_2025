@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.45">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -229,7 +258,301 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>El álgebra lineal es un instrumento</p>
+<p>Cronograma de actividades</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 7%">
+<col style="width: 71%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Sesión</th>
+<th style="text-align: center;">Semana</th>
+<th style="text-align: center;">S_1/S_2</th>
+<th style="text-align: center;">Fecha</th>
+<th style="text-align: left;">Tema</th>
+<th style="text-align: right;">Puntos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Enero 20</td>
+<td style="text-align: left;">Presentación del curso, actividad de enganche, vectores en R^2</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Enero 22</td>
+<td style="text-align: left;">Vectores en <span class="math inline">\(R^2\)</span>, operaciones: suma, multiplicación por un escalar y producto punto con sus respectivas propiedades.</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Enero 27</td>
+<td style="text-align: left;">Ecuación de la recta. Rectas paralelas, perpendiculares, independencia lineal, bases.</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Enero 29</td>
+<td style="text-align: left;">Subespacios en <span class="math inline">\(R^2\)</span>. Proyección de un vector sobre otro, norma, distancia entre dos puntos, distancia entre un punto y una recta.</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Febrero 3</td>
+<td style="text-align: left;">Matrices 2x2, determinantes, operaciones entre matrices.</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Febrero 5</td>
+<td style="text-align: left;">Trabajo computacional</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Febrero 10</td>
+<td style="text-align: left;">Sistemas de ecuaciones 2x2 (taller)</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Febrero 12</td>
+<td style="text-align: left;">Inversa de una matriz. Aplicaciones de sistemas de ecuaciones 2x2.</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Febrero 17</td>
+<td style="text-align: left;">Vectores y valores propios en <span class="math inline">\(R^2\)</span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Febrero 19</td>
+<td style="text-align: left;">Aplicaciones de vectores y valores propios. Diagonalización.</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Febrero 24</td>
+<td style="text-align: left;">Examen corto - Taller</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">12</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Febrero 26</td>
+<td style="text-align: left;">Aplicaciones de vectores y valores propios. Diagonalización.</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Marzo 3</td>
+<td style="text-align: left;">Trabajo computacional</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">14</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Marzo 5</td>
+<td style="text-align: left;">Matrices NxN, operaciones, determinantes.</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Marzo 10</td>
+<td style="text-align: left;">Inversa de una matriz y sistemas de ecuaciones NxN.</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">16</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Marzo 12</td>
+<td style="text-align: left;">Aplicaciones de sistemas NxN.</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Marzo 17</td>
+<td style="text-align: left;">Examen corto - Taller</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">18</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Marzo 19</td>
+<td style="text-align: left;">Vectores en <span class="math inline">\(R^N\)</span>, operaciones (suma, resta, producto punto, norma).</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Marzo 24</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Marzo 26</td>
+<td style="text-align: left;">Planos, vectores perpendiculares, producto cruz.</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">21</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Marzo 31</td>
+<td style="text-align: left;">Trabajo computacional</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">22</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Abril 2</td>
+<td style="text-align: left;">Independencia lineal, bases y dimensión.</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Abril 7</td>
+<td style="text-align: left;">Examen corto - Taller</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">24</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Abril 9</td>
+<td style="text-align: left;">Bases ortonormales</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Abril 21</td>
+<td style="text-align: left;">Coordenadas y cambio de base</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">26</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Abril 23</td>
+<td style="text-align: left;">Transformaciones lineales en <span class="math inline">\(R^n\)</span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">27</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Abril 28</td>
+<td style="text-align: left;">Núcleo e imagen de una transformación (taller)</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">28</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Abril 30</td>
+<td style="text-align: left;">La matriz de una transformación lineal</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">29</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Mayo 5</td>
+<td style="text-align: left;">Vectores y valores propios en <span class="math inline">\(R^N\)</span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">30</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Mayo 7</td>
+<td style="text-align: left;">Diagonalización</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">31</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">S_1</td>
+<td style="text-align: center;">Mayo 12</td>
+<td style="text-align: left;">Trabajo computacional</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">32</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">S_2</td>
+<td style="text-align: center;">Mayo 14</td>
+<td style="text-align: left;">Taller de aplicaciones de valores y vectores propios, diagonalización.</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">Examen</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;">100</td>
+</tr>
+</tbody>
+</table>
 
 
 
