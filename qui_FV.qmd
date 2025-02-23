@@ -1,0 +1,89 @@
+---
+title: "Álgebra Lineal"
+format:
+  pdf: 
+    documentclass: article
+    classoption: 12pt
+    geometry: "left=2cm,right=2cm,top=2cm,bottom=2cm"
+    header-includes:
+      - \usepackage{tikz}
+      - \usepackage{eso-pic}
+      - |
+        \AddToShipoutPictureBG*{%
+          \begin{tikzpicture}[remember picture, overlay]
+            % Se extiende el rango para cubrir toda la página en x e y.
+            \foreach \x in {-60,-58,-56,...,58,60,62}{%
+              \foreach \y in {-60,-58,-56,...,66,68,60}{%
+                \node [rotate=45, scale=0.21, opacity=0.005] at (current page.center) [shift={(\x cm,\y cm)}] {CONFIDENCIAL};
+              }
+            }
+          \end{tikzpicture}
+        }
+---
+
+# Preguntas de Verdadero o Falso
+
+Las siguientes afirmaciones son preguntas de **Verdadero o Falso** sobre álgebra lineal. Justifica cada respuesta.
+
+1. Si $\mathbf{u} \cdot \mathbf{v} = 0$, entonces se cumple que
+   $$\|\mathbf{u} + \mathbf{v}\|^2 = \|\mathbf{u}\|^2 + \|\mathbf{v}\|^2.$$
+
+2. Dos rectas son paralelas si sus vectores dirección son ortogonales en $\mathbb{R}^2$.
+
+3. Si $\mathbf{u}$ y $\mathbf{v}$ son paralelos  en $\mathbb{R}^2$, entonces $\operatorname{proj}_{\mathbf{v}} \mathbf{u} = \mathbf{u}$.
+
+4. Puedo encontrar la ecuación paramétrica de la recta si conozco un punto y una recta perpendicular a la recta  en $\mathbb{R}^2$.
+
+5. Dos rectas en $\mathbb{R}^2$ con el mismo vector dirección siempre son paralelas.
+
+6. Si dos rectas en $\mathbb{R}^2$ tienen vectores dirección ortogonales, entonces siempre se intersectan en un único punto.
+
+11. Un conjunto de dos vectores en $\mathbb{R}^2$ siempre es una base del espacio si los vectores son diferentes de cero.
+
+12. Dos vectores linealmente independientes en $\mathbb{R}^2$ siempre son ortogonales.
+
+13. Dos vectores linealmente independientes en $\mathbb{R}^2$ forman una base.
+
+14. Si una matriz $A_{2 \times 2}$ tiene columnas linealmente independientes, entonces sus filas también son linealmente independientes.
+
+15. Si una matriz $A_{2 \times 2}$ es invertible, entonces los vectores formados por sus filas son linealmente dependientes.
+
+16. Si una matriz $A_{2 \times 2}$ es invertible, entonces los vectores formados por las columnas son linealmente dependientes.
+
+17. Un conjunto de dos vectores en $\mathbb{R}^2$ siempre es una base del espacio si los vectores son diferentes de cero.
+
+18. El conjunto $\{(0,0)\}$ es un subespacio de $\mathbb{R}^2$ porque satisface las condiciones de cerradura bajo suma y multiplicación escalar.
+
+19. Si una matriz $A_{2 \times 2}$ tiene columnas linealmente independientes, entonces sus filas también son linealmente independientes.
+
+20. Si dos vectores en $\mathbb{R}^2$ son ortogonales, entonces son linealmente dependientes.
+
+21. Si una matriz cuadrada $A_{2 \times 2}$ tiene determinante cero, entonces el sistema $Ax = b$ no tiene solución única.
+
+22. Un conjunto de vectores es linealmente independiente es equivalente en $\mathbb{R}^2$ que no son paralelos.
+
+23. Si una matriz cuadrada en $A_{2 \times 2}$ tiene un determinante mayor que cero, entonces su inversa siempre existe.
+
+24. El determinante de una matriz en $\mathbb{R}^2$ representa el área de un paralelogramo definido por sus columnas como vectores.
+
+25. El vector proyección en $\mathbb{R}^2$  de un vector **u** sobre otro vector **v** siempre es un múltiplo escalar de **v**.
+
+26. Toda recta en $\mathbb{R}^2$ definida en forma paramétrica puede expresarse en la forma $y = ax + b$.
+
+27. Si el determinante de dos vectores en $\mathbb{R}^2$ es igual a cero, entonces los vectores son linealmente dependientes.
+
+28. La magnitud de la proyección de un vector $u$ sobre $v$ es igual a $\displaystyle \frac{|u \cdot v|}{\|v\|^2}$.
+
+29. Si la proyección de $\mathbf{u}$ sobre $\mathbf{v}$ en $\mathbb{R}^2$ resulta en el vector cero y $\mathbf{u}$ no es cero, entonces $\mathbf{v}$ debe ser el vector cero.
+
+30. Si la proyección de $\mathbf{u}$ sobre $\mathbf{v}$ en $\mathbb{R}^2$  resulta en el vector cero y $\mathbf{u}$ no es cero, entonces los vectores son perpendiculares.
+
+31. En un sistema de ecuaciones lineales de dos variables en $\mathbb{R}^2$ , si una ecuación es múltiplo de la otra, el sistema tiene infinitas soluciones.
+
+32. El hecho de que la proyección de un vector $\mathbf{u}$ sobre $\mathbf{v}$ en $\mathbb{R}^2$ sea diferente de cero implica que $\mathbf{u}$ y $\mathbf{v}$ tienen exactamente la misma dirección.
+
+33. El sistema de ecuaciones lineales en  $\mathbb{R}^2$, $Ax = b$ tiene solución única si y solo si la matriz $A_{2\times 2}$ y los vectores formados por sus columnas son linealmente independientes.
+
+34. El sistema $Ax = b$ en  $\mathbb{R}^2$ , tiene infinitas soluciones si la matriz $A_{2\times 2}$ tiene determinante igual a cero.
+
+35. Si $b$ en $\mathbb{R}^2$  no se puede escribir como combinación lineal de las columnas de la matriz $A$, entonces el sistema $Ax = b$ tiene solución única.
