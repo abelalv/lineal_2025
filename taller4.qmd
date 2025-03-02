@@ -127,10 +127,9 @@ import matplotlib.pyplot as plt
 H = np.array([[0, 4, 4, 2, 0, 0], 
               [0, 0, 3, 5, 3, 0]])  # Se repite el primer punto para cerrar la casa
 
-# Matriz de Rotación de 45 grados
-theta = np.radians(45)  # Convertir a radianes
-T = np.array([[np.cos(theta), -np.sin(theta)], 
-              [np.sin(theta), np.cos(theta)]])
+# Matriz de Rotación
+T = np.array([[2, 1], 
+              [1,2]])
 
 # Aplicar la transformación
 H_transformed = T @ H  # Multiplicación de matrices
