@@ -228,7 +228,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"options":{"read-only":"false","context":"interactive","label":"","comment":"","warning":"true","message":"true","output":"true","results":"markup","out-height":"","fig-cap":"","autorun":"","out-width":"700px","fig-height":5,"classes":"","fig-width":7,"dpi":72},"code":"\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Definir la matriz de coordenadas de la casa\nH = np.array([[0, 4, 4, 2, 0, 0], \n              [0, 0, 3, 5, 3, 0]])  # Se repite el primer punto para cerrar la casa\n\n# Matriz de Rotación de 45 grados\ntheta = np.radians(45)  # Convertir a radianes\nT = np.array([[np.cos(theta), -np.sin(theta)], \n              [np.sin(theta), np.cos(theta)]])\n\n# Aplicar la transformación\nH_transformed = T @ H  # Multiplicación de matrices\n\n# Graficar la casa original y la transformada\nplt.figure(figsize=(6,6))\nplt.plot(H[0], H[1], 'bo-', label=\"Casa Original\")  # Dibujo original\nplt.plot(H_transformed[0], H_transformed[1], 'ro-', label=\"Casa Transformada\")  # Transformada\n\n# Configuración de la gráfica\nplt.axhline(0, color='black', linewidth=0.5)\nplt.axvline(0, color='black', linewidth=0.5)\nplt.xlim(-5, 6)\nplt.ylim(-5, 6)\nplt.grid(True, linestyle=\"--\", linewidth=0.5)\nplt.gca().set_aspect('equal', adjustable='box')  # Establecer la grilla 1 en 1\nplt.gca().set_xticks(np.arange(-5, 7, 1))  # Espaciado de 1 en 1 en el eje x\nplt.gca().set_yticks(np.arange(-5, 7, 1))  # Espaciado de 1 en 1 en el eje y\nplt.legend()\nplt.title(\"Transformación de la Casa \")\nplt.show()"}];
+globalThis.qpyodideCellDetails = [{"options":{"label":"","read-only":"false","autorun":"","warning":"true","message":"true","fig-cap":"","comment":"","fig-width":7,"out-height":"","dpi":72,"results":"markup","context":"interactive","classes":"","output":"true","fig-height":5,"out-width":"700px"},"id":1,"code":"\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Definir la matriz de coordenadas de la casa\nH = np.array([[0, 4, 4, 2, 0, 0], \n              [0, 0, 3, 5, 3, 0]])  # Se repite el primer punto para cerrar la casa\n\n# Matriz de Rotación\nT = np.array([[2, 1], \n              [1,2]])\n\n# Aplicar la transformación\nH_transformed = T @ H  # Multiplicación de matrices\n\n# Graficar la casa original y la transformada\nplt.figure(figsize=(6,6))\nplt.plot(H[0], H[1], 'bo-', label=\"Casa Original\")  # Dibujo original\nplt.plot(H_transformed[0], H_transformed[1], 'ro-', label=\"Casa Transformada\")  # Transformada\n\n# Configuración de la gráfica\nplt.axhline(0, color='black', linewidth=0.5)\nplt.axvline(0, color='black', linewidth=0.5)\nplt.xlim(-5, 6)\nplt.ylim(-5, 6)\nplt.grid(True, linestyle=\"--\", linewidth=0.5)\nplt.gca().set_aspect('equal', adjustable='box')  # Establecer la grilla 1 en 1\nplt.gca().set_xticks(np.arange(-5, 7, 1))  # Espaciado de 1 en 1 en el eje x\nplt.gca().set_yticks(np.arange(-5, 7, 1))  # Espaciado de 1 en 1 en el eje y\nplt.legend()\nplt.title(\"Transformación de la Casa \")\nplt.show()"}];
 
 
 </script>
@@ -667,7 +667,7 @@ y &amp; 0 &amp; 0 &amp; 3 &amp; 5 &amp; 3 &amp; 0 \\ \hline
 <p>Multiplica a cada uno de los puntos por la matriz</p>
 <p><span class="math display">\[A= \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}\]</span></p>
 <p>y dibuja la nueva casa.</p>
-<div id="26108b6e" class="cell" data-execution_count="1">
+<div id="7aef5bed" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -682,19 +682,20 @@ y &amp; 0 &amp; 0 &amp; 3 &amp; 5 &amp; 3 &amp; 0 \\ \hline
 <li><p>¿Qué pasa si la matriz de rotación es <span class="math inline">\(A= \begin{bmatrix} 1 &amp; 0 \\ -1 &amp; 0 \end{bmatrix}\)</span>? ¿Qué sucede con la casa? ¿Cuales son los valores propios y vectores propios de la matriz? ¿Qué interpretación podemos dar a los valores propios en este contexto?</p></li>
 <li><p>Crea la matriz en python de la forma</p></li>
 </ol>
-<pre class="{tex}"><code>import numpy as np
-H = np.array([[0, 4, 4, 2, 0, 0], 
-              [0, 0, 3, 5, 3, 0]]) 
-
-A= np.array([[2, 1], 
-              [1, 2]])              </code></pre>
+<blockquote class="blockquote">
+<p>import numpy as np H = np.array([[0, 4, 4, 2, 0, 0], [0, 0, 3, 5, 3, 0]])</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>A= np.array([[2, 1], [1, 2]])</p>
+</blockquote>
 <p>para aplicar la transformación</p>
-<pre class="{tex}"><code>H_transformed = A @ H</code></pre>
+<blockquote class="blockquote">
+<p>H_transformed = A @ H</p>
+</blockquote>
 <p>Para dibujar la nueva casa.</p>
-<pre class="{tex}"><code>import matplotlib.pyplot as plt
-plt.plot(H[0], H[1], 'bo-', label="Casa Original")  # Dibujo original
-plt.plot(H_transformed[0], H_transformed[1], 'ro-', label="Casa Transformada")  # Transformada
-</code></pre>
+<blockquote class="blockquote">
+<p>import matplotlib.pyplot as plt plt.plot(H[0], H[1], ‘bo-’, label=“Casa Original”) # Dibujo original plt.plot(H_transformed[0], H_transformed[1], ‘ro-’, label=“Casa Transformada”) # Transformada</p>
+</blockquote>
 <div id="qpyodide-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 
