@@ -1,1 +1,10 @@
 /* css styles */
+@font-face {
+    font-family: 'DejaVu Sans';
+    src: url('fonts/DejaVuSans.ttf') format('truetype');
+}
+
+body {
+    font-family: 'DejaVu Sans', sans-serif;
+}
+

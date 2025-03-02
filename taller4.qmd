@@ -58,6 +58,14 @@ y dibuja la nueva casa.
 #| echo: false
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib
+
+# Cambiar la fuente predeterminada para evitar DejaVuSans
+matplotlib.rcParams['font.family'] = 'sans-serif'
+matplotlib.rcParams['font.sans-serif'] = ['Arial', 'Liberation Sans', 'Helvetica']
+
+
+
 
 # Definir la matriz de coordenadas de la casa
 H = np.array([[0, 4, 4, 2, 0, 0], 
@@ -113,7 +121,9 @@ Para dibujar la nueva casa.
 
 
 >import matplotlib.pyplot as plt
+
 >plt.plot(H[0], H[1], 'bo-', label="Casa Original")  # Dibujo original
+
 >plt.plot(H_transformed[0], H_transformed[1], 'ro-', label="Casa Transformada")  # Transformada
 
 
@@ -142,12 +152,12 @@ plt.plot(H_transformed[0], H_transformed[1], 'ro-', label="Casa Transformada")  
 # Configuración de la gráfica
 plt.axhline(0, color='black', linewidth=0.5)
 plt.axvline(0, color='black', linewidth=0.5)
-plt.xlim(-5, 6)
-plt.ylim(-5, 6)
+plt.xlim(-1, 20)
+plt.ylim(-1, 20)
 plt.grid(True, linestyle="--", linewidth=0.5)
 plt.gca().set_aspect('equal', adjustable='box')  # Establecer la grilla 1 en 1
-plt.gca().set_xticks(np.arange(-5, 7, 1))  # Espaciado de 1 en 1 en el eje x
-plt.gca().set_yticks(np.arange(-5, 7, 1))  # Espaciado de 1 en 1 en el eje y
+plt.gca().set_xticks(np.arange(-1, 20, 1))  # Espaciado de 1 en 1 en el eje x
+plt.gca().set_yticks(np.arange(-1, 20, 1))  # Espaciado de 1 en 1 en el eje y
 plt.legend()
 plt.title("Transformación de la Casa ")
 plt.show()

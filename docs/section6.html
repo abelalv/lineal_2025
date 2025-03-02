@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ejercicios de Autovalores y Autovectores (Matrices 2x2)</title>
+<title>Trabajo computacional</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -228,7 +228,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"options":{"fig-width":7,"output":"true","out-width":"700px","comment":"","read-only":"false","out-height":"","warning":"true","fig-cap":"","autorun":"","label":"","message":"true","fig-height":5,"context":"interactive","dpi":72,"classes":"","results":"markup"},"code":"\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Definir la matriz de coordenadas de la casa\nH = np.array([[0, 4, 4, 2, 0, 0], \n              [0, 0, 3, 5, 3, 0]])  # Se repite el primer punto para cerrar la casa\n\n# Matriz de Rotación\nT = np.array([[2, 1], \n              [1,2]])\n\n# Aplicar la transformación\nH_transformed = T @ H  # Multiplicación de matrices\n\n# Graficar la casa original y la transformada\nplt.figure(figsize=(6,6))\nplt.plot(H[0], H[1], 'bo-', label=\"Casa Original\")  # Dibujo original\nplt.plot(H_transformed[0], H_transformed[1], 'ro-', label=\"Casa Transformada\")  # Transformada\n\n# Configuración de la gráfica\nplt.axhline(0, color='black', linewidth=0.5)\nplt.axvline(0, color='black', linewidth=0.5)\nplt.xlim(-1, 20)\nplt.ylim(-1, 20)\nplt.grid(True, linestyle=\"--\", linewidth=0.5)\nplt.gca().set_aspect('equal', adjustable='box')  # Establecer la grilla 1 en 1\nplt.gca().set_xticks(np.arange(-1, 20, 1))  # Espaciado de 1 en 1 en el eje x\nplt.gca().set_yticks(np.arange(-1, 20, 1))  # Espaciado de 1 en 1 en el eje y\nplt.legend()\nplt.title(\"Transformación de la Casa \")\nplt.show()","id":1}];
+globalThis.qpyodideCellDetails = [{"id":1,"options":{"results":"markup","warning":"true","comment":"","out-width":"700px","autorun":"","fig-cap":"","output":"true","context":"interactive","fig-width":7,"fig-height":5,"message":"true","classes":"","dpi":72,"read-only":"false","out-height":"","label":""},"code":"import numpy as np\n\nA = np.array([[1, 2], [3, 4]])\n\nprint(A)"},{"id":2,"options":{"results":"markup","warning":"true","comment":"","out-width":"700px","autorun":"","fig-cap":"","output":"true","context":"interactive","fig-width":7,"fig-height":5,"message":"true","classes":"","dpi":72,"read-only":"false","out-height":"","label":""},"code":"import numpy as np\n\nv = np.array([[1], [2]])\n\nprint(v)"},{"id":3,"options":{"results":"markup","warning":"true","comment":"","out-width":"700px","autorun":"","fig-cap":"","output":"true","context":"interactive","fig-width":7,"fig-height":5,"message":"true","classes":"","dpi":72,"read-only":"false","out-height":"","label":""},"code":"import numpy as np\n\nw = np.array([[1, 2]])\n\nprint(w)"},{"id":4,"options":{"results":"markup","warning":"true","comment":"","out-width":"700px","autorun":"","fig-cap":"","output":"true","context":"interactive","fig-width":7,"fig-height":5,"message":"true","classes":"","dpi":72,"read-only":"false","out-height":"","label":""},"code":"import numpy as np\n\nA = np.array([[1, 2], [3, 4]])\nB = np.array([[5, 6], [7, 8]])\n\nC = A + B\n\nprint(C)"},{"id":5,"options":{"results":"markup","warning":"true","comment":"","out-width":"700px","autorun":"","fig-cap":"","output":"true","context":"interactive","fig-width":7,"fig-height":5,"message":"true","classes":"","dpi":72,"read-only":"false","out-height":"","label":""},"code":"import numpy as np\n\nA = np.array([[1, 2], [3, 4]])\nalpha = 2\nC=alpha*A\n\nprint(C)"},{"id":6,"options":{"results":"markup","warning":"true","comment":"","out-width":"700px","autorun":"","fig-cap":"","output":"true","context":"interactive","fig-width":7,"fig-height":5,"message":"true","classes":"","dpi":72,"read-only":"false","out-height":"","label":""},"code":"import numpy as np\nA = np.array([[1, 2], [3, 4]])\nB = np.array([[5, 6], [7, 8]])\n\nC_dot = np.dot(A, B)\nC_at = A @ B\n\nprint(\"Usando el comando np.dot\",C_dot)\nprint(\"Usando el comando @\",C_at)"},{"id":7,"options":{"results":"markup","warning":"true","comment":"","out-width":"700px","autorun":"","fig-cap":"","output":"true","context":"interactive","fig-width":7,"fig-height":5,"message":"true","classes":"","dpi":72,"read-only":"false","out-height":"","label":""},"code":"\nimport numpy as np\n\nA = np.array([[1, 2], [3, 4]])\n\nA_transpuesta1 = np.transpose(A)\n\nA_transpuesta2=A.T\n\nprint(\"usando el p comando mp.transpose\",A_transpuesta1)\nprint(\"usando el segundo .T\",A_transpuesta2)"},{"id":8,"options":{"results":"markup","warning":"true","comment":"","out-width":"700px","autorun":"","fig-cap":"","output":"true","context":"interactive","fig-width":7,"fig-height":5,"message":"true","classes":"","dpi":72,"read-only":"false","out-height":"","label":""},"code":"\nimport numpy as np\n\nA = np.array([[1, 2], [3, 4]])\n\ndet_A = np.linalg.det(A)\n\nprint(det_A)"},{"id":9,"options":{"results":"markup","warning":"true","comment":"","out-width":"700px","autorun":"","fig-cap":"","output":"true","context":"interactive","fig-width":7,"fig-height":5,"message":"true","classes":"","dpi":72,"read-only":"false","out-height":"","label":""},"code":"\nimport numpy as np\n\nA = np.array([[1, 2], [3, 4]])\n\nA_inversa = np.linalg.inv(A)\n\nprint(A_inversa)"}];
 
 
 </script>
@@ -461,7 +461,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taller1.html">Talleres</a></li><li class="breadcrumb-item"><a href="./taller4.html">Taller 4 (Valores propios)</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./section4.html">Matrices</a></li><li class="breadcrumb-item"><a href="./section6.html">Trabajo computacional</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -545,7 +545,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./section6.html" class="sidebar-item-text sidebar-link">
+  <a href="./section6.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Trabajo computacional</span></a>
   </div>
 </li>
@@ -580,7 +580,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./taller4.html" class="sidebar-item-text sidebar-link active">
+  <a href="./taller4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Taller 4 (Valores propios)</span></a>
   </div>
 </li>
@@ -596,10 +596,14 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a>
+  <li><a href="#generar-una-matriz" id="toc-generar-una-matriz" class="nav-link active" data-scroll-target="#generar-una-matriz">Generar una matriz</a></li>
+  <li><a href="#operaciones-con-matrices" id="toc-operaciones-con-matrices" class="nav-link" data-scroll-target="#operaciones-con-matrices">Operaciones con matrices</a>
   <ul class="collapse">
-  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios">Ejercicios</a></li>
+  <li><a href="#ejericios" id="toc-ejericios" class="nav-link" data-scroll-target="#ejericios">Ejericios</a></li>
   </ul></li>
+  <li><a href="#transpuesta-de-una-matriz" id="toc-transpuesta-de-una-matriz" class="nav-link" data-scroll-target="#transpuesta-de-una-matriz">Transpuesta de una matriz</a></li>
+  <li><a href="#determinante-de-una-matriz" id="toc-determinante-de-una-matriz" class="nav-link" data-scroll-target="#determinante-de-una-matriz">Determinante de una matriz</a></li>
+  <li><a href="#inversa-de-una-matriz" id="toc-inversa-de-una-matriz" class="nav-link" data-scroll-target="#inversa-de-una-matriz">Inversa de una matriz</a></li>
   </ul>
 </nav>
     </div>
@@ -616,9 +620,9 @@ window.Quarto = {
   });
 </script>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taller1.html">Talleres</a></li><li class="breadcrumb-item"><a href="./taller4.html">Taller 4 (Valores propios)</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./section4.html">Matrices</a></li><li class="breadcrumb-item"><a href="./section6.html">Trabajo computacional</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Ejercicios de Autovalores y Autovectores (Matrices 2x2)</h1>
+<h1 class="title">Trabajo computacional</h1>
 </div>
 
 
@@ -635,78 +639,74 @@ window.Quarto = {
 </header>
 
 
-<section id="introducción" class="level1">
-<h1>Introducción</h1>
-<section id="ejercicios" class="level2">
-<h2 class="anchored" data-anchor-id="ejercicios">Ejercicios</h2>
-<p>Dada la matriz, encontrar los valores propios y vectores propios. 1. <span class="math inline">\(A = \begin{bmatrix} 4 &amp; 2 \\ 1 &amp; 3 \end{bmatrix}\)</span></p>
-<ol start="2" type="1">
-<li><p><span class="math inline">\(B = \begin{bmatrix} 5 &amp; -2 \\ 2 &amp; 1 \end{bmatrix}\)</span></p></li>
-<li><p><span class="math inline">\(E = \begin{bmatrix} 6 &amp; 2 \\ 2 &amp; 3 \end{bmatrix}\)</span></p></li>
-<li><p><span class="math inline">\(G = \begin{bmatrix} -1 &amp; -2 \\ 2 &amp; -3 \end{bmatrix}\)</span></p></li>
-<li><p>Determina para que valor <span class="math inline">\(\alpha\)</span> la matriz <span class="math inline">\(H = \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; \alpha \end{bmatrix}\)</span> tiene un solo valor propio.</p></li>
-<li><p>Un modelo lineal de evolución poblacional para dos especies está dado por la matriz:</p></li>
-</ol>
-<p><span class="math display">\[
-\begin{bmatrix}y_{n+1}\\ x_{n+1}\end{bmatrix}= \begin{bmatrix} 0.8 &amp; 0.3 \\ 0.2 &amp; 0.7 \end{bmatrix}\begin{bmatrix}y_{n}\\ x_{n}\end{bmatrix}
-\]</span></p>
-<p>El sistema anterior, la matriz de transición describe cómo las poblaciones de dos especies (denotadas como <span class="math inline">\(y\)</span> y <span class="math inline">\(x\)</span>) evolucionan de un tiempo <span class="math inline">\(n\)</span> al siguiente tiempo <span class="math inline">\(n+1\)</span>. Los elementos de la matriz representan las tasas de crecimiento y las interacciones entre las dos especies. Si la población inicial es <span class="math inline">\(y_0= 0.2\)</span> y <span class="math inline">\(x_0=0.8\)</span>, (Usa un computador para realizar rápidamente los cálculos)</p>
-<ol type="a">
-<li><p>¿cuál será la población en tiempo n=10. Halla los valores propios y vectores propios para analizar el comportamiento del sistema.</p></li>
-<li><p>Como podemos interpretar los valores propios en este contexto.</p></li>
-</ol>
-<ol start="7" type="1">
-<li>En el siguiente plano se dibuja una casa.</li>
-</ol>
-<p>Los puntos se encuentran en las coordenadas:</p>
-<p><span class="math display">\[\begin{array}{|c|c|c|c|c|c|c|} \hline
-\text{Punto} &amp; A &amp; B &amp; C &amp; D &amp; E &amp; A \\ \hline
-x &amp; 0 &amp; 4 &amp; 4 &amp; 2 &amp; 0 &amp; 0 \\ \hline
-y &amp; 0 &amp; 0 &amp; 3 &amp; 5 &amp; 3 &amp; 0 \\ \hline
-\end{array}\]</span></p>
-<p>Multiplica a cada uno de los puntos por la matriz</p>
-<p><span class="math display">\[A= \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}\]</span></p>
-<p>y dibuja la nueva casa.</p>
-<div id="7c612ce5" class="cell" data-execution_count="1">
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="taller4_files/figure-html/cell-2-output-1.png" width="491" height="489" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<ol type="a">
-<li><p>Como podemos interpretar la transformación de la casa en este contexto.</p></li>
-<li><p>Encuentra los valores propios y vectores propios de la matriz de rotación y analiza su comportamiento.</p></li>
-<li><p>¿Qué pasa si la matriz de rotación es <span class="math inline">\(A= \begin{bmatrix} 1 &amp; 0 \\ -1 &amp; 0 \end{bmatrix}\)</span>? ¿Qué sucede con la casa? ¿Cuales son los valores propios y vectores propios de la matriz? ¿Qué interpretación podemos dar a los valores propios en este contexto?</p></li>
-<li><p>Crea la matriz en python de la forma</p></li>
-</ol>
-<blockquote class="blockquote">
-<p>import numpy as np H = np.array([[0, 4, 4, 2, 0, 0], [0, 0, 3, 5, 3, 0]])</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>A= np.array([[2, 1], [1, 2]])</p>
-</blockquote>
-<p>para aplicar la transformación</p>
-<blockquote class="blockquote">
-<p>H_transformed = A @ H</p>
-</blockquote>
-<p>Para dibujar la nueva casa.</p>
-<blockquote class="blockquote">
-<p>import matplotlib.pyplot as plt</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>plt.plot(H[0], H[1], ‘bo-’, label=“Casa Original”) # Dibujo original</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>plt.plot(H_transformed[0], H_transformed[1], ‘ro-’, label=“Casa Transformada”) # Transformada</p>
-</blockquote>
+<p>en esta sección usaremos python para calcular operaciones con matrices y vectores. Para las operaciones vectoriales y matriciales, usaremos la librería <code>numpy</code>.</p>
+<section id="generar-una-matriz" class="level2">
+<h2 class="anchored" data-anchor-id="generar-una-matriz">Generar una matriz</h2>
+<p>Generar la matriz debemos usar el comando <code>np.array</code> de la librería <code>numpy</code>, la matriz se debe ingresar como una lista de listas. Por ejemplo, para generar la matriz <span class="math display">\[A=\begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix}\]</span></p>
 <div id="qpyodide-insertion-location-1"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p><strong>Crear un vector columna</strong></p>
+<p>Ahora vamos a generar el vector columna</p>
+<p><span class="math display">\[v=\begin{pmatrix} 1 \\ 2 \end{pmatrix},\]</span></p>
+<div id="qpyodide-insertion-location-2"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p><strong>Crear un vector fila</strong></p>
+<p><span class="math display">\[w=\begin{pmatrix} 1 &amp; 2 \end{pmatrix}\]</span></p>
+<div id="qpyodide-insertion-location-3"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section>
+<section id="operaciones-con-matrices" class="level1">
+<h1>Operaciones con matrices</h1>
+<p>Recuerde que para sumar dos matrices, estas deben tener la misma dimensión. Por ejemplo, si tenemos las matrices</p>
+<p><span class="math display">\[A=\begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix} \text{ y } B=\begin{pmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{pmatrix},\]</span></p>
+<p>la suma de estas matrices es</p>
+<div id="qpyodide-insertion-location-4"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>de la misma forma si queremos multiplicar una matriz por un escalar, por ejemplo, queremos multiplicar la matriz <span class="math inline">\(A\)</span> por el escalar <span class="math inline">\(\alpha=2\)</span>:</p>
+<div id="qpyodide-insertion-location-5"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>Para la multiplicación de matrices podemos usar el comando <code>np.dot</code> de la librería <code>numpy</code> ó <code>@</code>. Por ejemplo, si tenemos las matrices</p>
+<p><span class="math display">\[A=\begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix} \text{ y } B=\begin{pmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{pmatrix},\]</span></p>
+<p>la multiplicación de estas matrices es</p>
+<div id="qpyodide-insertion-location-6"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<section id="ejericios" class="level2">
+<h2 class="anchored" data-anchor-id="ejericios">Ejericios</h2>
+<ol type="1">
+<li>Seas <span class="math inline">\(A=\begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix}\)</span> y <span class="math inline">\(B=\begin{pmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{pmatrix}\)</span>, <span class="math inline">\(X=\begin{pmatrix} 1 \\ 2 \end{pmatrix}\)</span> y <span class="math inline">\(Y=\begin{pmatrix} 3 \\ 4 \end{pmatrix}\)</span>,</li>
+</ol>
+<p>Calcule 1. <span class="math inline">\(A+B\)</span>,</p>
+<ol start="2" type="1">
+<li><p><span class="math inline">\(A-B\)</span>,</p></li>
+<li><p><span class="math inline">\(A\cdot B\)</span>,</p></li>
+<li><p><span class="math inline">\(A\cdot X\)</span>,</p></li>
+<li><p><span class="math inline">\(A\cdot Y\)</span></p></li>
+<li><p><span class="math inline">\(X\cdot Y\)</span>.</p></li>
+</ol>
+</section>
+</section>
+<section id="transpuesta-de-una-matriz" class="level1">
+<h1>Transpuesta de una matriz</h1>
+<p>Para calcula la transpuesta de una matriz, usamos el comando <code>np.transpose</code> de la librería <code>numpy</code>, o desúes de generar la matriz usamos el comando .T. Por ejemplo, si tenemos la matriz</p>
+<p><span class="math display">\[A=\begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix},\]</span></p>
+<div id="qpyodide-insertion-location-7"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section>
+<section id="determinante-de-una-matriz" class="level1">
+<h1>Determinante de una matriz</h1>
+<p>Para calcular el determinante de una matriz, usamos el comando <code>np.linalg.det</code> de la librería <code>numpy</code>. Por ejemplo, si tenemos la matriz</p>
+<p><span class="math display">\[A=\begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix},\]</span></p>
+<div id="qpyodide-insertion-location-8"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section>
+<section id="inversa-de-una-matriz" class="level1">
+<h1>Inversa de una matriz</h1>
+<p>Para calcular la inversa de una matriz, usamos el comando <code>np.linalg.inv</code> de la librería <code>numpy</code>. Por ejemplo, si tenemos la matriz</p>
+<p><span class="math display">\[A=\begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix},\]</span></p>
+<div id="qpyodide-insertion-location-9"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
