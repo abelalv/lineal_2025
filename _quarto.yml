@@ -34,6 +34,8 @@ website:
             text: Taller 2
           - href: taller3.qmd
             text: Taller 3 (matrices)
+          - href: taller4.qmd
+            text: Taller 4 (Valores propios)
 format:
   html:
     theme: cosmo

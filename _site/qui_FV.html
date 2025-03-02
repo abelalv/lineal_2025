@@ -226,6 +226,12 @@ window.Quarto = {
  <span class="menu-text">Taller 3 (matrices)</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./taller4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taller 4 (Valores propios)</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -269,36 +275,36 @@ window.Quarto = {
 <p>Las siguientes afirmaciones son preguntas de <strong>Verdadero o Falso</strong> sobre álgebra lineal. Justifica cada respuesta.</p>
 <ol type="1">
 <li><p>Si <span class="math inline">\(\mathbf{u} \cdot \mathbf{v} = 0\)</span>, entonces se cumple que <span class="math display">\[\|\mathbf{u} + \mathbf{v}\|^2 = \|\mathbf{u}\|^2 + \|\mathbf{v}\|^2.\]</span></p></li>
-<li><p>Dos rectas son paralelas si sus vectores dirección son ortogonales.</p></li>
-<li><p>Si <span class="math inline">\(\mathbf{u}\)</span> y <span class="math inline">\(\mathbf{v}\)</span> son paralelos, entonces <span class="math inline">\(\operatorname{proj}_{\mathbf{v}} \mathbf{u} = \mathbf{u}\)</span>.</p></li>
-<li><p>Puedo encontrar la ecuación paramétrica de la recta si conozco un punto y una recta perpendicular a la recta.</p></li>
+<li><p>Dos rectas son paralelas si sus vectores dirección son ortogonales en <span class="math inline">\(\mathbb{R}^2\)</span>.</p></li>
+<li><p>Si <span class="math inline">\(\mathbf{u}\)</span> y <span class="math inline">\(\mathbf{v}\)</span> son paralelos en <span class="math inline">\(\mathbb{R}^2\)</span>, entonces <span class="math inline">\(\operatorname{proj}_{\mathbf{v}} \mathbf{u} = \mathbf{u}\)</span>.</p></li>
+<li><p>Puedo encontrar la ecuación paramétrica de la recta si conozco un punto y una recta perpendicular a la recta en <span class="math inline">\(\mathbb{R}^2\)</span>.</p></li>
 <li><p>Dos rectas en <span class="math inline">\(\mathbb{R}^2\)</span> con el mismo vector dirección siempre son paralelas.</p></li>
 <li><p>Si dos rectas en <span class="math inline">\(\mathbb{R}^2\)</span> tienen vectores dirección ortogonales, entonces siempre se intersectan en un único punto.</p></li>
 <li><p>Un conjunto de dos vectores en <span class="math inline">\(\mathbb{R}^2\)</span> siempre es una base del espacio si los vectores son diferentes de cero.</p></li>
 <li><p>Dos vectores linealmente independientes en <span class="math inline">\(\mathbb{R}^2\)</span> siempre son ortogonales.</p></li>
 <li><p>Dos vectores linealmente independientes en <span class="math inline">\(\mathbb{R}^2\)</span> forman una base.</p></li>
-<li><p>Si una matriz <span class="math inline">\(A\)</span> de <span class="math inline">\(2 \times 2\)</span> tiene columnas linealmente independientes, entonces sus filas también son linealmente independientes.</p></li>
-<li><p>Si una matriz <span class="math inline">\(A\)</span> es invertible, entonces los vectores formados por sus filas son linealmente dependientes.</p></li>
-<li><p>Si una matriz <span class="math inline">\(A\)</span> es invertible, entonces los vectores formados por las columnas son linealmente dependientes.</p></li>
+<li><p>Si una matriz <span class="math inline">\(A_{2 \times 2}\)</span> tiene columnas linealmente independientes, entonces sus filas también son linealmente independientes.</p></li>
+<li><p>Si una matriz <span class="math inline">\(A_{2 \times 2}\)</span> es invertible, entonces los vectores formados por sus filas son linealmente dependientes.</p></li>
+<li><p>Si una matriz <span class="math inline">\(A_{2 \times 2}\)</span> es invertible, entonces los vectores formados por las columnas son linealmente dependientes.</p></li>
 <li><p>Un conjunto de dos vectores en <span class="math inline">\(\mathbb{R}^2\)</span> siempre es una base del espacio si los vectores son diferentes de cero.</p></li>
 <li><p>El conjunto <span class="math inline">\(\{(0,0)\}\)</span> es un subespacio de <span class="math inline">\(\mathbb{R}^2\)</span> porque satisface las condiciones de cerradura bajo suma y multiplicación escalar.</p></li>
-<li><p>Si una matriz <span class="math inline">\(A\)</span> de <span class="math inline">\(2 \times 2\)</span> tiene columnas linealmente independientes, entonces sus filas también son linealmente independientes.</p></li>
+<li><p>Si una matriz <span class="math inline">\(A_{2 \times 2}\)</span> tiene columnas linealmente independientes, entonces sus filas también son linealmente independientes.</p></li>
 <li><p>Si dos vectores en <span class="math inline">\(\mathbb{R}^2\)</span> son ortogonales, entonces son linealmente dependientes.</p></li>
-<li><p>Si una matriz cuadrada <span class="math inline">\(A\)</span> tiene determinante cero, entonces el sistema <span class="math inline">\(Ax = b\)</span> no tiene solución única.</p></li>
-<li><p>Un conjunto de vectores es linealmente independiente si ninguno de ellos puede expresarse como combinación lineal de los demás.</p></li>
-<li><p>Si una matriz cuadrada tiene un determinante mayor que cero, entonces su inversa siempre existe.</p></li>
+<li><p>Si una matriz cuadrada <span class="math inline">\(A_{2 \times 2}\)</span> tiene determinante cero, entonces el sistema <span class="math inline">\(Ax = b\)</span> no tiene solución única.</p></li>
+<li><p>Un conjunto de vectores es linealmente independiente es equivalente en <span class="math inline">\(\mathbb{R}^2\)</span> que no son paralelos.</p></li>
+<li><p>Si una matriz cuadrada en <span class="math inline">\(A_{2 \times 2}\)</span> tiene un determinante mayor que cero, entonces su inversa siempre existe.</p></li>
 <li><p>El determinante de una matriz en <span class="math inline">\(\mathbb{R}^2\)</span> representa el área de un paralelogramo definido por sus columnas como vectores.</p></li>
-<li><p>El vector proyección de un vector <strong>u</strong> sobre otro vector <strong>v</strong> siempre es un múltiplo escalar de <strong>v</strong>.</p></li>
+<li><p>El vector proyección en <span class="math inline">\(\mathbb{R}^2\)</span> de un vector <strong>u</strong> sobre otro vector <strong>v</strong> siempre es un múltiplo escalar de <strong>v</strong>.</p></li>
 <li><p>Toda recta en <span class="math inline">\(\mathbb{R}^2\)</span> definida en forma paramétrica puede expresarse en la forma <span class="math inline">\(y = ax + b\)</span>.</p></li>
 <li><p>Si el determinante de dos vectores en <span class="math inline">\(\mathbb{R}^2\)</span> es igual a cero, entonces los vectores son linealmente dependientes.</p></li>
 <li><p>La magnitud de la proyección de un vector <span class="math inline">\(u\)</span> sobre <span class="math inline">\(v\)</span> es igual a <span class="math inline">\(\displaystyle \frac{|u \cdot v|}{\|v\|^2}\)</span>.</p></li>
-<li><p>Si la proyección de <span class="math inline">\(\mathbf{u}\)</span> sobre <span class="math inline">\(\mathbf{v}\)</span> resulta en el vector cero y <span class="math inline">\(\mathbf{u}\)</span> no es cero, entonces <span class="math inline">\(\mathbf{v}\)</span> debe ser el vector cero.</p></li>
-<li><p>Si la proyección de <span class="math inline">\(\mathbf{u}\)</span> sobre <span class="math inline">\(\mathbf{v}\)</span> resulta en el vector cero y <span class="math inline">\(\mathbf{u}\)</span> no es cero, entonces los vectores son perpendiculares.</p></li>
-<li><p>En un sistema de ecuaciones lineales de dos variables, si una ecuación es múltiplo de la otra, el sistema tiene infinitas soluciones.</p></li>
-<li><p>El hecho de que la proyección de un vector <span class="math inline">\(\mathbf{u}\)</span> sobre <span class="math inline">\(\mathbf{v}\)</span> sea diferente de cero implica que <span class="math inline">\(\mathbf{u}\)</span> y <span class="math inline">\(\mathbf{v}\)</span> tienen exactamente la misma dirección.</p></li>
-<li><p>El sistema de ecuaciones lineales <span class="math inline">\(Ax = b\)</span> tiene solución única si y solo si la matriz <span class="math inline">\(A\)</span> y los vectores formados por sus columnas son linealmente independientes.</p></li>
-<li><p>El sistema <span class="math inline">\(Ax = b\)</span> tiene infinitas soluciones si la matriz <span class="math inline">\(A\)</span> tiene determinante igual a cero.</p></li>
-<li><p>Si <span class="math inline">\(b\)</span> no se puede escribir como combinación lineal de las columnas de la matriz <span class="math inline">\(A\)</span>, entonces el sistema <span class="math inline">\(Ax = b\)</span> tiene solución única.</p></li>
+<li><p>Si la proyección de <span class="math inline">\(\mathbf{u}\)</span> sobre <span class="math inline">\(\mathbf{v}\)</span> en <span class="math inline">\(\mathbb{R}^2\)</span> resulta en el vector cero y <span class="math inline">\(\mathbf{u}\)</span> no es cero, entonces <span class="math inline">\(\mathbf{v}\)</span> debe ser el vector cero.</p></li>
+<li><p>Si la proyección de <span class="math inline">\(\mathbf{u}\)</span> sobre <span class="math inline">\(\mathbf{v}\)</span> en <span class="math inline">\(\mathbb{R}^2\)</span> resulta en el vector cero y <span class="math inline">\(\mathbf{u}\)</span> no es cero, entonces los vectores son perpendiculares.</p></li>
+<li><p>En un sistema de ecuaciones lineales de dos variables en <span class="math inline">\(\mathbb{R}^2\)</span> , si una ecuación es múltiplo de la otra, el sistema tiene infinitas soluciones.</p></li>
+<li><p>El hecho de que la proyección de un vector <span class="math inline">\(\mathbf{u}\)</span> sobre <span class="math inline">\(\mathbf{v}\)</span> en <span class="math inline">\(\mathbb{R}^2\)</span> sea diferente de cero implica que <span class="math inline">\(\mathbf{u}\)</span> y <span class="math inline">\(\mathbf{v}\)</span> tienen exactamente la misma dirección.</p></li>
+<li><p>El sistema de ecuaciones lineales en <span class="math inline">\(\mathbb{R}^2\)</span>, <span class="math inline">\(Ax = b\)</span> tiene solución única si y solo si la matriz <span class="math inline">\(A_{2\times 2}\)</span> y los vectores formados por sus columnas son linealmente independientes.</p></li>
+<li><p>El sistema <span class="math inline">\(Ax = b\)</span> en <span class="math inline">\(\mathbb{R}^2\)</span> , tiene infinitas soluciones si la matriz <span class="math inline">\(A_{2\times 2}\)</span> tiene determinante igual a cero.</p></li>
+<li><p>Si <span class="math inline">\(b\)</span> en <span class="math inline">\(\mathbb{R}^2\)</span> no se puede escribir como combinación lineal de las columnas de la matriz <span class="math inline">\(A\)</span>, entonces el sistema <span class="math inline">\(Ax = b\)</span> tiene solución única.</p></li>
 </ol>
 
 
