@@ -151,5 +151,6 @@ plt.gca().set_yticks(np.arange(-5, 7, 1))  # Espaciado de 1 en 1 en el eje y
 plt.legend()
 plt.title("Transformación de la Casa ")
 plt.show()
+
 ```
 
