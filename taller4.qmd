@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Ejercicios de Autovalores y Autovectores (Matrices 2x2)"
 format: html
 filters:
@@ -164,3 +165,76 @@ plt.show()
 
 ```
 
+=======
+title: "Cálculo de Autovalores y Autovectores en Matrices 2x2"
+author: ""
+date: "`r Sys.Date()`"
+format: pdf
+---
+
+# Ejercicios de Autovalores y Autovectores en Matrices 2x2
+
+A continuación se presentan una serie de ejercicios donde se requiere calcular los autovalores y autovectores de matrices $2 \times 2$, asegurando que todos los autovalores sean reales.
+
+## **Ejercicios Matemáticos (sin contexto)**
+
+### **Ejercicio 1: Cálculo directo**
+Calcula los autovalores y autovectores de la matriz:
+$$A = \begin{bmatrix} 4 & 2 \\ 1 & 3 \end{bmatrix}$$
+
+### **Ejercicio 2: Autovalores distintos**
+Determina los autovalores y autovectores de la siguiente matriz:
+$$B = \begin{bmatrix} 5 & -1 \\ -1 & 5 \end{bmatrix}$$
+
+### **Ejercicio 3: Autovalores iguales**
+Halla los autovalores y autovectores de la matriz:
+$$C = \begin{bmatrix} 6 & 4 \\ 3 & 5 \end{bmatrix}$$
+
+### **Ejercicio 4: Matriz diagonalizable**
+Para la matriz:
+$$D = \begin{bmatrix} 2 & 0 \\ 0 & 3 \end{bmatrix}$$
+Calcula los autovalores y autovectores y verifica si la matriz es diagonalizable.
+
+### **Ejercicio 5: Autovalores negativos**
+Encuentra los autovalores y autovectores de:
+$$E = \begin{bmatrix} -2 & 1 \\ 1 & -3 \end{bmatrix}$$
+
+### **Ejercicio 6: Efecto de una transformación**
+La matriz de transformación es:
+$$F = \begin{bmatrix} 7 & 2 \\ 2 & 5 \end{bmatrix}$$
+Calcula sus autovalores y autovectores.
+
+## **Ejercicios con Contexto Aplicado**
+
+### **Ejercicio 7: Sistema de población de dos especies**
+En un ecosistema, se modela la evolución de dos especies que interactúan a través de un sistema lineal. La matriz de interacción se obtiene considerando la tasa de reproducción y la influencia de una especie sobre la otra. 
+La ecuación que modela la dinámica es:
+$$ \begin{bmatrix} x' \\ y' \end{bmatrix} = G \begin{bmatrix} x \\ y \end{bmatrix} $$
+donde la matriz de interacción es:
+$$G = \begin{bmatrix} 1.2 & 0.4 \\ 0.3 & 0.8 \end{bmatrix}$$
+Calcula los autovalores y autovectores. ¿Cómo interpretarías estos valores en términos de estabilidad del sistema poblacional?
+
+### **Ejercicio 8: Vibraciones mecánicas**
+Un sistema de dos masas acopladas mediante resortes se modela con la ecuación diferencial:
+$$ M \mathbf{a} + K \mathbf{x} = 0 $$
+donde \( K \) es la matriz de rigidez del sistema, derivada de las constantes elásticas de los resortes.
+Para un sistema específico, se tiene la matriz:
+$$H = \begin{bmatrix} 10 & -2 \\ -2 & 8 \end{bmatrix}$$
+Determina sus autovalores y autovectores. ¿Cómo están relacionados con las frecuencias de vibración del sistema?
+
+### **Ejercicio 9: Flujo de dinero en una economía simplificada**
+En una economía con dos sectores productivos, los flujos monetarios entre los sectores pueden modelarse con una matriz de transición $J$. Esta matriz se construye a partir de los porcentajes de inversión que cada sector realiza en sí mismo y en el otro sector.
+
+La matriz de transición se define como:
+$$J = \begin{bmatrix} 0.6 & 0.4 \\ 0.3 & 0.7 \end{bmatrix}$$
+¿Cuáles son sus autovalores y autovectores? ¿Cómo se relacionan con la estabilidad del sistema económico?
+
+### **Ejercicio 10: Dinámica de transmisión de enfermedades**
+La propagación de una enfermedad entre dos comunidades puede modelarse con un sistema lineal en el que la tasa de transmisión depende de los contactos entre individuos y la tasa de recuperación. La matriz de transmisión se obtiene a partir de estos parámetros.
+
+La ecuación que modela la evolución de la enfermedad es:
+$$ \begin{bmatrix} S' \\ I' \end{bmatrix} = K \begin{bmatrix} S \\ I \end{bmatrix} $$
+donde la matriz de transmisión es:
+$$K = \begin{bmatrix} 0.9 & 0.2 \\ 0.1 & 0.8 \end{bmatrix}$$
+¿Cuáles son sus autovalores y autovectores? ¿Qué significan en términos de estabilidad de la propagación de la enfermedad?
+>>>>>>> 301a5ec (actividad 5)

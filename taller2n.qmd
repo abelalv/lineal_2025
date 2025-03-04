@@ -1,0 +1,39 @@
+---
+title: Ejercicios $\mathbb{R}^2$
+format: html
+filters:
+  - pyodide
+---
+
+## **Problema 1**  
+
+Un **dron de vigilancia** sigue una trayectoria rectilínea sobre una ciudad y debe evitar colisionar con un **avión en ruta**.  
+
+- La **trayectoria del dron** pasa por el punto $(3,7)$ y tiene dirección $(15,6)$.  
+- La **trayectoria del avión** pasa por el punto $(8,3)$ y tiene dirección $(10,4)$.  
+
+### **Pregunta:**  
+Determina la distancia mínima entre la trayectoria del dron y la del avión.  
+
+
+
+## **Problema 2**  
+
+En un **partido de fútbol**, un jugador debe decidir la mejor forma de patear el balón para maximizar la probabilidad de anotar un gol.  
+
+El balón es impactado con dos posibles direcciones, representadas por los siguientes vectores de velocidad en m/s:  
+
+- **Dirección 1** (disparo curvado):  
+  $$
+  \mathbf{v}_1 = (10, 4)
+  $$
+- **Dirección 2** (disparo recto y potente):  
+  $$
+  \mathbf{v}_2 = (6, 9)
+  $$
+
+El entrenador quiere analizar cómo la diferencia de ángulos entre ambos tiros afecta la probabilidad de anotar un gol.
+
+### **Preguntas:**  
+a. Calcula el ángulo $\theta$ entre las dos direcciones de disparo.  
+b. ¿Cómo influiría este ángulo en la probabilidad de anotar, considerando que un tiro con menor ángulo respecto al arco puede ser más preciso?  

@@ -26,6 +26,8 @@ website:
             text: Solución de sistema de ecuaciones
           - href: section6.qmd
             text: Trabajo computacional
+          - href: section9.qmd
+            text: Autovalores y autovectores
       - section: "Talleres"
         contents:
           - href: taller1.qmd

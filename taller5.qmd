@@ -1,0 +1,138 @@
+---
+title: "Guía de Codificación con ASCII y Álgebra Lineal"
+author: "Tu Nombre"
+format: html
+---
+
+
+## **1. Introducción al Código de Codificación**
+
+Para codificar un mensaje, utilizaremos una correspondencia entre letras y números basada en el alfabeto:
+
+| Letra  | Código |
+|--------|--------|
+| A      | 1      |
+| B      | 2      |
+| C      | 3      |
+| ...    | ...    |
+| Z      | 26     |
+| Espacio | 0     |
+
+**Ejemplo:**  
+La palabra `"VIDA"` se convierte en:
+
+$$
+V = 22, \quad I = 9, \quad D = 4, \quad A = 1
+$$
+
+y se agrupa en vectores de dos en dos:
+
+$$
+\begin{bmatrix} 22 \\ 9 \end{bmatrix}, \quad \begin{bmatrix} 4 \\ 1 \end{bmatrix}
+$$
+
+## Ejercicio 1: Codificación de "La vida es bella"**
+
+Vamos a codificar la frase `"LA VIDA ES BELLA"` con la siguiente matriz:
+
+$$
+A = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}
+$$
+
+### **Pasos a seguir**  
+1. **Convierte las letras a valores numéricos** siguiendo la tabla anterior.  
+2. **Agrupa los valores en vectores columna de $2 \times 1$**.  
+3. **Multiplica cada vector por la matriz $A$ para obtener el mensaje cifrado**.  
+
+
+
+## Ejercicio 2: Descifrado de un Mensaje con la Matriz Inversa**
+
+Un mensaje secreto fue cifrado con la misma matriz $A$, y se obtuvo:
+$$
+\begin{bmatrix}
+0 & 8 & 18 & 0 & 21 & 5 & 0 & 15 & 18 & 0 & 25 & 4 & 18 & 15 & 0 \\
+25 & 1 & 15 & 1 & 17 & 9 & 14 & 16 & 4 & 1 & 1 & 21 & 1 & 14 & 19
+\end{bmatrix}
+$$
+
+
+### **Pasos a seguir**  
+
+1. **Encuentra la matriz inversa de $A$**:  
+   $$
+   A^{-1} = ?
+   $$
+2. **Multiplica cada vector cifrado por $A^{-1}$ para recuperar el mensaje original**.  
+3. **Convierte los números obtenidos en letras** usando la misma codificación del **Ejercicio 1**.  
+
+## 
+
+Los autovalores de la matriz \( A \) son \( \lambda_1 = 1 \) y \( \lambda_2 = 1 \).
+Los autovectores de la matriz \( A \) son las columnas de la matriz \( P \) tal que \( A = P \Lambda P^{-1} \), donde \( \Lambda \) es la matriz diagonal de autovalores. Para la matriz \( A \), los autovectores son:
+
+$$
+\begin{bmatrix}
+1 \\
+1
+\end{bmatrix}
+\quad \text{y} \quad
+\begin{bmatrix}
+2 \\
+1
+\end{bmatrix}
+$$
+
+
+
+
+
+## Observaciones
+
+Note que una matriz cuadrada $A$ de $2 \times 2$ tiene dos autovalores $\lambda_1$ y $\lambda_2$, y dos autovectores $v_1$ y $v_2$. La matriz $A$ se puede descomponer como:
+
+$$
+A = P \Lambda P^{-1}
+$$
+
+
+donde $P$ es la matriz cuyas columnas son los autovectores de $A$, y $\Lambda$ es la matriz diagonal de los autovalores de $A$. **Por ejemplo**, si $A$ es:
+
+$$
+A = \begin{bmatrix} 0 & 1 \\ 1 & 0\end{bmatrix}
+$$
+entonces los valores propios de $A$ son $\lambda_1 = 1$ y $\lambda_2 = -1$, y los vectores propios  son:
+
+$$
+v_1 = \begin{bmatrix} 1 \\ 1\end{bmatrix} \quad \text{y} \quad v_2 = \begin{bmatrix} 1 \\ -1\end{bmatrix}
+$$
+
+de esta forma, tenemos que la matriz
+
+$$
+P = \begin{bmatrix} 1 & 1 \\ 1 & -1\end{bmatrix},
+\ \
+\Lambda = \begin{bmatrix} 1 & 0 \\ 0 & -1\end{bmatrix}
+\ \ 
+\text{y} \ \
+P^{-1} = \begin{bmatrix} 1/2 & 1/2 \\ 1/2 & -1/2\end{bmatrix}
+$$
+
+$$
+A = \begin{bmatrix} 1 & 1 \\ 1 & -1\end{bmatrix} \begin{bmatrix} 1 & 0 \\ 0 & -1\end{bmatrix} \begin{bmatrix} 1/2 & 1/2 \\ 1/2 & -1/2\end{bmatrix}
+$$ 
+
+Un experto en matemáticas observo el siguiente vector el cual tiene un mensaje encriptado, el cual se sabe que fue encriptado con la técnica anterior. 
+
+el encontro que la matriz llave tenia dos auntovalores 
+$$\lambda_1 = 1 \quad \text{y} \quad \lambda_2 = 2$$
+
+y el valor propio asociado a $\lambda_2$ es 
+
+$$
+v_2 = \begin{bmatrix} 1 \\ 2\end{bmatrix}
+$$
+
+## Ejercicio 3: Encuentre el mensaje encriptado
+
+1. Note que si se 

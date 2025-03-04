@@ -66,6 +66,7 @@
   "cronogrma.qmd": {
     "cronogrma.html": "0e02a4a1"
   },
+<<<<<<< HEAD
   "qui_FV.qmd": {
     "qui_FV.tex": "06c27244",
     "qui_FV.html": "6b77410f"
@@ -73,5 +74,23 @@
   "taller4.qmd": {
     "taller4.tex": "935ad575",
     "taller4.html": "e4369168"
+=======
+  "taller2n.qmd": {
+    "taller2n.tex": "ac9f403c",
+    "taller2n.html": "60966cae"
+  },
+  "solution_taller1.qmd": {
+    "solution_taller1.html": "5e049a70"
+  },
+  "taller4.qmd": {
+    "taller4.tex": "6b164312"
+  },
+  "taller5.qmd": {
+    "taller5.tex": "ee0ee766",
+    "taller5.html": "44a7b65f"
+  },
+  "calculo.ipynb": {
+    "calculo.html": "e9b2db2e"
+>>>>>>> 301a5ec (actividad 5)
   }
 }
