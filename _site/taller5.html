@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.45">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -466,46 +432,10 @@ A = \begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{bmatrix}.
 <li><p><strong>Agrupa los valores en vectores columna de <span class="math inline">\(2 \times 1\)</span></strong>.</p></li>
 <li><p><strong>Multiplica la matriz <span class="math inline">\(A\)</span> por cada vector para obtener el mensaje cifrado</strong>.</p></li>
 </ol>
-<div id="aa673880" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Definir la matriz A</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>D <span class="op">=</span> np.array([[<span class="dv">1</span>, <span class="dv">0</span>], [<span class="dv">0</span>, <span class="dv">2</span>]])</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Matriz D:"</span>,D)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>P <span class="op">=</span> np.array([[<span class="dv">2</span>, <span class="dv">1</span>], [<span class="dv">1</span>, <span class="dv">0</span>]])</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.dot(np.dot(np.linalg.inv(P), D), P)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>A<span class="op">=</span> P<span class="op">@</span>D<span class="op">@</span>np.linalg.inv(P)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Matriz A:"</span>,A)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear el diccionario de conversión</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>abc_dict <span class="op">=</span> {<span class="bu">chr</span>(i <span class="op">+</span> <span class="dv">64</span>): i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">27</span>)}  <span class="co"># A = 1, B = 2, ..., Z = 26</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>abc_dict[<span class="st">" "</span>] <span class="op">=</span> <span class="dv">0</span>  <span class="co"># Espacio = 0</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostrar el diccionario</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(abc_dict)</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> text_to_numbers(text):</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    text <span class="op">=</span> text.upper()  <span class="co"># Convertimos a mayúsculas para evitar errores</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [abc_dict[char] <span class="cf">for</span> char <span class="kw">in</span> text <span class="cf">if</span> char <span class="kw">in</span> abc_dict]</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Prueba con "LA VIDA ES BELLA"</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co">#frase = "Y AHORA QUIEN PODRA AYUDARNOS "</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>frase <span class="op">=</span> <span class="st">"LA VIDA ES BELLA"</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">#frase = "EL CHAPULIN COLORADO"</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>numeros <span class="op">=</span> text_to_numbers(frase)</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co">#print(numeros)</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Convertir la lista de números en una matriz de filas</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>numeros_matriz <span class="op">=</span> np.array(numeros).reshape(<span class="op">-</span><span class="dv">1</span>, <span class="dv">2</span>)</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numeros_matriz.T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Respuesta:</p>
+<div id="2debbb67" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-stdout">
-<pre><code>Matriz D: [[1 0]
- [0 2]]
-Matriz A: [[ 2. -2.]
- [ 0.  1.]]
-{'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 6, 'G': 7, 'H': 8, 'I': 9, 'J': 10, 'K': 11, 'L': 12, 'M': 13, 'N': 14, 'O': 15, 'P': 16, 'Q': 17, 'R': 18, 'S': 19, 'T': 20, 'U': 21, 'V': 22, 'W': 23, 'X': 24, 'Y': 25, 'Z': 26, ' ': 0}
-[[12  0  9  1  5  0  5 12]
+<pre><code>[[12  0  9  1  5  0  5 12]
  [ 1 22  4  0 19  2 12  1]]</code></pre>
 </div>
 </div>
@@ -515,10 +445,16 @@ Matriz A: [[ 2. -2.]
 <h2 class="anchored" data-anchor-id="ejercicio-2-descifrado-de-un-mensaje-con-la-matriz-inversa">Ejercicio 2: Descifrado de un Mensaje con la Matriz Inversa</h2>
 <p>Un mensaje secreto fue cifrado con la misma matriz <span class="math inline">\(A\)</span>, y se obtuvo: <span class="math display">\[
 \begin{bmatrix}
-0 &amp; 8 &amp; 18 &amp; 0 &amp; 21 &amp; 5 &amp; 0 &amp; 15 &amp; 18 &amp; 0 &amp; 25 &amp; 4 &amp; 18 &amp; 15 &amp; 0 \\
-25 &amp; 1 &amp; 15 &amp; 1 &amp; 17 &amp; 9 &amp; 14 &amp; 16 &amp; 4 &amp; 1 &amp; 1 &amp; 21 &amp; 1 &amp; 14 &amp; 19
-\end{bmatrix}.
+25 &amp; 1 &amp; 15 &amp; 1 &amp; 17 &amp; 9 &amp; 14 &amp; 16 &amp; 4 &amp; 1 &amp; 1 &amp; 21 &amp; 1 &amp; 14 &amp; 19 \\
+0 &amp; 8 &amp; 18 &amp; 0 &amp; 21 &amp; 5 &amp; 0 &amp; 15 &amp; 18 &amp; 0 &amp; 25 &amp; 4 &amp; 18 &amp; 15 &amp; 0
+\end{bmatrix}
 \]</span></p>
+<div id="6cef4664" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-stdout">
+<pre><code>[[25  1 15  1 17  9 14 16  4  1  1 21  1 14 19]
+ [ 0  8 18  0 21  5  0 15 18  0 25  4 18 15  0]]</code></pre>
+</div>
+</div>
 <section id="pasos-a-seguir-1" class="level3">
 <h3 class="anchored" data-anchor-id="pasos-a-seguir-1">Pasos a seguir</h3>
 <ol type="a">
@@ -529,11 +465,13 @@ A^{-1} = ?
 <li><p><strong>Multiplica <span class="math inline">\(A^{-1}\)</span> por cada vector para recuperar el mensaje original</strong>.</p></li>
 <li><p><strong>Convierte los números obtenidos en letras</strong> usando la misma codificación del <strong>Ejercicio 1</strong>.</p></li>
 </ol>
+<p>Respuesta:</p>
+<p>“Y AHORA QUIEN PODRA AYUDARNOS”</p>
 </section>
 </section>
 <section id="información-adicional" class="level2">
 <h2 class="anchored" data-anchor-id="información-adicional">Información Adicional</h2>
-<p>Los valores propios de la matriz <span class="math inline">\(A\)</span> son <span class="math inline">\(\lambda_1 = 1\)</span> y <span class="math inline">\(\lambda_2 = 1\)</span>. Los vectores propios de la matriz <span class="math inline">\(A\)</span> son las columnas de la matriz <span class="math inline">\(P\)</span> tal que <span class="math inline">\(A = P \Lambda P^{-1}\)</span>, donde <span class="math inline">\(\Lambda\)</span> es la matriz diagonal de los valores propios. Para la matriz <span class="math inline">\(A\)</span>, los vectores propios son:</p>
+<p>Los valores propios de la matriz <span class="math inline">\(A\)</span> son <span class="math inline">\(\lambda_1 = 1\)</span> y <span class="math inline">\(\lambda_2 = -1\)</span>. Los vectores propios de la matriz <span class="math inline">\(A\)</span> son las columnas de la matriz <span class="math inline">\(P\)</span> tal que <span class="math inline">\(A = P \Lambda P^{-1}\)</span>, donde <span class="math inline">\(\Lambda\)</span> es la matriz diagonal de los valores propios. Para la matriz <span class="math inline">\(A\)</span>, los vectores propios son:</p>
 <p><span class="math display">\[
 \begin{bmatrix}
 1 \\
@@ -582,23 +520,25 @@ A = \begin{bmatrix} 1 &amp; 1 \\ 1 &amp; -1\end{bmatrix} \begin{bmatrix} 1 &amp;
 v_2 = \begin{bmatrix} 1 \\ 0\end{bmatrix}
 \]</span></p>
 <p>Ademas noto que cuando tenia la la combinación espacio de letras “BA” al convertirlo a vectores y multiplicarlo por la matriz llave, obtenía el mismo vector, es decir tenia la misma combinación de letras.</p>
-<p>Note que si el mensaje encriptado era</p>
-<p><span class="math display">\[
+<p>Note que si el mensaje encriptado era <span class="math display">\[
 \begin{bmatrix}
--14 &amp; -6 &amp; 14 &amp; -10 &amp; 6 &amp; 28 &amp; -24 &amp; -6 &amp; 34 &amp; -22 \\
-12 &amp; 3 &amp; 1 &amp; 21 &amp; 9 &amp; 0 &amp; 15 &amp; 15 &amp; 1 &amp; 15 \\
+5 &amp; 0 &amp; 8 &amp; 16 &amp; 12 &amp; 14 &amp; 3 &amp; 12 &amp; 18 &amp; 4 \\
+12 &amp; 3 &amp; 1 &amp; 21 &amp; 9 &amp; 0 &amp; 15 &amp; 15 &amp; 1 &amp; 15
 \end{bmatrix}
 \]</span></p>
-<p>escribiéndolo en forma de matriz, tenemos <span class="math display">\[
-\begin{bmatrix}
-10 &amp; 0 &amp; 16 &amp; 32 &amp; 24 &amp; 28 &amp; 6 &amp; 24 &amp; 36 &amp; 8 \\
-2 &amp; 3 &amp; -15 &amp; -11 &amp; -15 &amp; -28 &amp; 9 &amp; -9 &amp; -35 &amp; 7
-\end{bmatrix}
-\]</span></p>
+<div id="5d209aef" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-stdout">
+<pre><code>[[ 5  0  8 16 12 14  3 12 18  4]
+ [12  3  1 21  9  0 15 15  1 15]]</code></pre>
+</div>
+</div>
+<p>escribiéndolo en forma de matriz, tenemos</p>
 <ol type="a">
 <li><p>Escribe un plan para encontrar el mensaje encriptado.</p></li>
 <li><p>Encuentra el mensaje encriptado.</p></li>
 </ol>
+<p>Respuesta</p>
+<p>“EL CHAPULIN COLORADO”</p>
 
 
 </section>

@@ -69,25 +69,28 @@ b. **Agrupa los valores en vectores columna de $2 \times 1$**.
 
 c. **Multiplica la matriz $A$ por cada vector  para obtener el mensaje cifrado**.  
 
+
+Respuesta:
 ```{python}
+#| echo: false
 import numpy as np
 
 # Definir la matriz A
-D = np.array([[1, 0], [0, 2]])
+#D = np.array([[1, 0], [0, 2]])
 
-print("Matriz D:",D)
-P = np.array([[2, 1], [1, 0]])
-A = np.dot(np.dot(np.linalg.inv(P), D), P)
+#print("Matriz D:",D)
+#P = np.array([[2, 1], [1, 0]])
 
-A= P@D@np.linalg.inv(P)
-print("Matriz A:",A)
 
+#A= P@D@np.linalg.inv(P)
+#print("Matriz A:",A)
+A= np.array([[0, 1], [1, 0]])
 # Crear el diccionario de conversión
 abc_dict = {chr(i + 64): i for i in range(1, 27)}  # A = 1, B = 2, ..., Z = 26
 abc_dict[" "] = 0  # Espacio = 0
 
 # Mostrar el diccionario
-print(abc_dict)
+#print(abc_dict)
 def text_to_numbers(text):
     text = text.upper()  # Convertimos a mayúsculas para evitar errores
     return [abc_dict[char] for char in text if char in abc_dict]
@@ -110,12 +113,37 @@ print(numeros_matriz.T)
 Un mensaje secreto fue cifrado con la misma matriz $A$, y se obtuvo:
 $$
 \begin{bmatrix}
-0 & 8 & 18 & 0 & 21 & 5 & 0 & 15 & 18 & 0 & 25 & 4 & 18 & 15 & 0 \\
-25 & 1 & 15 & 1 & 17 & 9 & 14 & 16 & 4 & 1 & 1 & 21 & 1 & 14 & 19
-\end{bmatrix}.
+25 & 1 & 15 & 1 & 17 & 9 & 14 & 16 & 4 & 1 & 1 & 21 & 1 & 14 & 19 \\
+0 & 8 & 18 & 0 & 21 & 5 & 0 & 15 & 18 & 0 & 25 & 4 & 18 & 15 & 0
+\end{bmatrix}
 $$
+```{python}
+#| echo: false
+import numpy as np
 
+A= np.array([[0, 1], [1, 0]])
+# Crear el diccionario de conversión
+abc_dict = {chr(i + 64): i for i in range(1, 27)}  # A = 1, B = 2, ..., Z = 26
+abc_dict[" "] = 0  # Espacio = 0
 
+# Mostrar el diccionario
+#print(abc_dict)
+def text_to_numbers(text):
+    text = text.upper()  # Convertimos a mayúsculas para evitar errores
+    return [abc_dict[char] for char in text if char in abc_dict]
+
+# Prueba con "LA VIDA ES BELLA"
+frase = "Y AHORA QUIEN PODRA AYUDARNOS "
+#frase = "LA VIDA ES BELLA"
+#frase = "EL CHAPULIN COLORADO"
+numeros = text_to_numbers(frase)
+#print(numeros)
+
+# Convertir la lista de números en una matriz de filas
+numeros_matriz = np.array(numeros).reshape(-1, 2)
+print(numeros_matriz.T)
+
+```
 ### Pasos a seguir
 
 a. **Encuentra la matriz inversa de $A$**:  
@@ -127,9 +155,10 @@ b. **Multiplica $A^{-1}$ por cada vector para recuperar el mensaje original**.
 
 c. **Convierte los números obtenidos en letras** usando la misma codificación del **Ejercicio 1**.  
 
-```{python}
 
-```
+Respuesta:
+
+"Y AHORA QUIEN PODRA AYUDARNOS "
 
 ## Información Adicional
 
@@ -210,22 +239,60 @@ Ademas noto que cuando tenia la la combinación espacio de letras "BA" al conver
 
 
 Note que si el mensaje encriptado era
-
 $$
 \begin{bmatrix}
--14 & -6 & 14 & -10 & 6 & 28 & -24 & -6 & 34 & -22 \\
-12 & 3 & 1 & 21 & 9 & 0 & 15 & 15 & 1 & 15 \\
+5 & 0 & 8 & 16 & 12 & 14 & 3 & 12 & 18 & 4 \\
+12 & 3 & 1 & 21 & 9 & 0 & 15 & 15 & 1 & 15
 \end{bmatrix}
 $$
+
+```{python}
+#| echo: false
+import numpy as np
+
+# Definir la matriz A
+D = np.array([[1, 0], [0, 2]])
+
+#print("Matriz D:",D)
+P = np.array([[2, 1], [1, 0]])
+
+
+A= P@D@np.linalg.inv(P)
+#print("Matriz A:",A)
+A= np.array([[0, 1], [1, 0]])
+# Crear el diccionario de conversión
+abc_dict = {chr(i + 64): i for i in range(1, 27)}  # A = 1, B = 2, ..., Z = 26
+abc_dict[" "] = 0  # Espacio = 0
+
+# Mostrar el diccionario
+#print(abc_dict)
+def text_to_numbers(text):
+    text = text.upper()  # Convertimos a mayúsculas para evitar errores
+    return [abc_dict[char] for char in text if char in abc_dict]
+
+# Prueba con "LA VIDA ES BELLA"
+#frase = "Y AHORA QUIEN PODRA AYUDARNOS "
+#frase = "LA VIDA ES BELLA"
+frase = "EL CHAPULIN COLORADO"
+numeros = text_to_numbers(frase)
+#print(numeros)
+
+# Convertir la lista de números en una matriz de filas
+numeros_matriz = np.array(numeros).reshape(-1, 2)
+print(numeros_matriz.T)
+
+```
+
 
 escribiéndolo en forma de matriz, tenemos
-$$
-\begin{bmatrix}
-10 & 0 & 16 & 32 & 24 & 28 & 6 & 24 & 36 & 8 \\
-2 & 3 & -15 & -11 & -15 & -28 & 9 & -9 & -35 & 7
-\end{bmatrix}
-$$
+
 
 a. Escribe un plan para encontrar el mensaje encriptado.
 
 b. Encuentra el mensaje encriptado.
+
+
+Respuesta
+
+"EL CHAPULIN COLORADO"
+
