@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "objectID": "section9.html",
     "href": "section9.html",
     "title": "Autovalores y autovectores",
@@ -95,6 +96,60 @@
     "crumbs": [
       "Plano",
       "Independencia lineal"
+=======
+    "objectID": "taller4.html",
+    "href": "taller4.html",
+    "title": "Ejercicios de Autovalores y Autovectores (Matrices 2x2)",
+    "section": "",
+    "text": "Dada la matriz, encontrar los valores propios y vectores propios. 1. \\(A = \\begin{bmatrix} 4 & 2 \\\\ 1 & 3 \\end{bmatrix}\\)\n\n\\(B = \\begin{bmatrix} 5 & -2 \\\\ 2 & 1 \\end{bmatrix}\\)\n\\(E = \\begin{bmatrix} 6 & 2 \\\\ 2 & 3 \\end{bmatrix}\\)\n\\(G = \\begin{bmatrix} -1 & -2 \\\\ 2 & -3 \\end{bmatrix}\\)\nDetermina para que valor \\(\\alpha\\) la matriz \\(H = \\begin{bmatrix} 2 & 1 \\\\ 1 & \\alpha \\end{bmatrix}\\) tiene un solo valor propio.\nUn modelo lineal de evolución poblacional para dos especies está dado por la matriz:\n\n\\[\n\\begin{bmatrix}y_{n+1}\\\\ x_{n+1}\\end{bmatrix}= \\begin{bmatrix} 0.8 & 0.3 \\\\ 0.2 & 0.7 \\end{bmatrix}\\begin{bmatrix}y_{n}\\\\ x_{n}\\end{bmatrix}\n\\]\nEl sistema anterior, la matriz de transición describe cómo las poblaciones de dos especies (denotadas como \\(y\\) y \\(x\\)) evolucionan de un tiempo \\(n\\) al siguiente tiempo \\(n+1\\). Los elementos de la matriz representan las tasas de crecimiento y las interacciones entre las dos especies. Si la población inicial es \\(y_0= 0.2\\) y \\(x_0=0.8\\), (Usa un computador para realizar rápidamente los cálculos)\n\n¿cuál será la población en tiempo n=10. Halla los valores propios y vectores propios para analizar el comportamiento del sistema.\nComo podemos interpretar los valores propios en este contexto.\n\n\nEn el siguiente plano se dibuja una casa.\n\nLos puntos se encuentran en las coordenadas:\n\\[\\begin{array}{|c|c|c|c|c|c|c|} \\hline\n\\text{Punto} & A & B & C & D & E & A \\\\ \\hline\nx & 0 & 4 & 4 & 2 & 0 & 0 \\\\ \\hline\ny & 0 & 0 & 3 & 5 & 3 & 0 \\\\ \\hline\n\\end{array}\\]\nMultiplica a cada uno de los puntos por la matriz\n\\[A= \\begin{bmatrix} 2 & 1 \\\\ 1 & 2 \\end{bmatrix}\\]\ny dibuja la nueva casa.\n\n\n\n\n\n\n\n\n\n\nComo podemos interpretar la transformación de la casa en este contexto.\nEncuentra los valores propios y vectores propios de la matriz de rotación y analiza su comportamiento.\n¿Qué pasa si la matriz de rotación es \\(A= \\begin{bmatrix} 1 & 0 \\\\ -1 & 0 \\end{bmatrix}\\)? ¿Qué sucede con la casa? ¿Cuales son los valores propios y vectores propios de la matriz? ¿Qué interpretación podemos dar a los valores propios en este contexto?\nCrea la matriz en python de la forma\n\n\nimport numpy as np H = np.array([[0, 4, 4, 2, 0, 0], [0, 0, 3, 5, 3, 0]])\n\n\nA= np.array([[2, 1], [1, 2]])\n\npara aplicar la transformación\n\nH_transformed = A @ H\n\nPara dibujar la nueva casa.\n\nimport matplotlib.pyplot as plt\n\n\nplt.plot(H[0], H[1], ‘bo-’, label=“Casa Original”) # Dibujo original\n\n\nplt.plot(H_transformed[0], H_transformed[1], ‘ro-’, label=“Casa Transformada”) # Transformada\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Talleres",
+      "Taller 4 (Valores propios)"
+    ]
+  },
+  {
+    "objectID": "taller4.html#ejercicios",
+    "href": "taller4.html#ejercicios",
+    "title": "Ejercicios de Autovalores y Autovectores (Matrices 2x2)",
+    "section": "",
+    "text": "Dada la matriz, encontrar los valores propios y vectores propios. 1. \\(A = \\begin{bmatrix} 4 & 2 \\\\ 1 & 3 \\end{bmatrix}\\)\n\n\\(B = \\begin{bmatrix} 5 & -2 \\\\ 2 & 1 \\end{bmatrix}\\)\n\\(E = \\begin{bmatrix} 6 & 2 \\\\ 2 & 3 \\end{bmatrix}\\)\n\\(G = \\begin{bmatrix} -1 & -2 \\\\ 2 & -3 \\end{bmatrix}\\)\nDetermina para que valor \\(\\alpha\\) la matriz \\(H = \\begin{bmatrix} 2 & 1 \\\\ 1 & \\alpha \\end{bmatrix}\\) tiene un solo valor propio.\nUn modelo lineal de evolución poblacional para dos especies está dado por la matriz:\n\n\\[\n\\begin{bmatrix}y_{n+1}\\\\ x_{n+1}\\end{bmatrix}= \\begin{bmatrix} 0.8 & 0.3 \\\\ 0.2 & 0.7 \\end{bmatrix}\\begin{bmatrix}y_{n}\\\\ x_{n}\\end{bmatrix}\n\\]\nEl sistema anterior, la matriz de transición describe cómo las poblaciones de dos especies (denotadas como \\(y\\) y \\(x\\)) evolucionan de un tiempo \\(n\\) al siguiente tiempo \\(n+1\\). Los elementos de la matriz representan las tasas de crecimiento y las interacciones entre las dos especies. Si la población inicial es \\(y_0= 0.2\\) y \\(x_0=0.8\\), (Usa un computador para realizar rápidamente los cálculos)\n\n¿cuál será la población en tiempo n=10. Halla los valores propios y vectores propios para analizar el comportamiento del sistema.\nComo podemos interpretar los valores propios en este contexto.\n\n\nEn el siguiente plano se dibuja una casa.\n\nLos puntos se encuentran en las coordenadas:\n\\[\\begin{array}{|c|c|c|c|c|c|c|} \\hline\n\\text{Punto} & A & B & C & D & E & A \\\\ \\hline\nx & 0 & 4 & 4 & 2 & 0 & 0 \\\\ \\hline\ny & 0 & 0 & 3 & 5 & 3 & 0 \\\\ \\hline\n\\end{array}\\]\nMultiplica a cada uno de los puntos por la matriz\n\\[A= \\begin{bmatrix} 2 & 1 \\\\ 1 & 2 \\end{bmatrix}\\]\ny dibuja la nueva casa.\n\n\n\n\n\n\n\n\n\n\nComo podemos interpretar la transformación de la casa en este contexto.\nEncuentra los valores propios y vectores propios de la matriz de rotación y analiza su comportamiento.\n¿Qué pasa si la matriz de rotación es \\(A= \\begin{bmatrix} 1 & 0 \\\\ -1 & 0 \\end{bmatrix}\\)? ¿Qué sucede con la casa? ¿Cuales son los valores propios y vectores propios de la matriz? ¿Qué interpretación podemos dar a los valores propios en este contexto?\nCrea la matriz en python de la forma\n\n\nimport numpy as np H = np.array([[0, 4, 4, 2, 0, 0], [0, 0, 3, 5, 3, 0]])\n\n\nA= np.array([[2, 1], [1, 2]])\n\npara aplicar la transformación\n\nH_transformed = A @ H\n\nPara dibujar la nueva casa.\n\nimport matplotlib.pyplot as plt\n\n\nplt.plot(H[0], H[1], ‘bo-’, label=“Casa Original”) # Dibujo original\n\n\nplt.plot(H_transformed[0], H_transformed[1], ‘ro-’, label=“Casa Transformada”) # Transformada\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Talleres",
+      "Taller 4 (Valores propios)"
+    ]
+  },
+  {
+    "objectID": "taller2.html",
+    "href": "taller2.html",
+    "title": "Ejercicios \\(\\mathbb{R}^2\\)",
+    "section": "",
+    "text": "En una ciudad se úed modelar mediante un plano cartesiano, en ella existen doa avenidas, La avenida A pasa por el punto \\((2,5)\\) y tiene dirección \\((6,9)\\), mientras que La avenida B pasa por el punto \\((5,8)\\) y tiene dirección \\((1,\\dfrac{3}{2})\\).\n\n\nEncuentra la distancia mínima entre ellas.",
+    "crumbs": [
+      "Talleres",
+      "Taller 2"
+    ]
+  },
+  {
+    "objectID": "taller2.html#problema-1",
+    "href": "taller2.html#problema-1",
+    "title": "Ejercicios \\(\\mathbb{R}^2\\)",
+    "section": "",
+    "text": "En una ciudad se úed modelar mediante un plano cartesiano, en ella existen doa avenidas, La avenida A pasa por el punto \\((2,5)\\) y tiene dirección \\((6,9)\\), mientras que La avenida B pasa por el punto \\((5,8)\\) y tiene dirección \\((1,\\dfrac{3}{2})\\).\n\n\nEncuentra la distancia mínima entre ellas.",
+    "crumbs": [
+      "Talleres",
+      "Taller 2"
+    ]
+  },
+  {
+    "objectID": "taller2.html#problema-2",
+    "href": "taller2.html#problema-2",
+    "title": "Ejercicios \\(\\mathbb{R}^2\\)",
+    "section": "Problema 2",
+    "text": "Problema 2\nUn ingeniero está analizando un sistema mecánico en el que dos fuerzas actúan sobre un punto en el plano ( ^2 ). Estas fuerzas están representadas por los siguientes vectores en Newtons:\n\nFuerza 1:\n\\[\n\\mathbf{F}_1 = (5, 2)\n\\]\nFuerza 2:\n\\[\n\\mathbf{F}_2 = (3, 6)\n\\]\n\nEl ingeniero necesita determinar el ángulo entre estas dos fuerzas para analizar su efecto combinado sobre la estructura.\n\nPreguntas:\n\nCalcula el ángulo \\(\\theta\\) entre los dos vectores\n¿Cómo influiría este ángulo en la estabilidad del sistema si ambas fuerzas estuvieran actuando sobre un mismo punto?",
+    "crumbs": [
+      "Talleres",
+      "Taller 2"
+>>>>>>> 8bf1a45 (cambios del taller 5)
     ]
   },
   {
@@ -204,6 +259,7 @@
     ]
   },
   {
+<<<<<<< HEAD
     "objectID": "taller1.html",
     "href": "taller1.html",
     "title": "Ejercicios \\(\\mathbb{R}^2\\)",
@@ -212,6 +268,102 @@
     "crumbs": [
       "Talleres",
       "Taller 1"
+=======
+    "objectID": "analisis_fuerzas_grua.html",
+    "href": "analisis_fuerzas_grua.html",
+    "title": "📌 Análisis de Fuerzas en una Grúa – Álgebra Lineal en (^2)",
+    "section": "",
+    "text": "Este análisis evalúa el comportamiento de fuerzas aplicadas en una grúa en un espacio bidimensional.\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n# Definir los vectores de fuerza\nF1 = np.array([4, 3])\nF2 = np.array([-2, 5])\n\n# 1. Fuerza resultante total\nF_resultante = F1 + F2\n\n# 2. Magnitud (norma) de cada fuerza\nnorm_F1 = np.linalg.norm(F1)\nnorm_F2 = np.linalg.norm(F2)\n\n# 3. Ángulo entre las dos fuerzas usando el producto punto\ndot_product = np.dot(F1, F2)\ncos_theta = dot_product / (norm_F1 * norm_F2)\ntheta = np.arccos(cos_theta) * (180 / np.pi)  # Convertir a grados\n\n# 4. Análisis de eficiencia (si están en ángulos similares o opuestos)\nif theta &lt; 90:\n    efficiency = \"Las fuerzas trabajan juntas para sostener la carga\"\nelif theta == 90:\n    efficiency = \"Las fuerzas son perpendiculares, contribuyendo parcialmente\"\nelse:\n    efficiency = \"Las fuerzas están en conflicto, se necesita rediseño\"\n\n# Mostrar resultados en un DataFrame\nresults = pd.DataFrame({\n    \"Concepto\": [\"Fuerza Resultante\", \"Norma de F1\", \"Norma de F2\", \"Ángulo entre fuerzas\", \"Análisis de eficiencia\"],\n    \"Valor\": [str(F_resultante), norm_F1, norm_F2, theta, efficiency]\n})\n\n# Mostrar resultados\nfrom IPython.display import display\ndisplay(results)\n    \n\n\n\n\n\n\n\n\nConcepto\nValor\n\n\n\n\n0\nFuerza Resultante\n[2 8]\n\n\n1\nNorma de F1\n5.0\n\n\n2\nNorma de F2\n5.385165\n\n\n3\nÁngulo entre fuerzas\n74.931512\n\n\n4\nAnálisis de eficiencia\nLas fuerzas trabajan juntas para sostener la c..."
+  },
+  {
+    "objectID": "analisis_fuerzas_grua.html#visualización-de-los-vectores-en-2",
+    "href": "analisis_fuerzas_grua.html#visualización-de-los-vectores-en-2",
+    "title": "📌 Análisis de Fuerzas en una Grúa – Álgebra Lineal en (^2)",
+    "section": "🔎 Visualización de los vectores en (^2)",
+    "text": "🔎 Visualización de los vectores en (^2)\n\n\n# Función para graficar los vectores en R^2\ndef plot_vectors(vectors, labels, colors=['r', 'b', 'g'], title=\"Gráfica de Vectores en R²\"):\n    plt.figure(figsize=(6,6))\n    plt.axhline(0, color='black',linewidth=0.5)\n    plt.axvline(0, color='black',linewidth=0.5)\n    plt.grid(color = 'gray', linestyle = '--', linewidth = 0.5)\n    \n    for i, vec in enumerate(vectors):\n        plt.quiver(0, 0, vec[0], vec[1], angles='xy', scale_units='xy', scale=1, color=colors[i], label=labels[i])\n    \n    plt.xlim(-5, 6)\n    plt.ylim(-5, 6)\n    plt.legend()\n    plt.title(title)\n    plt.show()\n\n# Graficar los vectores\nplot_vectors([F1, F2, F_resultante], ['F1', 'F2', 'F_resultante'])"
+  },
+  {
+    "objectID": "enunciado_grua.html",
+    "href": "enunciado_grua.html",
+    "title": "📌 Análisis de Fuerzas en una Grúa – Álgebra Lineal en (^2)",
+    "section": "",
+    "text": "Un ingeniero mecánico está diseñando una grúa móvil que debe levantar una carga de 500 kg. Dos cables están sosteniendo la carga desde diferentes ángulos, ejerciendo fuerzas **( _1 ) y ( _2 )**. Se quiere analizar la eficiencia de estas fuerzas y verificar si el diseño es estable.\nLas ecuaciones vectoriales de las fuerzas son:\n$ _1 = (4, 3) $\n$ _2 = (-2, 5) $\n\n\n\n\nCalcular la fuerza resultante total sobre la carga. (Suma de vectores)\nDeterminar la magnitud de cada fuerza individual. (Norma de cada vector)\nCalcular el ángulo entre las dos fuerzas. (Usando el producto punto)\nInterpretar si las fuerzas están en conflicto o ayudan a sostener la carga.\nSi la grúa necesita rediseñarse para mayor estabilidad, ¿qué modificación sugerirías en los vectores de fuerza?\n\nEste problema se resolverá utilizando Python."
+  },
+  {
+    "objectID": "enunciado_grua.html#contexto",
+    "href": "enunciado_grua.html#contexto",
+    "title": "📌 Análisis de Fuerzas en una Grúa – Álgebra Lineal en (^2)",
+    "section": "",
+    "text": "Un ingeniero mecánico está diseñando una grúa móvil que debe levantar una carga de 500 kg. Dos cables están sosteniendo la carga desde diferentes ángulos, ejerciendo fuerzas **( _1 ) y ( _2 )**. Se quiere analizar la eficiencia de estas fuerzas y verificar si el diseño es estable.\nLas ecuaciones vectoriales de las fuerzas son:\n$ _1 = (4, 3) $\n$ _2 = (-2, 5) $"
+  },
+  {
+    "objectID": "enunciado_grua.html#tareas-a-resolver",
+    "href": "enunciado_grua.html#tareas-a-resolver",
+    "title": "📌 Análisis de Fuerzas en una Grúa – Álgebra Lineal en (^2)",
+    "section": "",
+    "text": "Calcular la fuerza resultante total sobre la carga. (Suma de vectores)\nDeterminar la magnitud de cada fuerza individual. (Norma de cada vector)\nCalcular el ángulo entre las dos fuerzas. (Usando el producto punto)\nInterpretar si las fuerzas están en conflicto o ayudan a sostener la carga.\nSi la grúa necesita rediseñarse para mayor estabilidad, ¿qué modificación sugerirías en los vectores de fuerza?\n\nEste problema se resolverá utilizando Python."
+  },
+  {
+    "objectID": "section5.html",
+    "href": "section5.html",
+    "title": "Matrices Solución de sistema de ecuaciones",
+    "section": "",
+    "text": "Queremos encontrar dos números tales que sumados sean 45 y restados sean 21, para resolver este problema deberíamos plantear las incógnitas de la siguiente forma:\n\\(X:=\\) número mayor\n\\(Y:=\\) número menor\nasí debemos plantear el sistema de ecuaciones:\n\\[X+Y=45\\] \\[X-Y=21\\]\nEste sistema lo podemos resolver de la usando el método de sustitución, para ello despejamos \\(X\\) de la segunda ecuación:\n\\[X=21+Y\\]\ny sustituimos en la primera ecuación:\n\\[21+Y+Y=45\\]\nAhora despejamos \\(Y\\):\n\\[2Y=24\\]\n\\[Y=12\\]\nSustituimos el valor de \\(Y\\) en la ecuación \\(X=21+Y\\):\n\\[X=21+12\\]\n\\[X=33\\]\nPor lo tanto los números son 33 y 12.\nAunque, este es un camino para resolver el problema, también podemos resolverlo de forma matricial, para ello planteamos el sistema de ecuaciones de la siguiente forma:\n\\[\\begin{bmatrix}\n1 & 1 \\\\\n1 & -1 \\\\\n\\end{bmatrix}\n\\begin{bmatrix}\nX \\\\\nY \\\\\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n45 \\\\\n21 \\\\\n\\end{bmatrix}\n\\]\nDe esta forma podemos definir la matriz \\(A\\) y el vector \\(B\\):\n\\[A=\\begin{bmatrix}\n1 & 1 \\\\\n1 & -1 \\\\\n\\end{bmatrix}\n\\text{ y }\nB=\\begin{bmatrix}\n45 \\\\\n21 \\\\\n\\end{bmatrix}\n\\]\nPara encontrar la solución del sistema de ecuaciones \\(AX=B\\) debemos encontrar la matriz \\(X\\) que cumpla con la ecuación anterior, para ello multiplicamos ambos lados de la ecuación por la inversa de la matriz \\(A\\), donde la matriz inversa de \\(A\\) es:\n\\[A^{-1}=\\begin{bmatrix}\n\\frac{1}{2} & \\frac{1}{2} \\\\\n\\frac{1}{2} & -\\frac{1}{2} \\\\\n\\end{bmatrix}\n\\] Comprueba que es la inversa de la matriz \\(A\\)\nDe esta forma tenemos que el sistema se puede escribir como: \\[\\begin{bmatrix}\n\\frac{1}{2} & \\frac{1}{2} \\\\\n\\frac{1}{2} & -\\frac{1}{2} \\\\\n\\end{bmatrix}\\begin{bmatrix}\n1 & 1 \\\\\n1 & -1 \\\\\n\\end{bmatrix}\n\\begin{bmatrix}\nX \\\\\nY \\\\\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n\\frac{1}{2} & \\frac{1}{2} \\\\\n\\frac{1}{2} & -\\frac{1}{2} \\\\\n\\end{bmatrix}\\begin{bmatrix}\n45 \\\\\n21 \\\\\n\\end{bmatrix}\n\\]\nAsí obtenemos que:\n\\[\\begin{bmatrix}\n1 & 0 \\\\\n0 & 1 \\\\\n\\end{bmatrix}\n\\begin{bmatrix}\nX \\\\\nY \\\\\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n33 \\\\\n12 \\\\\n\\end{bmatrix}\n\\]\ny\n\\[\\begin{bmatrix}\nX \\\\\nY \\\\\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n33 \\\\\n12 \\\\\n\\end{bmatrix}\n\\]\nPor lo tanto los números son 33 y 12, como lo habíamos encontrado anteriormente.",
+    "crumbs": [
+      "Matrices",
+      "Solución de sistema de ecuaciones"
+    ]
+  },
+  {
+    "objectID": "section5.html#independencia-en-la-la-columna-de-una-matriz",
+    "href": "section5.html#independencia-en-la-la-columna-de-una-matriz",
+    "title": "Matrices Solución de sistema de ecuaciones",
+    "section": "Independencia en la la columna de una matriz",
+    "text": "Independencia en la la columna de una matriz\nLa matriz \\(A=\\begin{bmatrix}a_{11} & a_{12}\\\\a_{21} & a_{22}\\end{bmatrix}\\), al multiplicar por el vector columna \\(\\begin{bmatrix}\\alpha_1 \\\\ \\alpha_2\\end{bmatrix}\\), obtenemos\n\\[\\begin{bmatrix}a_{11} & a_{12}\\\\a_{21} & a_{22}\\end{bmatrix}\\begin{bmatrix}\\alpha_1 \\\\ \\alpha_2\\end{bmatrix}=\\begin{bmatrix}a_{11}\\alpha_1+a_{12}\\alpha_2\\\\a_{21}\\alpha_1+a_{22}\\alpha_2\\end{bmatrix},\\]\nagrupando términos tenemos:\n\\[A\\begin{bmatrix}\\alpha_1 \\\\ \\alpha_2\\end{bmatrix}=\\alpha_1\\begin{bmatrix}a_{11}\\\\a_{21}\\end{bmatrix}+\\alpha_2\\begin{bmatrix}a_{12}\\\\a_{22}\\end{bmatrix}\\]\nDe esta forma podemos ver que esta multiplicación es una combinación lineal de la s columnas de la matriz \\(A\\).\nVamos a analizar que sucede si la matriz \\(A\\) tiene columnas linealmente dependientes, para estudiar esto vamos a considerar el siguiente ejemplo\n\\[A=\\begin{bmatrix}1 & 2\\\\2 & 4\\end{bmatrix}\\]\nNote que la segunda columna es el doble de la primera columna, por lo tanto las columnas de la matriz \\(A\\) son linealmente dependientes.\nAhora si vamos a calcular la inversa de la matriz \\(A\\), con la formula que vimos anteriormente, obtenemos:\n\\[A^{-1}=\\frac{1}{1\\cdot 4-2\\cdot 2}\\begin{bmatrix}4 & -2\\\\-2 & 1\\end{bmatrix}=\\frac{1}{0}\\begin{bmatrix}4 & -2\\\\-2 & 1\\end{bmatrix}\\]\nPodemos ver que la inversa no existe. Ahora vamos a explorar que sucede si la matriz \\(A\\) tiene columnas linealmente independientes, para ello consideremos la matriz \\(A=\\begin{bmatrix}1 & 2\\\\3 & 4\\end{bmatrix}\\), en este caso las columnas de la matriz \\(A\\) son linealmente independientes.\nAhora vamos a calcular la inversa de la matriz \\(A\\), con la formula que vimos anteriormente, obtenemos:\n\\[A^{-1}=\\frac{1}{1\\cdot 4-2\\cdot 3}\\begin{bmatrix}4 & -2\\\\-3 & 1\\end{bmatrix}=\\frac{1}{-2}\\begin{bmatrix}4 & -2\\\\-3 & 1\\end{bmatrix}=\\begin{bmatrix}-2 & 1\\\\1.5 & -0.5\\end{bmatrix}\\]\nPor lo tanto la inversa de la matriz \\(A\\) existe.\nEsto nos lleva al siguiente resultado:\nProposición Si la matriz \\(A\\) tiene columnas linealmente independientes, entonces la matriz \\(A\\) tiene inversa.\nProposición Si la matriz \\(A\\) de \\(2\\times 2\\) tiene columnas linealmente independientes, el sistema \\(Ax=b\\) una única solución. ¿Cómo podemos justificar este resultado?\nPara saber si una matriz tiene inversa vamos a introducir el siguiente concepto.",
+    "crumbs": [
+      "Matrices",
+      "Solución de sistema de ecuaciones"
+    ]
+  },
+  {
+    "objectID": "section5.html#determinantes",
+    "href": "section5.html#determinantes",
+    "title": "Matrices Solución de sistema de ecuaciones",
+    "section": "Determinantes",
+    "text": "Determinantes\nEl determinante de una matriz \\(A\\) de dimensión \\(2\\times 2\\) se denota por \\(|A|\\) y se define como:\n\\[|A|=a_{11}a_{22}-a_{12}a_{21}\\]\nPara la matriz \\(A=\\begin{bmatrix}1 & 2\\\\2 & 4\\end{bmatrix}\\), el determinante de la matriz \\(A\\) es:\n\\[|A|=1\\cdot 4-2\\cdot 2=0\\]\nNote que el determinante de una matriz cuadrada es igual a cero si las columnas de la matriz son linealmente dependientes.\nLa interpretación geométrica del determinante de una matriz \\(A\\) de dimensión \\(2\\times 2\\) es que el determinante de la matriz \\(A\\) es igual al área del paralelogramo que se forma con los vectores columna de la matriz \\(A\\).\nEjemplo Veamos la interpretación geométrica del determinante de la matriz \\(A=\\begin{bmatrix}1/2 & 1/2\\\\1 & 0\\end{bmatrix}\\) note que el determinante de la matriz \\(A\\) es:\n\\[|A|=1/2\\cdot 0-1/2\\cdot 1=1/2\\] gráficamente podemos ver que el área del paralelogramo es igual a 1/2.\n\n\n\n\n\n\n\n\n\nNote que con esta definición podemos modificar la formula de la inversa de una matriz \\(A\\) de dimensión \\(2\\times 2\\) como:\n\\[A^{-1}=\\frac{1}{|A|}\\begin{bmatrix}a_{22} & -a_{12}\\\\-a_{21} & a_{11}\\end{bmatrix}\\]\ny podemos obtener la siguiente proposición:\nProposición Si el determinante de una matriz \\(A\\) de dimensión \\(2\\times 2\\) es diferente de cero, entonces la matriz \\(A\\) tiene inversa.\nProposición Si el determinante de una matriz \\(A\\) de dimensión \\(2\\times 2\\) es diferente de cero, entonces el sistema \\(Ax=b\\) tiene una única solución.\nProposición Si el determinante de una matriz \\(A\\) de dimensión \\(2\\times 2\\) es diferente a cero, entonces \\(A\\) tiene columnas linealmente independientes.\nProposición Si el determinante de una matriz \\(A\\) de dimensión \\(2\\times 2\\) es diferente a cero, entonces \\(A\\) tiene filas linealmente independientes.",
+    "crumbs": [
+      "Matrices",
+      "Solución de sistema de ecuaciones"
+    ]
+  },
+  {
+    "objectID": "cronogrma.html",
+    "href": "cronogrma.html",
+    "title": "Operaciones en \\(\\mathbb{R}^2\\)",
+    "section": "",
+    "text": "Sesión\nSemana\nS_1/S_2\nFecha\nTema\nPuntos\n\n\n\n\n1\n1\nS_1\nEnero 20\nPresentación del curso, actividad de enganche, vectores en R^2\n\n\n\n2\n\nS_2\nEnero 22\nVectores en R^2, operaciones: suma, multiplicación por un escalar y producto punto con sus respectivas propiedades.\n\n\n\n3\n2\nS_1\nEnero 27\nEcuación de la recta. Rectas paralelas, perpendiculares, independencia lineal, bases.\n\n\n\n4\n\nS_2\nEnero 29\nSubespacios en R^2. Proyección de un vector sobre otro, norma, distancia entre dos puntos, distancia entre un punto y una recta.\n\n\n\n5\n3\nS_1\nFebrero 3\nMatrices 2x2, determinantes, operaciones entre matrices.\n\n\n\n6\n\nS_2\nFebrero 5\nTrabajo computacional\n\n\n\n7\n4\nS_1\nFebrero 10\nSistemas de ecuaciones 2x2 (taller)\n15\n\n\n8\n\nS_2\nFebrero 12\nInversa de una matriz. Aplicaciones de sistemas de ecuaciones 2x2.\n\n\n\n9\n5\nS_1\nFebrero 17\nVectores y valores propios en R^2\n\n\n\n10\n\nS_2\nFebrero 19\nAplicaciones de vectores y valores propios. Diagonalización.\n\n\n\n11\n6\nS_1\nFebrero 24\nExamen corto - Taller\n10\n\n\n12\n\nS_2\nFebrero 26\nAplicaciones de vectores y valores propios. Diagonalización.\n\n\n\n13\n7\nS_1\nMarzo 3\nTrabajo computacional\n15\n\n\n14\n\nS_2\nMarzo 5\nMatrices NxN, operaciones, determinantes.\n\n\n\n15\n8\nS_1\nMarzo 10\nInversa de una matriz y sistemas de ecuaciones NxN.\n\n\n\n16\n\nS_2\nMarzo 12\nAplicaciones de sistemas NxN.\n\n\n\n17\n9\nS_1\nMarzo 17\nExamen corto - Taller\n10\n\n\n18\n\nS_2\nMarzo 19\nVectores en R^N, operaciones (suma, resta, producto punto, norma).\n\n\n\n19\n10\nS_1\nMarzo 24\n\n\n\n\n20\n\nS_2\nMarzo 26\nPlanos, vectores perpendiculares, producto cruz.\n\n\n\n21\n11\nS_1\nMarzo 31\nTrabajo computacional\n\n\n\n22\n\nS_2\nAbril 2\nIndependencia lineal, bases y dimensión.\n\n\n\n23\n12\nS_1\nAbril 7\nExamen corto - Taller\n10\n\n\n24\n\nS_2\nAbril 9\nBases ortonormales\n\n\n\n25\n13\nS_1\nAbril 21\nCoordenadas y cambio de base\n\n\n\n26\n\nS_2\nAbril 23\nTransformaciones lineales en R^n\n\n\n\n27\n14\nS_1\nAbril 28\nNúcleo e imagen de una transformación (taller)\n15\n\n\n28\n\nS_2\nAbril 30\nLa matriz de una transformación lineal\n\n\n\n29\n15\nS_1\nMayo 5\nVectores y valores propios en R^N\n\n\n\n30\n\nS_2\nMayo 7\nDiagonalización\n\n\n\n31\n16\nS_1\nMayo 12\nTrabajo computacional\n15\n\n\n32\n\nS_2\nMayo 14\nTaller de aplicaciones de valores y vectores propios, diagonalización.\n\n\n\n\n\n\n\nExamen\n10\n\n\n\n\n\n\n\n100"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Cuadernillo de Algebra Lineal",
+    "section": "",
+    "text": "En este sitio web usted podrá encontrar los apuntes de la clase de Álgebra Lineal, donde se repasan los conceptos fundamentales de los vectores en \\(\\mathbb{R}^2\\), la suma de vectores, la multiplicación por escalar, las normas y la proyección de un vector sobre otro.",
+    "crumbs": [
+      "Plano",
+      "Acerca de"
+    ]
+  },
+  {
+    "objectID": "taller3.html",
+    "href": "taller3.html",
+    "title": "Taller 3",
+    "section": "",
+    "text": "Sea la matriz \\(A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\) y el vector \\(\\mathbf{v} = \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}\\).\n\nCalcula \\(A\\mathbf{v}\\).\n\nCalcula \\(A^2\\mathbf{v}\\).\n\nCalcula \\(A\\mathbf{v} + A^2\\mathbf{v}\\).\n\nProblema en Contexto: Compra de Frutas\nUn comerciante de frutas desea determinar el precio de cada unidad de manzanas y naranjas. Sabe que si compra 4 manzanas y 3 naranjas, el gasto total es de $26, y que si compra 2 manzanas y 5 naranjas, el gasto es de $23.\n\n¿Cuánto costaría comprar 3 manzanas y 4 naranjas?\n\nVerifica la solución sustituyendo los valores en ambas ecuaciones.\n\nProblema en Contexto: Producción de Camisas y Pantalones\nUna fábrica produce camisas y pantalones. La producción de una camisa requiere 2 horas de trabajo y la de un pantalón 1 hora. El tiempo total de trabajo disponible es de 100 horas por semana. Si la fábrica produce 40 camisas y 60 pantalones, el beneficio semanal es de 3000 dólares, y si produce 60 camisas y 40 pantalones, el beneficio es de 3100 dólares.\n\n¿Cuál es el beneficio de producir 50 camisas y 50 pantalones?\nVerifica la solución sustituyendo los valores en ambas ecuaciones.\n\nSi una matriz \\(A\\) de \\(2\\times 2\\) tiene columnas linealmente independientes, ¿es cierto que \\(A\\) tiene filas linealmente independientes? Justifica tu respuesta.\nEscribe 3 formas diferentes de saber si una matriz invertible.\nSi \\(X=(3,6)\\) y \\(Y=(-2,3)\\), que representaría \\[proy_{X}Y\\] y \\[proy_{Y}X\\] Grafica la situación.\nComo podemos interpretar el determinante de una matriz? ¿Qué significa que el determinante sea igual a cero?\nLos vectores \\(\\mathbf{v}_1 = (1, 2)\\) y \\(\\mathbf{v}_2 = (-2, 1)\\) ortogonales (verifique) entonces son linealmente dependientes. De esta forma, ¿podemos decir que dos vectores ortogonales son linealmente independientes? Justifica tu respuesta. El reciproco ¿es cierto?\nSea el sistema de ecuaciones lineales \\[Ax=b\\] y \\(A\\) una matriz cuadrada de \\(2\\times 2\\) con determinante distinto de cero. ¿Cuál es la condición para que el sistema tenga solución única? Justifica tu respuesta. ¿Qué sucede si el determinante de \\(A\\) es igual a cero?\n¿Qué significa que un conjunto de vectores sea linealmente independiente? ¿Qué significa que un conjunto de vectores sea linealmente dependiente? Da un ejemplo de cada uno.",
+    "crumbs": [
+      "Talleres",
+      "Taller 3 (matrices)"
+>>>>>>> 8bf1a45 (cambios del taller 5)
     ]
   },
   {
@@ -303,6 +455,7 @@
     ]
   },
   {
+<<<<<<< HEAD
     "objectID": "taller3.html",
     "href": "taller3.html",
     "title": "Taller 3",
@@ -414,6 +567,19 @@
     "text": "🔎 Visualización de los vectores en (^2)\n\n\n# Función para graficar los vectores en R^2\ndef plot_vectors(vectors, labels, colors=['r', 'b', 'g'], title=\"Gráfica de Vectores en R²\"):\n    plt.figure(figsize=(6,6))\n    plt.axhline(0, color='black',linewidth=0.5)\n    plt.axvline(0, color='black',linewidth=0.5)\n    plt.grid(color = 'gray', linestyle = '--', linewidth = 0.5)\n    \n    for i, vec in enumerate(vectors):\n        plt.quiver(0, 0, vec[0], vec[1], angles='xy', scale_units='xy', scale=1, color=colors[i], label=labels[i])\n    \n    plt.xlim(-5, 6)\n    plt.ylim(-5, 6)\n    plt.legend()\n    plt.title(title)\n    plt.show()\n\n# Graficar los vectores\nplot_vectors([F1, F2, F_resultante], ['F1', 'F2', 'F_resultante'])"
   },
   {
+=======
+    "objectID": "taller1.html",
+    "href": "taller1.html",
+    "title": "Ejercicios \\(\\mathbb{R}^2\\)",
+    "section": "",
+    "text": "Taller de Vectores en \\(\\mathbb{R}^2\\) y Matrices \\(2 \\times 2\\)\n\nEjercicio 1\nSean los vectores \\(\\mathbf{u} = (3, -1)\\) y \\(\\mathbf{v} = (2, 4)\\).\n1. Calcula \\(\\mathbf{u} + \\mathbf{v}\\).\n2. Calcula \\(2\\mathbf{u} - 3\\mathbf{v}\\).\n\nVerifica la propiedad distributiva:\n\\[\\alpha(\\mathbf{u} + \\mathbf{v}) \\stackrel{?}{=} \\alpha\\mathbf{u} + \\alpha\\mathbf{v}\\]\ntomando \\(\\alpha = -1\\).\n\n\nPista: Solo necesitas comparar ambos lados de la igualdad para concluir.\n\n\n\nEjercicio 2\nCon los mismos vectores \\(\\mathbf{u} = (3, -1)\\) y \\(\\mathbf{v} = (2, 4)\\):\n1. Halla \\(\\mathbf{u} \\cdot \\mathbf{v}\\).\n2. Verifica la propiedad de conmutatividad \\(\\mathbf{u} \\cdot \\mathbf{v} = \\mathbf{v} \\cdot \\mathbf{u}\\).\n3. Encuentra el vector \\(\\mathbf{v}\\) y comprueba que \\[\\mathbf{v}\\cdot\\mathbf{v}=||\\mathbf{v}||^2.\\] 4. Calcula el vector proyección de \\(\\mathbf{u}\\) sobre \\(\\mathbf{v}\\), es decir, \\(\\text{proj}_{\\mathbf{v}}\\mathbf{u}\\).\n\nPista: Usa la fórmula:\n\\[\\text{proj}_{\\mathbf{v}}\\mathbf{u} = \\left(\\frac{\\mathbf{u} \\cdot \\mathbf{v}}{\\|\\mathbf{v}\\|^2}\\right)\\mathbf{v}.\\]\n\nInterpreta geometricamente que significa la proyección de un vector sobre otro.\n\n\n\nDescriba si la siguiente afirmaciones son es verdaderas o falsas:\n\nSi \\(\\mathbf{u} \\cdot \\mathbf{v} = 0\\), entonces \\(\\mathbf{u}\\) y \\(\\mathbf{v}\\) son ortogonales.\n\n\n\\[\\Big|\\Big|\\frac{\\mathbf{u}\\cdot\\mathbf{v}}{||v||^2}\\mathbf{v}\\Big|\\Big| = \\frac{|\\mathbf{u}\\cdot\\mathbf{v}|}{||\\mathbf{v}||}\\]\n\nUse el procedimiento anterior para calcular el ángulo entre los vectores \\(\\mathbf{u}\\) y \\(\\mathbf{v}\\).\n\n\n\n\n\n\n\n\n\n\n\nCalcula el ángulo \\(\\theta\\) entre \\(\\mathbf{u}\\) y \\(\\mathbf{v}\\) usando la fórmula:\n\\[\\mathbf{u} \\cdot \\mathbf{v} = \\|\\mathbf{u}\\|\\,\\|\\mathbf{v}\\|\\cos(\\theta).\\]\n\n\n\nEjercicio 3\nDada la recta que pasa por el punto \\(\\mathbf{P} = (1, -2)\\) y que tiene como dirección el vector \\(\\mathbf{P} = (2, 3)\\):\n\nEscribe su ecuación paramétrica en \\(\\mathbb{R}^2\\).\n\nRecuerda que la forma paramétrica se describe como:\n\\[\\mathbf{r}(t) = \\mathbf{P} + t\\,\\mathbf{v}, \\quad t \\in \\mathbb{R}.\\]\n\nVerifica que el punto \\(\\mathbf{Q} = (3,1)\\) no pertenece a dicha recta (sustituyendo en la forma paramétrica y comprobando si existe un valor de \\(t\\) que lo satisfaga).\nEscribe la ecuación de forma cartesiana, es decir de la forma \\(y =ax+b\\).\n\n\n\nEjercicio 4\nConsidera la recta \\(r_1\\) en forma paramétrica:\n\\[r_1: \\quad \\mathbf{r}(t) = (2, 1) + t \\, (3, -1).\\]\n\nEncuentra la ecuación paramétrica de la recta \\(r_2\\) paralela a \\(r_1\\) y que pase por el punto \\((4,2)\\).\n\nDos rectas son paralelas si sus vectores direccionales son múltiplos.\n\nEncuentra la ecuación paramétrica de la recta \\(r_3\\) perpendicular a \\(r_1\\) que pase por \\((4,2)\\).\n\nDos rectas en \\(\\mathbb{R}^2\\) son perpendiculares si sus vectores direccionales \\(\\mathbf{d_1}\\) y \\(\\mathbf{d_2}\\) cumplen \\(\\mathbf{d_1}\\cdot \\mathbf{d_2} = 0\\).\n\nDetermina el punto de intersección entre \\(r_3\\) y la recta \\(r_1\\).\n\n\n\nEjercicio 5\nSea \\(\\{\\mathbf{w}_1, \\mathbf{w}_2\\}\\) con \\(\\mathbf{w}_1 = (1, 3)\\) y \\(\\mathbf{w}_2 = (2, 6)\\).\n\nDetermina si \\(\\mathbf{w}_1\\) y \\(\\mathbf{w}_2\\) son linealmente dependientes o independientes. Explica tu proceso.\n\nSi son dependientes, describe la relación de dependencia. Si son independientes, justifica por qué.\n\n\n\nEjercicio 6\n\nExplica en tus propias palabras qué significa que un conjunto de vectores sea base de \\(\\mathbb{R}^2\\).\n\nDados los vectores \\(\\mathbf{a} = (1, 2)\\) y \\(\\mathbf{b} = (2, 1)\\), ¿son una base de \\(\\mathbb{R}^2\\)?\n\nJustifica tu respuesta usando independencia lineal\n\n\n\n\nEjercicio 7\n\n¿Por qué \\(\\{(0,0)\\}\\) (el conjunto que solo contiene al vector cero) es un subespacio de \\(\\mathbb{R}^2\\)?\n\nSi \\(S\\) es el conjunto de todos los vectores \\((x, y)\\) tales que \\(x + y = 0\\), demuestra que \\(S\\) es un subespacio de \\(\\mathbb{R}^2\\).\n\nDetermina una base para el subespacio \\(S\\).",
+    "crumbs": [
+      "Talleres",
+      "Taller 1"
+    ]
+  },
+  {
+>>>>>>> 8bf1a45 (cambios del taller 5)
     "objectID": "ejerciocio.html",
     "href": "ejerciocio.html",
     "title": "Primer taller computacional",
@@ -504,6 +670,7 @@
     ]
   },
   {
+<<<<<<< HEAD
     "objectID": "taller2.html",
     "href": "taller2.html",
     "title": "Ejercicios \\(\\mathbb{R}^2\\)",
@@ -534,11 +701,84 @@
     "crumbs": [
       "Talleres",
       "Taller 2"
+=======
+    "objectID": "qui_FV.html",
+    "href": "qui_FV.html",
+    "title": "Álgebra Lineal",
+    "section": "",
+    "text": "Preguntas de Verdadero o Falso\nLas siguientes afirmaciones son preguntas de Verdadero o Falso sobre álgebra lineal. Justifica cada respuesta.\n\nSi \\(\\mathbf{u} \\cdot \\mathbf{v} = 0\\), entonces se cumple que \\[\\|\\mathbf{u} + \\mathbf{v}\\|^2 = \\|\\mathbf{u}\\|^2 + \\|\\mathbf{v}\\|^2.\\]\nDos rectas son paralelas si sus vectores dirección son ortogonales en \\(\\mathbb{R}^2\\).\nSi \\(\\mathbf{u}\\) y \\(\\mathbf{v}\\) son paralelos en \\(\\mathbb{R}^2\\), entonces \\(\\operatorname{proj}_{\\mathbf{v}} \\mathbf{u} = \\mathbf{u}\\).\nPuedo encontrar la ecuación paramétrica de la recta si conozco un punto y una recta perpendicular a la recta en \\(\\mathbb{R}^2\\).\nDos rectas en \\(\\mathbb{R}^2\\) con el mismo vector dirección siempre son paralelas.\nSi dos rectas en \\(\\mathbb{R}^2\\) tienen vectores dirección ortogonales, entonces siempre se intersectan en un único punto.\nUn conjunto de dos vectores en \\(\\mathbb{R}^2\\) siempre es una base del espacio si los vectores son diferentes de cero.\nDos vectores linealmente independientes en \\(\\mathbb{R}^2\\) siempre son ortogonales.\nDos vectores linealmente independientes en \\(\\mathbb{R}^2\\) forman una base.\nSi una matriz \\(A_{2 \\times 2}\\) tiene columnas linealmente independientes, entonces sus filas también son linealmente independientes.\nSi una matriz \\(A_{2 \\times 2}\\) es invertible, entonces los vectores formados por sus filas son linealmente dependientes.\nSi una matriz \\(A_{2 \\times 2}\\) es invertible, entonces los vectores formados por las columnas son linealmente dependientes.\nUn conjunto de dos vectores en \\(\\mathbb{R}^2\\) siempre es una base del espacio si los vectores son diferentes de cero.\nEl conjunto \\(\\{(0,0)\\}\\) es un subespacio de \\(\\mathbb{R}^2\\) porque satisface las condiciones de cerradura bajo suma y multiplicación escalar.\nSi una matriz \\(A_{2 \\times 2}\\) tiene columnas linealmente independientes, entonces sus filas también son linealmente independientes.\nSi dos vectores en \\(\\mathbb{R}^2\\) son ortogonales, entonces son linealmente dependientes.\nSi una matriz cuadrada \\(A_{2 \\times 2}\\) tiene determinante cero, entonces el sistema \\(Ax = b\\) no tiene solución única.\nUn conjunto de vectores es linealmente independiente es equivalente en \\(\\mathbb{R}^2\\) que no son paralelos.\nSi una matriz cuadrada en \\(A_{2 \\times 2}\\) tiene un determinante mayor que cero, entonces su inversa siempre existe.\nEl determinante de una matriz en \\(\\mathbb{R}^2\\) representa el área de un paralelogramo definido por sus columnas como vectores.\nEl vector proyección en \\(\\mathbb{R}^2\\) de un vector u sobre otro vector v siempre es un múltiplo escalar de v.\nToda recta en \\(\\mathbb{R}^2\\) definida en forma paramétrica puede expresarse en la forma \\(y = ax + b\\).\nSi el determinante de dos vectores en \\(\\mathbb{R}^2\\) es igual a cero, entonces los vectores son linealmente dependientes.\nLa magnitud de la proyección de un vector \\(u\\) sobre \\(v\\) es igual a \\(\\displaystyle \\frac{|u \\cdot v|}{\\|v\\|^2}\\).\nSi la proyección de \\(\\mathbf{u}\\) sobre \\(\\mathbf{v}\\) en \\(\\mathbb{R}^2\\) resulta en el vector cero y \\(\\mathbf{u}\\) no es cero, entonces \\(\\mathbf{v}\\) debe ser el vector cero.\nSi la proyección de \\(\\mathbf{u}\\) sobre \\(\\mathbf{v}\\) en \\(\\mathbb{R}^2\\) resulta en el vector cero y \\(\\mathbf{u}\\) no es cero, entonces los vectores son perpendiculares.\nEn un sistema de ecuaciones lineales de dos variables en \\(\\mathbb{R}^2\\) , si una ecuación es múltiplo de la otra, el sistema tiene infinitas soluciones.\nEl hecho de que la proyección de un vector \\(\\mathbf{u}\\) sobre \\(\\mathbf{v}\\) en \\(\\mathbb{R}^2\\) sea diferente de cero implica que \\(\\mathbf{u}\\) y \\(\\mathbf{v}\\) tienen exactamente la misma dirección.\nEl sistema de ecuaciones lineales en \\(\\mathbb{R}^2\\), \\(Ax = b\\) tiene solución única si y solo si la matriz \\(A_{2\\times 2}\\) y los vectores formados por sus columnas son linealmente independientes.\nEl sistema \\(Ax = b\\) en \\(\\mathbb{R}^2\\) , tiene infinitas soluciones si la matriz \\(A_{2\\times 2}\\) tiene determinante igual a cero.\nSi \\(b\\) en \\(\\mathbb{R}^2\\) no se puede escribir como combinación lineal de las columnas de la matriz \\(A\\), entonces el sistema \\(Ax = b\\) tiene solución única."
+  },
+  {
+    "objectID": "section3.html",
+    "href": "section3.html",
+    "title": "Independencia lineal",
+    "section": "",
+    "text": "Un subespacio de \\(\\mathbb{R}^2\\) es un conjunto de vectores que cumple con las siguientes propiedades:\n\nEl vector cero está en el subespacio.\nEl subespacio es cerrado bajo la suma de vectores.\nEl subespacio es cerrado bajo la multiplicación por un escalar.\n\n\n\nEl conjunto de todos los vectores que estan contenidos en una recta que pasa por el origen es un subespacio de \\(\\mathbb{R}^2\\). Esto se debe a que la recta cumple con las tres propiedades mencionadas anteriormente. ¿cómo podemos mostrar esto?\n\n\n\nEl vector cero es un subespacio. ¿Por qué?",
+    "crumbs": [
+      "Plano",
+      "Independencia lineal"
+    ]
+  },
+  {
+    "objectID": "section3.html#ejemplo",
+    "href": "section3.html#ejemplo",
+    "title": "Independencia lineal",
+    "section": "",
+    "text": "El conjunto de todos los vectores que estan contenidos en una recta que pasa por el origen es un subespacio de \\(\\mathbb{R}^2\\). Esto se debe a que la recta cumple con las tres propiedades mencionadas anteriormente. ¿cómo podemos mostrar esto?",
+    "crumbs": [
+      "Plano",
+      "Independencia lineal"
+    ]
+  },
+  {
+    "objectID": "section3.html#ejemplo-2",
+    "href": "section3.html#ejemplo-2",
+    "title": "Independencia lineal",
+    "section": "",
+    "text": "El vector cero es un subespacio. ¿Por qué?",
+    "crumbs": [
+      "Plano",
+      "Independencia lineal"
+    ]
+  },
+  {
+    "objectID": "section3.html#ejemplo-1",
+    "href": "section3.html#ejemplo-1",
+    "title": "Independencia lineal",
+    "section": "Ejemplo",
+    "text": "Ejemplo\nVamos a estudiar el conjunto generado por el vector \\(\\mathbf{v} = (1, 2)\\) en \\(\\mathbb{R}^2\\). Lo primero que vamos a estudiar es el conjunto de todas las combinaciones lineales de \\(\\mathbf{v}\\), es decir, el conjunto de todos los vectores que se pueden obtener multiplicando \\(\\mathbf{v}\\) por un número real. Para ello vamos a graficar el vector \\(\\mathbf{v}\\) y luego multiplicamos a este vector por un número real \\(c\\) y graficamos el vector resultante. Como lo vemos en la siguiente figura el conjunto de todas las combinaciones lineales de \\(\\mathbf{v}\\) es una recta de color negro que pasa por el origen y tiene dirección \\(\\mathbf{v}\\).",
+    "crumbs": [
+      "Plano",
+      "Independencia lineal"
+    ]
+  },
+  {
+    "objectID": "section3.html#ejemplo-2-1",
+    "href": "section3.html#ejemplo-2-1",
+    "title": "Independencia lineal",
+    "section": "Ejemplo 2",
+    "text": "Ejemplo 2\nVamos a estudiar si el vector \\(\\mathbf{w} = (10, 5)\\) es una combinación lineal del vector \\(\\mathbf{v}_1 = (1, 2)\\), Note que el vector\n\\[\\mathbf{w} = 5 \\mathbf{v}_1\\] puesto que\n\\[5 \\mathbf{v}_1 = 5(1, 2) = (5, 10)\\]\nDe esta forma podemos decir que \\(\\mathbf{w}\\) es una combinación lineal de \\(\\mathbf{v}_1\\). Además podemos ver que \\(\\mathbf{w}\\in Span(\\mathbf{v}_1)\\).\nAquí nos surgen varias preguntas que gráficamente podríamos resolver como\n\n¿Si \\(\\mathbf{w},\\mathbf{v}_1\\) son paralelos y vectores de \\(\\mathbb{R}^2\\), estos formaran el mismo espacio generado?\n¿El vector \\(\\mathbf{z}=(5,2)\\) también es una combinación lineal de \\(\\mathbf{v}_1=(1,2)\\)?\n\nAhora supongamos que tenemos dos vectores no nulos en \\(\\mathbb{R}^2\\), llamados \\(\\mathbf{v}_1=(2,1)\\) y \\(\\mathbf{v}_2=(1,2)\\). Vamos a estudiar el conjunto de todas las combinaciones lineales de estos dos vectores. Para ello vamos a graficar los vectores \\(\\mathbf{v}_1\\) y \\(\\mathbf{v}_2\\) y luego multiplicamos a estos vectores por dos números reales \\(c_1\\) y \\(c_2\\) y graficamos el vector resultante. Como lo vemos en la siguiente figura el conjunto de todas las combinaciones lineales de \\(\\mathbf{v}_1\\) y \\(\\mathbf{v}_2\\) es un plano de color\n\nNote que en este caso podemos ver que el espacio generado por todos los vectores es \\(\\mathbb{R}^2\\).\nDefinición: Un conjunto de vectores \\(W=\\{\\mathbf{v}_1,\\mathbf{v}_2,\\ldots,\\mathbf{v}_n\\}\\) en \\(\\mathbb{R}^n\\) es linealmente independiente si la única combinación lineal de los vectores de \\(W\\) que da como resultado el vector cero es la combinación lineal trivial, es decir, si\n\\[\\alpha_1 \\mathbf{v}_1 + \\alpha_2 \\mathbf{v}_2 + \\ldots + \\alpha_n \\mathbf{v}_n = \\mathbf{0}\\]\nentonces \\(\\alpha_1 = \\alpha_2 = \\ldots = \\alpha_n = 0\\). Si un conjunto de vectores no es linealmente independiente, se dice que es linealmente dependiente.",
+    "crumbs": [
+      "Plano",
+      "Independencia lineal"
+    ]
+  },
+  {
+    "objectID": "section3.html#ejemplo-3",
+    "href": "section3.html#ejemplo-3",
+    "title": "Independencia lineal",
+    "section": "Ejemplo",
+    "text": "Ejemplo\nNote que los vectores \\(\\mathbf{v}_1=(1,1)\\) y \\(\\mathbf{v}_2=(-1,1)\\) son linealmente independientes, ya que la única combinación lineal de estos vectores que da como resultado el vector cero es la combinación lineal trivial. Es decir, si \\(\\alpha_1 \\mathbf{v}_1 + \\alpha_2 \\mathbf{v}_2 = \\mathbf{0}\\), entonces \\(\\alpha_1 = \\alpha_2 = 0\\). ¿Por qué?\nDefinición\nUn conjunto de vectores \\(W=\\{\\mathbf{v}_1,\\mathbf{v}_2,\\ldots,\\mathbf{v}_n\\}\\) en \\(\\mathbb{R}^2\\) es una base si cumple las siguientes dos condiciones:\n\nLos elementos de \\(W\\) son linealmente independientes.\n\\(Span(W)=\\mathbb{R}^2\\). Es decir, cualquier vector en \\(\\mathbb{R}^2\\) se puede expresar como una combinación lineal de los vectores de \\(W\\).",
+    "crumbs": [
+      "Plano",
+      "Independencia lineal"
+>>>>>>> 8bf1a45 (cambios del taller 5)
     ]
   },
   {
     "objectID": "taller5.html",
     "href": "taller5.html",
+<<<<<<< HEAD
     "title": "Guía de Codificación con ASCII y Álgebra Lineal",
     "section": "",
     "text": "Para codificar un mensaje, utilizaremos una correspondencia entre letras y números basada en el alfabeto:\n\n\n\nLetra\nCódigo\n\n\n\n\nA\n1\n\n\nB\n2\n\n\nC\n3\n\n\n…\n…\n\n\nZ\n26\n\n\nEspacio\n0\n\n\n\nEjemplo:\nLa palabra \"VIDA\" se convierte en:\n\\[\nV = 22, \\quad I = 9, \\quad D = 4, \\quad A = 1\n\\]\ny se agrupa en vectores de dos en dos:\n\\[\n\\begin{bmatrix} 22 \\\\ 9 \\end{bmatrix}, \\quad \\begin{bmatrix} 4 \\\\ 1 \\end{bmatrix}\n\\]"
@@ -577,17 +817,37 @@
     "title": "Guía de Codificación con ASCII y Álgebra Lineal",
     "section": "Ejercicio 2: Descifrado de un Mensaje con la Matriz Inversa**",
     "text": "Ejercicio 2: Descifrado de un Mensaje con la Matriz Inversa**\nUn mensaje secreto fue cifrado con la misma matriz \\(A\\), y se obtuvo: \\[\n\\begin{bmatrix}\n0 & 8 & 18 & 0 & 21 & 5 & 0 & 15 & 18 & 0 & 25 & 4 & 18 & 15 & 0 \\\\\n25 & 1 & 15 & 1 & 17 & 9 & 14 & 16 & 4 & 1 & 1 & 21 & 1 & 14 & 19\n\\end{bmatrix}\n\\]\n\nPasos a seguir\n\nEncuentra la matriz inversa de \\(A\\):\n\\[\nA^{-1} = ?\n\\]\nMultiplica cada vector cifrado por \\(A^{-1}\\) para recuperar el mensaje original.\n\nConvierte los números obtenidos en letras usando la misma codificación del Ejercicio 1."
+=======
+    "title": "Ejercicio computacional valores y vectores propios (Matrices 2x2)",
+    "section": "",
+    "text": "Para realizar este ejercicio usted puede usar Colab, ya que necesitará realizar muchas operaciones matriciales, como suma de matrices y multiplicación. El resto de la operaciones las puede realizar en papel.",
+    "crumbs": [
+      "Talleres",
+      "Taller 5 (Trabajo computacional)"
+    ]
+>>>>>>> 8bf1a45 (cambios del taller 5)
   },
   {
     "objectID": "taller5.html#introducción-al-código-de-codificación",
     "href": "taller5.html#introducción-al-código-de-codificación",
+<<<<<<< HEAD
     "title": "Guía de Codificación con ASCII y Álgebra Lineal",
     "section": "",
     "text": "Para codificar un mensaje, utilizaremos una correspondencia entre letras y números basada en el alfabeto:\n\n\n\nLetra\nCódigo\n\n\n\n\nA\n1\n\n\nB\n2\n\n\nC\n3\n\n\n…\n…\n\n\nZ\n26\n\n\nEspacio\n0\n\n\n\nEjemplo:\nLa palabra \"VIDA\" se convierte en:\n\\[\nV = 22, \\quad I = 9, \\quad D = 4, \\quad A = 1\n\\]\ny se agrupa en vectores de dos en dos:\n\\[\n\\begin{bmatrix} 22 \\\\ 9 \\end{bmatrix}, \\quad \\begin{bmatrix} 4 \\\\ 1 \\end{bmatrix}\n\\]"
+=======
+    "title": "Ejercicio computacional valores y vectores propios (Matrices 2x2)",
+    "section": "Introducción al Código de Codificación",
+    "text": "Introducción al Código de Codificación\nPara codificar un mensaje, utilizaremos una correspondencia entre letras y números basada en el alfabeto:\n\n\n\nLetra\nCódigo\n\n\n\n\nA\n1\n\n\nB\n2\n\n\nC\n3\n\n\nD\n4\n\n\nE\n5\n\n\nF\n6\n\n\nG\n7\n\n\nH\n8\n\n\nI\n9\n\n\nJ\n10\n\n\nK\n11\n\n\nL\n12\n\n\nM\n13\n\n\nN\n14\n\n\nO\n15\n\n\nP\n16\n\n\nQ\n17\n\n\nR\n18\n\n\nS\n19\n\n\nT\n20\n\n\nU\n21\n\n\nV\n22\n\n\nW\n23\n\n\nX\n24\n\n\nY\n25\n\n\nZ\n26\n\n\nEspacio\n0\n\n\n\nEjemplo:\nLa palabra \"VIDA\" se convierte en:\n\\[\nV = 22, \\quad I = 9, \\quad D = 4, \\quad A = 1,\n\\]\ny se agrupa en vectores de dos en dos:\n\\[\n\\begin{bmatrix} 22 \\\\ 9 \\end{bmatrix}, \\quad \\begin{bmatrix} 4 \\\\ 1 \\end{bmatrix}.\n\\]",
+    "crumbs": [
+      "Talleres",
+      "Taller 5 (Trabajo computacional)"
+    ]
+>>>>>>> 8bf1a45 (cambios del taller 5)
   },
   {
     "objectID": "taller5.html#ejercicio-1-codificación-de-la-vida-es-bella",
     "href": "taller5.html#ejercicio-1-codificación-de-la-vida-es-bella",
+<<<<<<< HEAD
     "title": "Guía de Codificación con ASCII y Álgebra Lineal",
     "section": "Ejercicio 1: Codificación de “La vida es bella”**",
     "text": "Ejercicio 1: Codificación de “La vida es bella”**\nVamos a codificar la frase \"LA VIDA ES BELLA\" con la siguiente matriz:\n\\[\nA = \\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix}\n\\]\n\nPasos a seguir\n\nConvierte las letras a valores numéricos siguiendo la tabla anterior.\n\nAgrupa los valores en vectores columna de \\(2 \\times 1\\).\n\nMultiplica cada vector por la matriz \\(A\\) para obtener el mensaje cifrado."
@@ -598,10 +858,31 @@
     "title": "Guía de Codificación con ASCII y Álgebra Lineal",
     "section": "4. Código en Python para Resolver la Práctica",
     "text": "4. Código en Python para Resolver la Práctica"
+=======
+    "title": "Ejercicio computacional valores y vectores propios (Matrices 2x2)",
+    "section": "Ejercicio 1: Codificación de La vida es bella",
+    "text": "Ejercicio 1: Codificación de La vida es bella\nVamos a codificar la frase \"LA VIDA ES BELLA\" con la siguiente matriz:\n\\[\nA = \\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix}.\n\\]\n\nPasos a seguir\n\nConvierte las letras a valores numéricos siguiendo la tabla anterior.\nAgrupa los valores en vectores columna de \\(2 \\times 1\\).\nMultiplica la matriz \\(A\\) por cada vector para obtener el mensaje cifrado.\n\n\nimport numpy as np\n\n# Definir la matriz A\nD = np.array([[1, 0], [0, 2]])\n\nprint(\"Matriz D:\",D)\nP = np.array([[2, 1], [1, 0]])\nA = np.dot(np.dot(np.linalg.inv(P), D), P)\n\nA= P@D@np.linalg.inv(P)\nprint(\"Matriz A:\",A)\n\n# Crear el diccionario de conversión\nabc_dict = {chr(i + 64): i for i in range(1, 27)}  # A = 1, B = 2, ..., Z = 26\nabc_dict[\" \"] = 0  # Espacio = 0\n\n# Mostrar el diccionario\nprint(abc_dict)\ndef text_to_numbers(text):\n    text = text.upper()  # Convertimos a mayúsculas para evitar errores\n    return [abc_dict[char] for char in text if char in abc_dict]\n\n# Prueba con \"LA VIDA ES BELLA\"\n#frase = \"Y AHORA QUIEN PODRA AYUDARNOS \"\nfrase = \"LA VIDA ES BELLA\"\n#frase = \"EL CHAPULIN COLORADO\"\nnumeros = text_to_numbers(frase)\n#print(numeros)\n\n# Convertir la lista de números en una matriz de filas\nnumeros_matriz = np.array(numeros).reshape(-1, 2)\nprint(numeros_matriz.T)\n\nMatriz D: [[1 0]\n [0 2]]\nMatriz A: [[ 2. -2.]\n [ 0.  1.]]\n{'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 6, 'G': 7, 'H': 8, 'I': 9, 'J': 10, 'K': 11, 'L': 12, 'M': 13, 'N': 14, 'O': 15, 'P': 16, 'Q': 17, 'R': 18, 'S': 19, 'T': 20, 'U': 21, 'V': 22, 'W': 23, 'X': 24, 'Y': 25, 'Z': 26, ' ': 0}\n[[12  0  9  1  5  0  5 12]\n [ 1 22  4  0 19  2 12  1]]",
+    "crumbs": [
+      "Talleres",
+      "Taller 5 (Trabajo computacional)"
+    ]
+  },
+  {
+    "objectID": "taller5.html#ejercicio-2-descifrado-de-un-mensaje-con-la-matriz-inversa",
+    "href": "taller5.html#ejercicio-2-descifrado-de-un-mensaje-con-la-matriz-inversa",
+    "title": "Ejercicio computacional valores y vectores propios (Matrices 2x2)",
+    "section": "Ejercicio 2: Descifrado de un Mensaje con la Matriz Inversa",
+    "text": "Ejercicio 2: Descifrado de un Mensaje con la Matriz Inversa\nUn mensaje secreto fue cifrado con la misma matriz \\(A\\), y se obtuvo: \\[\n\\begin{bmatrix}\n0 & 8 & 18 & 0 & 21 & 5 & 0 & 15 & 18 & 0 & 25 & 4 & 18 & 15 & 0 \\\\\n25 & 1 & 15 & 1 & 17 & 9 & 14 & 16 & 4 & 1 & 1 & 21 & 1 & 14 & 19\n\\end{bmatrix}.\n\\]\n\nPasos a seguir\n\nEncuentra la matriz inversa de \\(A\\):\n\\[\nA^{-1} = ?\n\\]\nMultiplica \\(A^{-1}\\) por cada vector para recuperar el mensaje original.\nConvierte los números obtenidos en letras usando la misma codificación del Ejercicio 1.",
+    "crumbs": [
+      "Talleres",
+      "Taller 5 (Trabajo computacional)"
+    ]
+>>>>>>> 8bf1a45 (cambios del taller 5)
   },
   {
     "objectID": "taller5.html#section",
     "href": "taller5.html#section",
+<<<<<<< HEAD
     "title": "Guía de Codificación con ASCII y Álgebra Lineal",
     "section": "",
     "text": "Los autovalores de la matriz ( A ) son ( _1 = 1 ) y ( _2 = 1 ). Los autovectores de la matriz ( A ) son las columnas de la matriz ( P ) tal que ( A = P P^{-1} ), donde ( ) es la matriz diagonal de autovalores. Para la matriz ( A ), los autovectores son:\n\\[\n\\begin{bmatrix}\n1 \\\\\n1\n\\end{bmatrix}\n\\quad \\text{y} \\quad\n\\begin{bmatrix}\n2 \\\\\n1\n\\end{bmatrix}\n\\]"
@@ -612,12 +893,53 @@
     "title": "",
     "section": "",
     "text": "import numpy as np\n\n# Definir la matriz A\nD = np.array([[1, 0], [0, -1]])\n\nprint(\"Matriz D:\",D)\nP = np.array([[1, 1], [-1, 1]])\nA = np.dot(np.dot(np.linalg.inv(P), D), P)\n\n\nprint(\"Matriz A:\",A)\n\nMatriz D: [[ 1  0]\n [ 0 -1]]\nMatriz A: [[0. 1.]\n [1. 0.]]\n\n\n\nimport numpy as np\n\n\n# Crear el diccionario de conversión\nabc_dict = {chr(i + 64): i for i in range(1, 27)}  # A = 1, B = 2, ..., Z = 26\nabc_dict[\" \"] = 0  # Espacio = 0\n\n# Mostrar el diccionario\nprint(abc_dict)\ndef text_to_numbers(text):\n    text = text.upper()  # Convertimos a mayúsculas para evitar errores\n    return [abc_dict[char] for char in text if char in abc_dict]\n\n# Prueba con \"LA VIDA ES BELLA\"\nfrase = \"Y AHORA QUIEN PODRA AYUDARNOS \"\nnumeros = text_to_numbers(frase)\nprint(numeros)\n\n# Convertir la lista de números en una matriz de filas\nnumeros_matriz = np.array(numeros).reshape(-1, 2)\nprint(numeros_matriz.T)\n\n\n\n\n{'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 6, 'G': 7, 'H': 8, 'I': 9, 'J': 10, 'K': 11, 'L': 12, 'M': 13, 'N': 14, 'O': 15, 'P': 16, 'Q': 17, 'R': 18, 'S': 19, 'T': 20, 'U': 21, 'V': 22, 'W': 23, 'X': 24, 'Y': 25, 'Z': 26, ' ': 0}\n[25, 0, 1, 8, 15, 18, 1, 0, 17, 21, 9, 5, 14, 0, 16, 15, 4, 18, 1, 0, 1, 25, 21, 4, 1, 18, 14, 15, 19, 0]\n[[25  1 15  1 17  9 14 16  4  1  1 21  1 14 19]\n [ 0  8 18  0 21  5  0 15 18  0 25  4 18 15  0]]\n\n\n\n# hacer la transformación\n\nnumeros_cifrados = np.dot(A, numeros_matriz.T)\nprint(numeros_cifrados)\n\n# Convertir la matriz de números cifrados en una lista\nnumeros_cifrados = numeros_cifrados.T.flatten()\nprint(numeros_cifrados)\n\n[[ 0.  8. 18.  0. 21.  5.  0. 15. 18.  0. 25.  4. 18. 15.  0.]\n [25.  1. 15.  1. 17.  9. 14. 16.  4.  1.  1. 21.  1. 14. 19.]]\n[ 0. 25.  8.  1. 18. 15.  0.  1. 21. 17.  5.  9.  0. 14. 15. 16. 18.  4.\n  0.  1. 25.  1.  4. 21. 18.  1. 15. 14.  0. 19.]\n\n\n\n## devolver a texto\n\nA_inv = np.linalg.inv(A)\n\nnumeros_descifrados = np.dot(A_inv, numeros_cifrados.reshape(-1, 2).T)\nnumeros_descifrados = numeros_descifrados.T.flatten()\nprint(numeros_descifrados)\n\n[25.  0.  1.  8. 15. 18.  1.  0. 17. 21.  9.  5. 14.  0. 16. 15.  4. 18.\n  1.  0.  1. 25. 21.  4.  1. 18. 14. 15. 19.  0.]\n\n\n\ndef numbers_to_text(numbers):\n    reverse_dict = {v: k for k, v in abc_dict.items()}  # Invertimos el diccionario\n    return \"\".join(reverse_dict[num] for num in numbers)\n\n# Prueba con los números obtenidos antes\ntexto_recuperado = numbers_to_text(numeros_descifrados)\nprint(texto_recuperado)\n\n\nY AHORA QUIEN PODRA AYUDARNOS"
+=======
+    "title": "Ejercicio computacional valores y vectores propios (Matrices 2x2)",
+    "section": "",
+    "text": "Los valores propios de la matriz \\(A\\) son \\(\\lambda_1 = 1\\) y \\(\\lambda_2 = 1\\). Los vectores propios de la matriz \\(A\\) son las columnas de la matriz \\(P\\) tal que \\(A = P \\Lambda P^{-1}\\), donde \\(\\Lambda\\) es la matriz diagonal de los valores propios. Para la matriz \\(A\\), los vectores propios son:\n\\[\n\\begin{bmatrix}\n1 \\\\\n1\n\\end{bmatrix}\n\\quad \\text{y} \\quad\n\\begin{bmatrix}\n2 \\\\\n1\n\\end{bmatrix}.\n\\]",
+    "crumbs": [
+      "Talleres",
+      "Taller 5 (Trabajo computacional)"
+    ]
+>>>>>>> 8bf1a45 (cambios del taller 5)
   },
   {
     "objectID": "taller5.html#observaciones",
     "href": "taller5.html#observaciones",
+<<<<<<< HEAD
     "title": "Guía de Codificación con ASCII y Álgebra Lineal",
     "section": "Observaciones",
     "text": "Observaciones\nNote que una matriz cuadrada \\(A\\) de \\(2 \\times 2\\) tiene dos autovalores \\(\\lambda_1\\) y \\(\\lambda_2\\), y dos autovectores \\(v_1\\) y \\(v_2\\). La matriz \\(A\\) se puede descomponer como:\n\\[\nA = P \\Lambda P^{-1}\n\\]\ndonde \\(P\\) es la matriz cuyas columnas son los autovectores de \\(A\\), y \\(\\Lambda\\) es la matriz diagonal de los autovalores de \\(A\\). Por ejemplo, si \\(A\\) es:\n\\[\nA = \\begin{bmatrix} 0 & 1 \\\\ 1 & 0\\end{bmatrix}\n\\] entonces los valores propios de \\(A\\) son \\(\\lambda_1 = 1\\) y \\(\\lambda_2 = -1\\), y los vectores propios son:\n\\[\nv_1 = \\begin{bmatrix} 1 \\\\ 1\\end{bmatrix} \\quad \\text{y} \\quad v_2 = \\begin{bmatrix} 1 \\\\ -1\\end{bmatrix}\n\\]\nde esta forma, la matriz \\(A\\) se puede descomponer como:\n\\[\nA = \\begin{bmatrix} 1 & 1 \\\\ 1 & -1\\end{bmatrix} \\begin{bmatrix} 1 & 0 \\\\ 0 & -1\\end{bmatrix} \\begin{bmatrix} 1 & 1 \\\\ 1 & -1\\end{bmatrix}^{-1}\n\\]"
+=======
+    "title": "Ejercicio computacional valores y vectores propios (Matrices 2x2)",
+    "section": "Observaciones",
+    "text": "Observaciones\nNote que una matriz cuadrada \\(A\\) de \\(2 \\times 2\\) tiene dos valores propios \\(\\lambda_1\\) y \\(\\lambda_2\\), y dos vectores propios \\(v_1\\) y \\(v_2\\). La matriz \\(A\\) se puede descomponer como:\n\\[\nA = P \\Lambda P^{-1},\n\\]\ndonde \\(P=[v_1|v_2]\\) es la matriz cuyas columnas son los vectores propios de \\(A\\), y\n\\[\\Lambda=\\begin{bmatrix}\\lambda_1&0\\\\0&\\lambda_2\\end{bmatrix},\\]\nes la matriz diagonal de los valores propios de \\(A\\).\nPor ejemplo, si \\(A\\) es:\n\\[\nA = \\begin{bmatrix} 0 & 1 \\\\ 1 & 0\\end{bmatrix},\n\\] entonces los valores propios de \\(A\\) son\n\\(\\lambda_1 = 1\\) asociado al vector propio \\(v_1 = \\begin{bmatrix} 1 \\\\ 1\\end{bmatrix}\\) y \\(\\lambda_2 = -1\\) asociado al vector propio \\(v_2 = \\begin{bmatrix} 1 \\\\ -1\\end{bmatrix}\\).\nDe esta forma, tenemos que la matriz\n\\[\nP = \\begin{bmatrix} 1 & 1 \\\\ 1 & -1\\end{bmatrix},\n\\ \\\n\\Lambda = \\begin{bmatrix} 1 & 0 \\\\ 0 & -1\\end{bmatrix}\n\\ \\\n\\text{y} \\ \\\nP^{-1} = \\begin{bmatrix} 1/2 & 1/2 \\\\ 1/2 & -1/2\\end{bmatrix},\n\\]\n\\[\nA = \\begin{bmatrix} 1 & 1 \\\\ 1 & -1\\end{bmatrix} \\begin{bmatrix} 1 & 0 \\\\ 0 & -1\\end{bmatrix} \\begin{bmatrix} 1/2 & 1/2 \\\\ 1/2 & -1/2\\end{bmatrix}.\n\\]",
+    "crumbs": [
+      "Talleres",
+      "Taller 5 (Trabajo computacional)"
+    ]
+  },
+  {
+    "objectID": "taller5.html#ejercicio-3-encuentre-el-mensaje-encriptado",
+    "href": "taller5.html#ejercicio-3-encuentre-el-mensaje-encriptado",
+    "title": "Ejercicio computacional valores y vectores propios (Matrices 2x2)",
+    "section": "Ejercicio 3: Encuentre el mensaje encriptado",
+    "text": "Ejercicio 3: Encuentre el mensaje encriptado\nUn experto en matemáticas observo el siguiente vector el cual tiene un mensaje encriptado, el cual se sabe que fue encriptado con la técnica anterior.\nel encontró que la matriz llave tiene dos valores propios \\[\\lambda_1 = 1 \\quad \\text{y} \\quad \\lambda_2 = 2,\\]\ny el valor propio asociado a \\(\\lambda_2\\) es\n\\[\nv_2 = \\begin{bmatrix} 1 \\\\ 0\\end{bmatrix}\n\\]\nAdemas noto que cuando tenia la la combinación espacio de letras “BA” al convertirlo a vectores y multiplicarlo por la matriz llave, obtenía el mismo vector, es decir tenia la misma combinación de letras.\nNote que si el mensaje encriptado era\n\\[\n\\begin{bmatrix}\n-14 & -6 & 14 & -10 & 6 & 28 & -24 & -6 & 34 & -22 \\\\\n12 & 3 & 1 & 21 & 9 & 0 & 15 & 15 & 1 & 15 \\\\\n\\end{bmatrix}\n\\]\nescribiéndolo en forma de matriz, tenemos \\[\n\\begin{bmatrix}\n10 & 0 & 16 & 32 & 24 & 28 & 6 & 24 & 36 & 8 \\\\\n2 & 3 & -15 & -11 & -15 & -28 & 9 & -9 & -35 & 7\n\\end{bmatrix}\n\\]\n\nEscribe un plan para encontrar el mensaje encriptado.\nEncuentra el mensaje encriptado.",
+    "crumbs": [
+      "Talleres",
+      "Taller 5 (Trabajo computacional)"
+    ]
+  },
+  {
+    "objectID": "taller5.html#información-adicional",
+    "href": "taller5.html#información-adicional",
+    "title": "Ejercicio computacional valores y vectores propios (Matrices 2x2)",
+    "section": "Información Adicional",
+    "text": "Información Adicional\nLos valores propios de la matriz \\(A\\) son \\(\\lambda_1 = 1\\) y \\(\\lambda_2 = 1\\). Los vectores propios de la matriz \\(A\\) son las columnas de la matriz \\(P\\) tal que \\(A = P \\Lambda P^{-1}\\), donde \\(\\Lambda\\) es la matriz diagonal de los valores propios. Para la matriz \\(A\\), los vectores propios son:\n\\[\n\\begin{bmatrix}\n1 \\\\\n1\n\\end{bmatrix}\n\\quad \\text{y} \\quad\n\\begin{bmatrix}\n2 \\\\\n1\n\\end{bmatrix}.\n\\]",
+    "crumbs": [
+      "Talleres",
+      "Taller 5 (Trabajo computacional)"
+    ]
+>>>>>>> 8bf1a45 (cambios del taller 5)
   }
 ]

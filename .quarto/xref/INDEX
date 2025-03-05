@@ -74,6 +74,7 @@
   "taller4.qmd": {
     "taller4.tex": "935ad575",
     "taller4.html": "e4369168"
+<<<<<<< HEAD
 =======
   "taller2n.qmd": {
     "taller2n.tex": "ac9f403c",
@@ -92,5 +93,10 @@
   "calculo.ipynb": {
     "calculo.html": "e9b2db2e"
 >>>>>>> 301a5ec (actividad 5)
+=======
+  },
+  "taller5.qmd": {
+    "taller5.html": "b3577183"
+>>>>>>> 8bf1a45 (cambios del taller 5)
   }
 }
