@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Guía de Codificación con ASCII y Álgebra Lineal"
 author: "Tu Nombre"
 format: html
@@ -6,6 +7,17 @@ format: html
 
 
 ## **1. Introducción al Código de Codificación**
+=======
+title: "Ejercicio computacional valores y vectores propios (Matrices 2x2)"
+format: html
+output: html_document
+---
+
+Para realizar este ejercicio usted puede usar Colab, ya que necesitará realizar muchas operaciones matriciales, como suma de matrices y multiplicación. El resto de la operaciones las puede realizar en papel.
+
+
+## Introducción al Código de Codificación
+>>>>>>> 1f1b43b (Taller 5)
 
 Para codificar un mensaje, utilizaremos una correspondencia entre letras y números basada en el alfabeto:
 
@@ -22,20 +34,32 @@ Para codificar un mensaje, utilizaremos una correspondencia entre letras y núme
 La palabra `"VIDA"` se convierte en:
 
 $$
+<<<<<<< HEAD
 V = 22, \quad I = 9, \quad D = 4, \quad A = 1
+=======
+V = 22, \quad I = 9, \quad D = 4, \quad A = 1,
+>>>>>>> 1f1b43b (Taller 5)
 $$
 
 y se agrupa en vectores de dos en dos:
 
 $$
+<<<<<<< HEAD
 \begin{bmatrix} 22 \\ 9 \end{bmatrix}, \quad \begin{bmatrix} 4 \\ 1 \end{bmatrix}
 $$
 
 ## Ejercicio 1: Codificación de "La vida es bella"**
+=======
+\begin{bmatrix} 22 \\ 9 \end{bmatrix}, \quad \begin{bmatrix} 4 \\ 1 \end{bmatrix}.
+$$
+
+## Ejercicio 1: Codificación de La vida es bella
+>>>>>>> 1f1b43b (Taller 5)
 
 Vamos a codificar la frase `"LA VIDA ES BELLA"` con la siguiente matriz:
 
 $$
+<<<<<<< HEAD
 A = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}
 $$
 
@@ -47,12 +71,28 @@ $$
 
 
 ## Ejercicio 2: Descifrado de un Mensaje con la Matriz Inversa**
+=======
+A = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}.
+$$
+
+### Pasos a seguir
+a. **Convierte las letras a valores numéricos** siguiendo la tabla anterior.  
+
+b. **Agrupa los valores en vectores columna de $2 \times 1$**.  
+
+c. **Multiplica cada vector por la matriz $A$ para obtener el mensaje cifrado**.  
+
+
+
+## Ejercicio 2: Descifrado de un Mensaje con la Matriz Inversa
+>>>>>>> 1f1b43b (Taller 5)
 
 Un mensaje secreto fue cifrado con la misma matriz $A$, y se obtuvo:
 $$
 \begin{bmatrix}
 0 & 8 & 18 & 0 & 21 & 5 & 0 & 15 & 18 & 0 & 25 & 4 & 18 & 15 & 0 \\
 25 & 1 & 15 & 1 & 17 & 9 & 14 & 16 & 4 & 1 & 1 & 21 & 1 & 14 & 19
+<<<<<<< HEAD
 \end{bmatrix}
 $$
 
@@ -70,6 +110,27 @@ $$
 
 Los autovalores de la matriz \( A \) son \( \lambda_1 = 1 \) y \( \lambda_2 = 1 \).
 Los autovectores de la matriz \( A \) son las columnas de la matriz \( P \) tal que \( A = P \Lambda P^{-1} \), donde \( \Lambda \) es la matriz diagonal de autovalores. Para la matriz \( A \), los autovectores son:
+=======
+\end{bmatrix}.
+$$
+
+
+### Pasos a seguir
+
+a. **Encuentra la matriz inversa de $A$**:  
+   $$
+   A^{-1} = ?
+   $$
+
+b. **Multiplica cada vector cifrado por $A^{-1}$ para recuperar el mensaje original**.  
+
+c. **Convierte los números obtenidos en letras** usando la misma codificación del **Ejercicio 1**.  
+
+## 
+
+Los valores propios de la matriz $A$ son $\lambda_1 = 1$ y $\lambda_2 = 1$.
+Los vectores propios de la matriz $A$ son las columnas de la matriz $P$ tal que $A = P \Lambda P^{-1}$, donde $\Lambda$ es la matriz diagonal de los valores propios. Para la matriz $A$, los vectores propios son:
+>>>>>>> 1f1b43b (Taller 5)
 
 $$
 \begin{bmatrix}
@@ -80,7 +141,11 @@ $$
 \begin{bmatrix}
 2 \\
 1
+<<<<<<< HEAD
 \end{bmatrix}
+=======
+\end{bmatrix}.
+>>>>>>> 1f1b43b (Taller 5)
 $$
 
 
@@ -89,6 +154,7 @@ $$
 
 ## Observaciones
 
+<<<<<<< HEAD
 Note que una matriz cuadrada $A$ de $2 \times 2$ tiene dos autovalores $\lambda_1$ y $\lambda_2$, y dos autovectores $v_1$ y $v_2$. La matriz $A$ se puede descomponer como:
 
 $$
@@ -108,6 +174,33 @@ v_1 = \begin{bmatrix} 1 \\ 1\end{bmatrix} \quad \text{y} \quad v_2 = \begin{bmat
 $$
 
 de esta forma, tenemos que la matriz
+=======
+Note que una matriz cuadrada $A$ de $2 \times 2$ tiene dos valores propios $\lambda_1$ y $\lambda_2$, y dos vectores propios $v_1$ y $v_2$. La matriz $A$ se puede descomponer como:
+
+$$
+A = P \Lambda P^{-1},
+$$
+
+
+donde $P=[v_1|v_2]$ es la matriz cuyas columnas son los vectores propios de $A$,  y 
+
+$$\Lambda=\begin{bmatrix}\lambda_1&0\\0&\lambda_2\end{bmatrix},$$
+
+es la matriz diagonal de los valores propios de $A$. 
+
+
+**Por ejemplo**, si $A$ es:
+
+$$
+A = \begin{bmatrix} 0 & 1 \\ 1 & 0\end{bmatrix},
+$$
+entonces los valores propios de $A$ son 
+
+$\lambda_1 = 1$ asociado al vector propio
+$v_1 = \begin{bmatrix} 1 \\ 1\end{bmatrix}$    y    $\lambda_2 = -1$ asociado al vector propio $v_2 = \begin{bmatrix} 1 \\ -1\end{bmatrix}$. 
+
+De esta forma, tenemos que la matriz
+>>>>>>> 1f1b43b (Taller 5)
 
 $$
 P = \begin{bmatrix} 1 & 1 \\ 1 & -1\end{bmatrix},
@@ -115,6 +208,7 @@ P = \begin{bmatrix} 1 & 1 \\ 1 & -1\end{bmatrix},
 \Lambda = \begin{bmatrix} 1 & 0 \\ 0 & -1\end{bmatrix}
 \ \ 
 \text{y} \ \
+<<<<<<< HEAD
 P^{-1} = \begin{bmatrix} 1/2 & 1/2 \\ 1/2 & -1/2\end{bmatrix}
 $$
 
@@ -126,6 +220,21 @@ Un experto en matemáticas observo el siguiente vector el cual tiene un mensaje 
 
 el encontro que la matriz llave tenia dos auntovalores 
 $$\lambda_1 = 1 \quad \text{y} \quad \lambda_2 = 2$$
+=======
+P^{-1} = \begin{bmatrix} 1/2 & 1/2 \\ 1/2 & -1/2\end{bmatrix},
+$$
+
+$$
+A = \begin{bmatrix} 1 & 1 \\ 1 & -1\end{bmatrix} \begin{bmatrix} 1 & 0 \\ 0 & -1\end{bmatrix} \begin{bmatrix} 1/2 & 1/2 \\ 1/2 & -1/2\end{bmatrix}.
+$$ 
+
+## Ejercicio 3: Encuentre el mensaje encriptado
+
+Un experto en matemáticas observo el siguiente vector el cual tiene un mensaje encriptado, el cual se sabe que fue encriptado con la técnica anterior. 
+
+el encontró que la matriz llave tiene dos valores propios
+$$\lambda_1 = 1 \quad \text{y} \quad \lambda_2 = 2,$$
+>>>>>>> 1f1b43b (Taller 5)
 
 y el valor propio asociado a $\lambda_2$ es 
 
@@ -133,6 +242,31 @@ $$
 v_2 = \begin{bmatrix} 1 \\ 2\end{bmatrix}
 $$
 
+<<<<<<< HEAD
 ## Ejercicio 3: Encuentre el mensaje encriptado
 
 1. Note que si se 
+=======
+Ademas noto que cuando tenia la la combinación espacio de letras "BA" al convertirlo a vectores y multiplicarlo por la matriz llave, obtenía el mismo vector, es decir tenia la misma combinación de letras.
+
+
+Note que si el mensaje encriptado era
+
+$$
+\begin{bmatrix}
+10 & 2 & 0 & 3 & 16 & -15 & 32 & -11 & 24 & -15 & 28 & -28 & 6 & 9 & 24 & -9 & 36 & -35 & 8 & 7
+\end{bmatrix}
+$$
+
+escribiéndolo en forma de matriz, tenemos
+$$
+\begin{bmatrix}
+10 & 0 & 16 & 32 & 24 & 28 & 6 & 24 & 36 & 8 \\
+2 & 3 & -15 & -11 & -15 & -28 & 9 & -9 & -35 & 7
+\end{bmatrix}
+$$
+
+a. Escribe un plan para encontrar el mensaje encriptado.
+
+b. Encuentra el mensaje encriptado.
+>>>>>>> 1f1b43b (Taller 5)
