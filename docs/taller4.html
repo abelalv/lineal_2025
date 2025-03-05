@@ -228,7 +228,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"options":{"fig-width":7,"output":"true","out-width":"700px","comment":"","read-only":"false","out-height":"","warning":"true","fig-cap":"","autorun":"","label":"","message":"true","fig-height":5,"context":"interactive","dpi":72,"classes":"","results":"markup"},"code":"\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Definir la matriz de coordenadas de la casa\nH = np.array([[0, 4, 4, 2, 0, 0], \n              [0, 0, 3, 5, 3, 0]])  # Se repite el primer punto para cerrar la casa\n\n# Matriz de Rotación\nT = np.array([[2, 1], \n              [1,2]])\n\n# Aplicar la transformación\nH_transformed = T @ H  # Multiplicación de matrices\n\n# Graficar la casa original y la transformada\nplt.figure(figsize=(6,6))\nplt.plot(H[0], H[1], 'bo-', label=\"Casa Original\")  # Dibujo original\nplt.plot(H_transformed[0], H_transformed[1], 'ro-', label=\"Casa Transformada\")  # Transformada\n\n# Configuración de la gráfica\nplt.axhline(0, color='black', linewidth=0.5)\nplt.axvline(0, color='black', linewidth=0.5)\nplt.xlim(-1, 20)\nplt.ylim(-1, 20)\nplt.grid(True, linestyle=\"--\", linewidth=0.5)\nplt.gca().set_aspect('equal', adjustable='box')  # Establecer la grilla 1 en 1\nplt.gca().set_xticks(np.arange(-1, 20, 1))  # Espaciado de 1 en 1 en el eje x\nplt.gca().set_yticks(np.arange(-1, 20, 1))  # Espaciado de 1 en 1 en el eje y\nplt.legend()\nplt.title(\"Transformación de la Casa \")\nplt.show()","id":1}];
+globalThis.qpyodideCellDetails = [{"code":"\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Definir la matriz de coordenadas de la casa\nH = np.array([[0, 4, 4, 2, 0, 0], \n              [0, 0, 3, 5, 3, 0]])  # Se repite el primer punto para cerrar la casa\n\n# Matriz de Rotación\nT = np.array([[2, 1], \n              [1,2]])\n\n# Aplicar la transformación\nH_transformed = T @ H  # Multiplicación de matrices\n\n# Graficar la casa original y la transformada\nplt.figure(figsize=(6,6))\nplt.plot(H[0], H[1], 'bo-', label=\"Casa Original\")  # Dibujo original\nplt.plot(H_transformed[0], H_transformed[1], 'ro-', label=\"Casa Transformada\")  # Transformada\n\n# Configuración de la gráfica\nplt.axhline(0, color='black', linewidth=0.5)\nplt.axvline(0, color='black', linewidth=0.5)\nplt.xlim(-1, 20)\nplt.ylim(-1, 20)\nplt.grid(True, linestyle=\"--\", linewidth=0.5)\nplt.gca().set_aspect('equal', adjustable='box')  # Establecer la grilla 1 en 1\nplt.gca().set_xticks(np.arange(-1, 20, 1))  # Espaciado de 1 en 1 en el eje x\nplt.gca().set_yticks(np.arange(-1, 20, 1))  # Espaciado de 1 en 1 en el eje y\nplt.legend()\nplt.title(\"Transformación de la Casa \")\nplt.show()","options":{"warning":"true","results":"markup","autorun":"","message":"true","read-only":"false","comment":"","dpi":72,"output":"true","out-height":"","classes":"","context":"interactive","fig-cap":"","label":"","fig-width":7,"fig-height":5,"out-width":"700px"},"id":1}];
 
 
 </script>
@@ -584,6 +584,12 @@ window.Quarto = {
  <span class="menu-text">Taller 4 (Valores propios)</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./taller5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taller 5 (Trabajo computacional)</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -667,7 +673,7 @@ y &amp; 0 &amp; 0 &amp; 3 &amp; 5 &amp; 3 &amp; 0 \\ \hline
 <p>Multiplica a cada uno de los puntos por la matriz</p>
 <p><span class="math display">\[A= \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}\]</span></p>
 <p>y dibuja la nueva casa.</p>
-<div id="7c612ce5" class="cell" data-execution_count="1">
+<div id="375dcbb2" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
