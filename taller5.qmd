@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Guía de Codificación con ASCII y Álgebra Lineal"
 author: "Tu Nombre"
 format: html
@@ -7,17 +6,6 @@ format: html
 
 
 ## **1. Introducción al Código de Codificación**
-=======
-title: "Ejercicio computacional valores y vectores propios (Matrices 2x2)"
-format: html
-output: html_document
----
-
-Para realizar este ejercicio usted puede usar Colab, ya que necesitará realizar muchas operaciones matriciales, como suma de matrices y multiplicación. El resto de la operaciones las puede realizar en papel.
-
-
-## Introducción al Código de Codificación
->>>>>>> 8bf1a45 (cambios del taller 5)
 
 Para codificar un mensaje, utilizaremos una correspondencia entre letras y números basada en el alfabeto:
 
@@ -26,32 +14,7 @@ Para codificar un mensaje, utilizaremos una correspondencia entre letras y núme
 | A      | 1      |
 | B      | 2      |
 | C      | 3      |
-<<<<<<< HEAD
 | ...    | ...    |
-=======
-| D      | 4      |
-| E      | 5      |
-| F      | 6      |
-| G      | 7      |
-| H      | 8      |
-| I      | 9      |
-| J      | 10     |
-| K      | 11     |
-| L      | 12     |
-| M      | 13     |
-| N      | 14     |
-| O      | 15     |
-| P      | 16     |
-| Q      | 17     |
-| R      | 18     |
-| S      | 19     |
-| T      | 20     |
-| U      | 21     |
-| V      | 22     |
-| W      | 23     |
-| X      | 24     |
-| Y      | 25     |
->>>>>>> 8bf1a45 (cambios del taller 5)
 | Z      | 26     |
 | Espacio | 0     |
 
@@ -59,32 +22,20 @@ Para codificar un mensaje, utilizaremos una correspondencia entre letras y núme
 La palabra `"VIDA"` se convierte en:
 
 $$
-<<<<<<< HEAD
 V = 22, \quad I = 9, \quad D = 4, \quad A = 1
-=======
-V = 22, \quad I = 9, \quad D = 4, \quad A = 1,
->>>>>>> 8bf1a45 (cambios del taller 5)
 $$
 
 y se agrupa en vectores de dos en dos:
 
 $$
-<<<<<<< HEAD
 \begin{bmatrix} 22 \\ 9 \end{bmatrix}, \quad \begin{bmatrix} 4 \\ 1 \end{bmatrix}
 $$
 
 ## Ejercicio 1: Codificación de "La vida es bella"**
-=======
-\begin{bmatrix} 22 \\ 9 \end{bmatrix}, \quad \begin{bmatrix} 4 \\ 1 \end{bmatrix}.
-$$
-
-## Ejercicio 1: Codificación de La vida es bella
->>>>>>> 8bf1a45 (cambios del taller 5)
 
 Vamos a codificar la frase `"LA VIDA ES BELLA"` con la siguiente matriz:
 
 $$
-<<<<<<< HEAD
 A = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}
 $$
 
@@ -96,58 +47,6 @@ $$
 
 
 ## Ejercicio 2: Descifrado de un Mensaje con la Matriz Inversa**
-=======
-A = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}.
-$$
-
-### Pasos a seguir
-a. **Convierte las letras a valores numéricos** siguiendo la tabla anterior.  
-
-b. **Agrupa los valores en vectores columna de $2 \times 1$**.  
-
-c. **Multiplica la matriz $A$ por cada vector  para obtener el mensaje cifrado**.  
-
-
-Respuesta:
-```{python}
-#| echo: false
-import numpy as np
-
-# Definir la matriz A
-#D = np.array([[1, 0], [0, 2]])
-
-#print("Matriz D:",D)
-#P = np.array([[2, 1], [1, 0]])
-
-
-#A= P@D@np.linalg.inv(P)
-#print("Matriz A:",A)
-A= np.array([[0, 1], [1, 0]])
-# Crear el diccionario de conversión
-abc_dict = {chr(i + 64): i for i in range(1, 27)}  # A = 1, B = 2, ..., Z = 26
-abc_dict[" "] = 0  # Espacio = 0
-
-# Mostrar el diccionario
-#print(abc_dict)
-def text_to_numbers(text):
-    text = text.upper()  # Convertimos a mayúsculas para evitar errores
-    return [abc_dict[char] for char in text if char in abc_dict]
-
-# Prueba con "LA VIDA ES BELLA"
-#frase = "Y AHORA QUIEN PODRA AYUDARNOS "
-frase = "LA VIDA ES BELLA"
-#frase = "EL CHAPULIN COLORADO"
-numeros = text_to_numbers(frase)
-#print(numeros)
-
-# Convertir la lista de números en una matriz de filas
-numeros_matriz = np.array(numeros).reshape(-1, 2)
-print(numeros_matriz.T)
-
-```
-
-## Ejercicio 2: Descifrado de un Mensaje con la Matriz Inversa
->>>>>>> 8bf1a45 (cambios del taller 5)
 
 Un mensaje secreto fue cifrado con la misma matriz $A$, y se obtuvo:
 $$
@@ -252,7 +151,6 @@ $$
 
 ## Observaciones
 
-<<<<<<< HEAD
 Note que una matriz cuadrada $A$ de $2 \times 2$ tiene dos autovalores $\lambda_1$ y $\lambda_2$, y dos autovectores $v_1$ y $v_2$. La matriz $A$ se puede descomponer como:
 
 $$
@@ -298,16 +196,10 @@ $\lambda_1 = 1$ asociado al vector propio
 $v_1 = \begin{bmatrix} 1 \\ 1\end{bmatrix}$    y    $\lambda_2 = -1$ asociado al vector propio $v_2 = \begin{bmatrix} 1 \\ -1\end{bmatrix}$. 
 
 De esta forma, tenemos que la matriz
->>>>>>> 8bf1a45 (cambios del taller 5)
+
 
 $$
-P = \begin{bmatrix} 1 & 1 \\ 1 & -1\end{bmatrix},
-\ \
-\Lambda = \begin{bmatrix} 1 & 0 \\ 0 & -1\end{bmatrix}
-\ \ 
-\text{y} \ \
-<<<<<<< HEAD
-P^{-1} = \begin{bmatrix} 1/2 & 1/2 \\ 1/2 & -1/2\end{bmatrix}
+P = \begin{bmatrix} 1 & 1 \\ 1 & -1\end{bmatrix}
 $$
 
 $$
@@ -332,12 +224,11 @@ Un experto en matemáticas observo el siguiente vector el cual tiene un mensaje 
 
 el encontró que la matriz llave tiene dos valores propios
 $$\lambda_1 = 1 \quad \text{y} \quad \lambda_2 = 2,$$
->>>>>>> 8bf1a45 (cambios del taller 5)
+
 
 y el valor propio asociado a $\lambda_2$ es 
 
 $$
-<<<<<<< HEAD
 v_2 = \begin{bmatrix} 1 \\ 2\end{bmatrix}
 $$
 
@@ -412,4 +303,3 @@ Respuesta
 
 "EL CHAPULIN COLORADO"
 
->>>>>>> 8798a1b (Organizar cambios)
