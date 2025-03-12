@@ -1,0 +1,42 @@
+---
+title: "lineal"
+---
+Cronograma de actividades
+
+
+| Sesión | Semana | S_1/S_2 | Fecha     | Tema                                                                                                       | Puntos |
+|:------:|:------:|:-------:|:---------:|:-----------------------------------------------------------------------------------------------------------|-------:|
+| 1      | 1      | S_1     | Enero 20  | Presentación del curso, actividad de enganche, vectores en R^2                                             |        |
+| 2      |        | S_2     | Enero 22  | Vectores en $R^2$, operaciones: suma, multiplicación por un escalar y producto punto con sus respectivas propiedades. |        |
+| 3      | 2      | S_1     | Enero 27  | Ecuación de la recta. Rectas paralelas, perpendiculares, independencia lineal, bases.                       |        |
+| 4      |        | S_2     | Enero 29  | Subespacios en $R^2$. Proyección de un vector sobre otro, norma, distancia entre dos puntos, distancia entre un punto y una recta. |        |
+| 5      | 3      | S_1     | Febrero 3 | Matrices 2x2, determinantes, operaciones entre matrices.                                                   |        |
+| 6      |        | S_2     | Febrero 5 | Trabajo computacional                                                                                      |        |
+| 7      | 4      | S_1     | Febrero 10| Sistemas de ecuaciones 2x2 (taller)                                                                        | 15     |
+| 8      |        | S_2     | Febrero 12| Inversa de una matriz. Aplicaciones de sistemas de ecuaciones 2x2.                                         |        |
+| 9      | 5      | S_1     | Febrero 17| Vectores y valores propios en $R^2$                                                                          |        |
+| 10     |        | S_2     | Febrero 19| Aplicaciones de vectores y valores propios. Diagonalización.                                               |        |
+| 11     | 6      | S_1     | Febrero 24| Examen corto - Taller                                                                                      | 10     |
+| 12     |        | S_2     | Febrero 26| Aplicaciones de vectores y valores propios. Diagonalización.                                               |        |
+| 13     | 7      | S_1     | Marzo 3   | Trabajo computacional                                                                                      | 15     |
+| 14     |        | S_2     | Marzo 5   | Matrices NxN, operaciones, determinantes.                                                                  |        |
+| 15     | 8      | S_1     | Marzo 10  | Inversa de una matriz y sistemas de ecuaciones NxN.                                                        |        |
+| 16     |        | S_2     | Marzo 12  | Aplicaciones de sistemas NxN.                                                                              |        |
+| 17     | 9      | S_1     | Marzo 17  | Examen corto - Taller                                                                                      | 10     |
+| 18     |        | S_2     | Marzo 19  | Vectores en $R^N$, operaciones (suma, resta, producto punto, norma).                                         |        |
+| 19     | 10     | S_1     | Marzo 24  |                                                                                                            |        |
+| 20     |        | S_2     | Marzo 26  | Planos, vectores perpendiculares, producto cruz.                                                           |        |
+| 21     | 11     | S_1     | Marzo 31  | Trabajo computacional                                                                                      |        |
+| 22     |        | S_2     | Abril 2   | Independencia lineal, bases y dimensión.                                                                   |        |
+| 23     | 12     | S_1     | Abril 7   | Examen corto - Taller                                                                                      | 10     |
+| 24     |        | S_2     | Abril 9   | Bases ortonormales                                                                                         |        |
+| 25     | 13     | S_1     | Abril 21  | Coordenadas y cambio de base                                                                               |        |
+| 26     |        | S_2     | Abril 23  | Transformaciones lineales en $R^n$                                                                           |        |
+| 27     | 14     | S_1     | Abril 28  | Núcleo e imagen de una transformación (taller)                                                             | 15     |
+| 28     |        | S_2     | Abril 30  | La matriz de una transformación lineal                                                                     |        |
+| 29     | 15     | S_1     | Mayo 5    | Vectores y valores propios en $R^N$                                                                          |        |
+| 30     |        | S_2     | Mayo 7    | Diagonalización                                                                                            |        |
+| 31     | 16     | S_1     | Mayo 12   | Trabajo computacional                                                                                      | 15     |
+| 32     |        | S_2     | Mayo 14   | Taller de aplicaciones de valores y vectores propios, diagonalización.                                     |        |
+|        |        |         |           | Examen                                                                                                     | 10     |
+|        |        |         |           |                                                                                                            | 100    |
