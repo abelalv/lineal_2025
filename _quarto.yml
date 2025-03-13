@@ -40,6 +40,8 @@ website:
             text: Taller 4 (Valores propios)
           - href: taller5.qmd
             text: Taller 5 (Valores propios)
+          - href: taller6.qmd
+            text: Taller resumen 
 format:
   html:
     theme: cosmo
