@@ -139,11 +139,11 @@ Dada la matriz $A = \begin{bmatrix} 1 & 2 &1 \\0& 1 & 4\\ 1&0&0 \end{bmatrix}$, 
 Para encontrar la matriz inversa de $A$ se puede resolver el sistema de ecuaciones lineales
 
 $$
-\begin{matrix}
-1  & 2 &1 &-& 1 & 0 & 0 \\
-0 & 1 & 4 &-& 0 & 1 & 0 \\
-1 & 0 & 0 &-& 0 & 0 & 1
-\end{matrix}
+\begin{bmatrix}
+1  & 2 &1 &|& 1 & 0 & 0 \\
+0 & 1 & 4 &|& 0 & 1 & 0 \\
+1 & 0 & 0 &|& 0 & 0 & 1
+\end{bmatrix}
 $$
 
 Luego mediante operaciones elementales se puede encontrar la matriz inversa de $A$,

@@ -262,7 +262,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"options":{"warning":"true","out-height":"","results":"markup","classes":"","dpi":72,"output":"true","fig-width":7,"fig-height":5,"read-only":"false","message":"true","autorun":"","fig-cap":"","comment":"","label":"","context":"interactive","out-width":"700px"},"code":"import numpy as np\n\nA = np.array([[3, 2, 3], [2, 3, 3], [3, 3, 4]])\nb = np.array([1, 2, 3])\n\nx = np.linalg.solve(A, b)\nprint(x)"},{"id":2,"options":{"warning":"true","out-height":"","results":"markup","classes":"","dpi":72,"output":"true","fig-width":7,"fig-height":5,"read-only":"false","message":"true","autorun":"","fig-cap":"","comment":"","label":"","context":"interactive","out-width":"700px"},"code":"import numpy as np\n\nA = np.array([[1, 2, 3], [0, 1, 4], [5, 6, 0]])\nA_inv = np.linalg.inv(A)\nprint(A_inv)"},{"id":3,"options":{"warning":"true","out-height":"","results":"markup","classes":"","dpi":72,"output":"true","fig-width":7,"fig-height":5,"read-only":"false","message":"true","autorun":"","fig-cap":"","comment":"","label":"","context":"interactive","out-width":"700px"},"code":"import numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy.linalg import lu\n\nA=np.array([[1,2,3],[0,1,4],[1,2,5]])\n\nplt.spy(A)\nplt.title(\"Diagrama de la matriz\")\nplt.xlabel(\"Columnas\")\nplt.ylabel(\"Filas\")\nplt.show()\n\n_, _, U = lu(A)\n\nplt.spy(U)\nplt.title(\"Diagrama de la matriz\")\nplt.xlabel(\"Columnas\")\nplt.ylabel(\"Filas\")\nplt.show()"}];
+globalThis.qpyodideCellDetails = [{"options":{"results":"markup","output":"true","context":"interactive","fig-cap":"","message":"true","warning":"true","label":"","comment":"","fig-width":7,"autorun":"","fig-height":5,"classes":"","dpi":72,"out-width":"700px","read-only":"false","out-height":""},"code":"import numpy as np\n\nA = np.array([[3, 2, 3], [2, 3, 3], [3, 3, 4]])\nb = np.array([1, 2, 3])\n\nx = np.linalg.solve(A, b)\nprint(x)","id":1},{"options":{"results":"markup","output":"true","context":"interactive","fig-cap":"","message":"true","warning":"true","label":"","comment":"","fig-width":7,"autorun":"","fig-height":5,"classes":"","dpi":72,"out-width":"700px","read-only":"false","out-height":""},"code":"import numpy as np\n\nA = np.array([[1, 2, 3], [0, 1, 4], [5, 6, 0]])\nA_inv = np.linalg.inv(A)\nprint(A_inv)","id":2},{"options":{"results":"markup","output":"true","context":"interactive","fig-cap":"","message":"true","warning":"true","label":"","comment":"","fig-width":7,"autorun":"","fig-height":5,"classes":"","dpi":72,"out-width":"700px","read-only":"false","out-height":""},"code":"import numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy.linalg import lu\n\nA=np.array([[1,2,3],[0,1,4],[1,2,5]])\n\nplt.spy(A)\nplt.title(\"Diagrama de la matriz\")\nplt.xlabel(\"Columnas\")\nplt.ylabel(\"Filas\")\nplt.show()\n\n_, _, U = lu(A)\n\nplt.spy(U)\nplt.title(\"Diagrama de la matriz\")\nplt.xlabel(\"Columnas\")\nplt.ylabel(\"Filas\")\nplt.show()","id":3}];
 
 
 </script>
@@ -659,6 +659,12 @@ window.Quarto = {
  <span class="menu-text">Taller resumen</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./taller7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taller Operaciones con matrices <span class="math inline">\(n\times n\)</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -836,11 +842,11 @@ AA^{-1} = A[x_1|x_2|\ldots|x_n] = [Ax_1|Ax_2|\ldots|Ax_n] = [e_1|e_2|\ldots|e_n]
 <p>Dada la matriz <span class="math inline">\(A = \begin{bmatrix} 1 &amp; 2 &amp;1 \\0&amp; 1 &amp; 4\\ 1&amp;0&amp;0 \end{bmatrix}\)</span>, encuentre la matriz inversa de <span class="math inline">\(A\)</span>.</p>
 <p>Para encontrar la matriz inversa de <span class="math inline">\(A\)</span> se puede resolver el sistema de ecuaciones lineales</p>
 <p><span class="math display">\[
-\begin{matrix}
-1  &amp; 2 &amp;1 &amp;-&amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 4 &amp;-&amp; 0 &amp; 1 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp;-&amp; 0 &amp; 0 &amp; 1
-\end{matrix}
+\begin{bmatrix}
+1  &amp; 2 &amp;1 &amp;|&amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 4 &amp;|&amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp;|&amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
 \]</span></p>
 <p>Luego mediante operaciones elementales se puede encontrar la matriz inversa de <span class="math inline">\(A\)</span>, por ejemplo, si hacemos <span class="math inline">\(F_3=F_3 - F_1\)</span> obtenemos</p>
 <p><span class="math display">\[
@@ -918,7 +924,7 @@ AA^{-1} = A[x_1|x_2|\ldots|x_n] = [Ax_1|Ax_2|\ldots|Ax_n] = [e_1|e_2|\ldots|e_n]
 </section>
 <section id="matrices-con-python" class="level3">
 <h3 class="anchored" data-anchor-id="matrices-con-python">Matrices con python</h3>
-<div id="73afc24f" class="cell" data-execution_count="1">
+<div id="c0ce7111" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Supongamos que bw es tu matriz binaria (NumPy array o matrix)</span></span>
