@@ -18,7 +18,7 @@ website:
             text: Rectas
           - href: section3.qmd
             text: Independencia lineal
-      - section: "Matrices"
+      - section: "Matrices $2\times 2$"
         contents:
           - href: section4.qmd
             text: Matrices
@@ -28,6 +28,12 @@ website:
             text: Trabajo computacional
           - href: section9.qmd
             text: Autovalores y autovectores
+      - section: "Matrices $N x N$"
+        contents:
+          - href: section10.qmd
+            text: Matrices
+          - href: section11.qmd
+            text: Determinantes
       - section: "Talleres"
         contents:
           - href: taller1.qmd
@@ -42,6 +48,8 @@ website:
             text: Taller 5 (Valores propios)
           - href: taller6.qmd
             text: Taller resumen 
+          - href: taller7.qmd
+            text: Taller Operaciones con matrices $n\times n$ 
 format:
   html:
     theme: cosmo
