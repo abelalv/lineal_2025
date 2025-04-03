@@ -75,7 +75,15 @@
   "taller7.qmd": {
     "taller7.html": "a85db5e7"
   },
+<<<<<<< HEAD
   "taller8.qmd": {
     "taller8.html": "43596fa9"
+=======
+  "section12.qmd": {
+    "section12.html": "da488659"
+  },
+  "ksection12.qmd": {
+    "ksection12.html": "3a23d2ea"
+>>>>>>> 68067ba (commit)
   }
 }
