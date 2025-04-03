@@ -253,7 +253,7 @@
         "\n",
         "### Matrices con python \n"
       ],
-      "id": "bde619ca"
+      "id": "6af4ace6"
     },
     {
       "cell_type": "code",
@@ -281,7 +281,7 @@
         "\n",
         "print(f\"Elemento en la fila 2 y columna 3: {A[1, 2]}\")\n"
       ],
-      "id": "9f2f9fc0",
+      "id": "e2ea7348",
       "execution_count": null,
       "outputs": []
     },
@@ -365,7 +365,7 @@
         "plt.show()\n",
         "```"
       ],
-      "id": "2079723b"
+      "id": "41bce761"
     }
   ],
   "metadata": {

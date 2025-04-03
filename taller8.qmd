@@ -129,7 +129,7 @@ c. Represente este producto en un $R^3$
 
 - $|\vec{a}+\vec{b}|=||\vec{a}||+||\vec{b}||$
 
-- Si $x,y\in\R^n$, entonces $||x\cdot y||^2=xy^T$
+- Si $x,y\in R^n$, entonces $||x\cdot y||^2=xy^T$
 
 - Si $\vec{u}=c\vec{v}$ entonces $\vec{u}\times\vec{v}=0$
 
