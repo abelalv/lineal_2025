@@ -50,6 +50,8 @@ website:
             text: Taller resumen 
           - href: taller7.qmd
             text: Taller Operaciones con matrices $n\times n$ 
+          - href: taller8.qmd
+            text: Vectores y matrices 
 format:
   html:
     theme: cosmo

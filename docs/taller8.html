@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.45">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ejercicios \mathbb{R}^2</title>
+<title>Operaciones con matrices</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -109,7 +109,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taller1.html">Talleres</a></li><li class="breadcrumb-item"><a href="./taller2.html">Taller 2</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taller1.html">Talleres</a></li><li class="breadcrumb-item"><a href="./taller8.html">Vectores y matrices</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -245,7 +245,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./taller2.html" class="sidebar-item-text sidebar-link active">
+  <a href="./taller2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Taller 2</span></a>
   </div>
 </li>
@@ -279,6 +279,12 @@ window.Quarto = {
  <span class="menu-text">Taller Operaciones con matrices <span class="math inline">\(n\times n\)</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./taller8.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Vectores y matrices</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -286,28 +292,15 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#problema-1" id="toc-problema-1" class="nav-link active" data-scroll-target="#problema-1"><strong>Problema 1</strong></a>
-  <ul class="collapse">
-  <li><a href="#pregunta" id="toc-pregunta" class="nav-link" data-scroll-target="#pregunta"><strong>Pregunta:</strong></a></li>
-  </ul></li>
-  <li><a href="#problema-2" id="toc-problema-2" class="nav-link" data-scroll-target="#problema-2"><strong>Problema 2</strong></a>
-  <ul class="collapse">
-  <li><a href="#preguntas" id="toc-preguntas" class="nav-link" data-scroll-target="#preguntas"><strong>Preguntas:</strong></a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taller1.html">Talleres</a></li><li class="breadcrumb-item"><a href="./taller2.html">Taller 2</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./taller1.html">Talleres</a></li><li class="breadcrumb-item"><a href="./taller8.html">Vectores y matrices</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Ejercicios <span class="math inline">\(\mathbb{R}^2\)</span></h1>
+<h1 class="title">Operaciones con matrices</h1>
 </div>
 
 
@@ -324,38 +317,125 @@ window.Quarto = {
 </header>
 
 
-<section id="problema-1" class="level2">
-<h2 class="anchored" data-anchor-id="problema-1"><strong>Problema 1</strong></h2>
-<p>En una ciudad se úed modelar mediante un plano cartesiano, en ella existen doa avenidas, <strong>La avenida A</strong> pasa por el punto <span class="math inline">\((2,5)\)</span> y tiene dirección <span class="math inline">\((6,9)\)</span>, mientras que <strong>La avenida B</strong> pasa por el punto <span class="math inline">\((5,8)\)</span> y tiene dirección <span class="math inline">\((1,\dfrac{3}{2})\)</span>.</p>
-<section id="pregunta" class="level3">
-<h3 class="anchored" data-anchor-id="pregunta"><strong>Pregunta:</strong></h3>
-<p>Encuentra la distancia mínima entre ellas.</p>
-</section>
-</section>
-<section id="problema-2" class="level2">
-<h2 class="anchored" data-anchor-id="problema-2"><strong>Problema 2</strong></h2>
-<p>Un ingeniero está analizando un sistema mecánico en el que dos fuerzas actúan sobre un punto en el plano ( ^2 ). Estas fuerzas están representadas por los siguientes vectores en Newtons:</p>
-<ul>
-<li><strong>Fuerza 1</strong>:<br>
-<span class="math display">\[
-\mathbf{F}_1 = (5, 2)
-\]</span></li>
-<li><strong>Fuerza 2</strong>:<br>
-<span class="math display">\[
-\mathbf{F}_2 = (3, 6)
-\]</span></li>
-</ul>
-<p>El ingeniero necesita determinar el ángulo entre estas dos fuerzas para analizar su efecto combinado sobre la estructura.</p>
-<section id="preguntas" class="level3">
-<h3 class="anchored" data-anchor-id="preguntas"><strong>Preguntas:</strong></h3>
-<ol type="a">
-<li>Calcula el ángulo <span class="math inline">\(\theta\)</span> entre los dos vectores</li>
-<li>¿Cómo influiría este ángulo en la estabilidad del sistema si ambas fuerzas estuvieran actuando sobre un mismo punto?</li>
+<ol type="1">
+<li><p>Resuelva el siguiente sistema de ecuaciones lineales usando la regla de Cramer <span class="math display">\[
+\begin{aligned}
+2x_1 + 3x_2 - x_3  &amp;= 10 \\
+-x_1 +  + 2x_3 - 3x_4 &amp;= 5 \\
+  - 2x_2 + x_3  &amp;= 7 \\
+4x_1 + x_2 - 5x_4 &amp;= 12
+\end{aligned}
+\]</span></p></li>
+<li><p>Resuelva el sistema anterior usando eliminación gaussiana</p></li>
+<li><p>Encuentre la matriz escalonada de la matriz</p></li>
 </ol>
+<p><span class="math display">\[
+\begin{bmatrix}
+    2 &amp; 3 &amp; -1 &amp; 0 \\
+    -1 &amp; 0 &amp; 2 &amp; -3 \\
+    0 &amp; -2 &amp; 1 &amp; 0 \\
+    4 &amp; 1 &amp; 0 &amp; -5
+\end{bmatrix}
+\]</span></p>
+<ol start="4" type="1">
+<li>Encuentre la matriz inversa</li>
+</ol>
+<p><span class="math display">\[
+\begin{bmatrix}
+    2 &amp; 3 &amp; -1 &amp; 0 \\
+    -1 &amp; 0 &amp; 2 &amp; -3 \\
+    0 &amp; -2 &amp; 1 &amp; 0 \\
+    4 &amp; 1 &amp; 0 &amp; -5
+\end{bmatrix}
+\]</span></p>
+<ol start="5" type="1">
+<li>Encuentre el valor de <span class="math inline">\(a\)</span> para que la matriz tenga inversa</li>
+</ol>
+<p><span class="math display">\[
+\begin{bmatrix}
+    a^2 &amp; &amp;03 \\
+    5 &amp; a &amp; 2  \\
+    3 &amp; 0 &amp; 1
+\end{bmatrix}
+\]</span></p>
+<ol start="6" type="1">
+<li>Decida si la afirmación es verdadera o falsa y justifique su respuesta</li>
+</ol>
+<ul>
+<li><p><span class="math inline">\(det(AA^T)=det(A)^2\)</span></p></li>
+<li><p><span class="math inline">\(det(-A)=-det(A)\)</span></p></li>
+<li><p>Si <span class="math inline">\(A^T=A^{-1}\)</span>, entonces <span class="math inline">\(det(A)=1\)</span></p></li>
+<li><p>Si <span class="math inline">\(B=PAP^{-1}\)</span>, entonces <span class="math inline">\(det(B)=det(A)\)</span></p></li>
+<li><p><span class="math inline">\(det(A+B)=det(A)+det(B)\)</span></p></li>
+</ul>
+<ol start="7" type="1">
+<li>Sea lso vectores <span class="math display">\[
+\vec{v}=\begin{bmatrix}
+1 \\
+2 \\
+3
+\end{bmatrix},\ \    
+\vec{u}=\begin{bmatrix}
+2 \\
+3 \\
+4
+\end{bmatrix}       
+\]</span></li>
+</ol>
+<p>Calcule</p>
+<ol type="a">
+<li><p><span class="math inline">\(\vec{v}+\vec{u}\)</span></p></li>
+<li><p><span class="math inline">\(\vec{v}-\vec{u}\)</span></p></li>
+<li><p><span class="math inline">\(2\vec{v}\)</span></p></li>
+<li><p><span class="math inline">\(\vec{v}^T\vec{u}\)</span></p></li>
+<li><p><span class="math inline">\(\vec{v}^T\vec{u}^T\)</span></p></li>
+</ol>
+<ol start="8" type="1">
+<li>Que valor de <span class="math inline">\(a\)</span>, para que los vectores sean ortogonales</li>
+</ol>
+<p><span class="math display">\[
+\vec{v}=\begin{bmatrix}
+    1 \\
+    2 \\
+    a
+\end{bmatrix},\ \
+\vec{u}=\begin{bmatrix}
+    2 \\
+    -1 \\
+    4
+\end{bmatrix}
+\]</span></p>
+<ol start="9" type="1">
+<li>Encuentre</li>
+</ol>
+<p><span class="math display">\[
+\vec{v}=\begin{bmatrix}
+    1 \\
+    2 \\
+    3
+\end{bmatrix},\ \
+\vec{u}=\begin{bmatrix}
+    2 \\
+    3 \\
+    4
+\end{bmatrix}
+\]</span></p>
+<ol type="a">
+<li><p><span class="math inline">\(\vec{v}\times\vec{u}\)</span></p></li>
+<li><p><span class="math inline">\(\vec{u}\times\vec{v}\)</span></p></li>
+<li><p>Represente este producto en un <span class="math inline">\(R^3\)</span></p></li>
+</ol>
+<ol start="10" type="1">
+<li>LAs siguientes son verdaderas</li>
+</ol>
+<ul>
+<li><p><span class="math inline">\(||\vec{u}+\vec{v}||^2=||\vec{u}||^2+||\vec{v}||^2+2\vec{u}\cdot\vec{v}\)</span></p></li>
+<li><p><span class="math inline">\(|\vec{a}+\vec{b}|=||\vec{a}||+||\vec{b}||\)</span></p></li>
+<li><p>Si <span class="math inline">\(x,y\in\R^n\)</span>, entonces <span class="math inline">\(||x\cdot y||^2=xy^T\)</span></p></li>
+<li><p>Si <span class="math inline">\(\vec{u}=c\vec{v}\)</span> entonces <span class="math inline">\(\vec{u}\times\vec{v}=0\)</span></p></li>
+</ul>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
