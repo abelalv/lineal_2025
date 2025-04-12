@@ -1,0 +1,127 @@
+---
+title: "Taller de Álgebra Lineal: Subespacios, Combinaciones Lineales, Independencia y Bases"
+format: html
+---
+
+# Ejercicios de Producto Cruz, Planos y Rectas
+
+A continuación, se presentan 15 ejercicios repartidos en tres secciones: **Producto Cruz**, **Planos** y **Rectas**.
+
+## Sección 1: Producto Cruz
+
+1. Calcular el producto cruz de los vectores:  
+$$
+\mathbf{u} = (1, 2, 3) \quad \text{y} \quad \mathbf{v} = (4, 5, 6).
+$$
+
+2. Determinar el producto cruz de los vectores:  
+$$
+\mathbf{u} = (2, -3, 1) \quad \text{y} \quad \mathbf{v} = (0, 4, -5).
+$$
+
+3. Encuentra el vector resultante del producto cruz de:  
+$$
+\mathbf{u} = (-1, 2, 0) \quad \text{y} \quad \mathbf{v} = (3, -1, 4).
+$$
+
+4. Calcular el producto cruz de:  
+$$
+\mathbf{u} = (0, 3, -2) \quad \text{y} \quad \mathbf{v} = (5, 1, 0).
+$$  
+*Verifica que el vector resultante sea perpendicular a ambos vectores dados.*
+
+5. Sean los vectores $ \mathbf{a} = (a_1, a_2, a_3)$ y $ \mathbf{b} = (b_1, b_2, b_3)$. Expresa el vector $ \mathbf{a} \times \mathbf{b}$ en forma de determinante y aplica este método para calcular el producto cruz de:  
+$$
+\mathbf{a} = (3, 0, -1) \quad \text{y} \quad \mathbf{b} = (1, 4, 2).
+$$
+
+## Sección 2: Planos
+
+6. Determinar la ecuación del plano que pasa por los puntos:  
+$$
+A(1, 0, 2),\quad B(2, -1, 3) \quad \text{y} \quad C(0, 2, 1).
+$$  
+Utiliza el producto cruz para encontrar el vector normal.
+
+7. Encuentra la ecuación del plano dado su vector normal $ \mathbf{n} = (2, -1, 3)$ y que pasa por el punto $P(1, 4, -2)$.
+
+8. Hallar la ecuación general del plano que es paralelo al plano  
+$$
+2x - y + z = 5
+$$  
+y pasa por el punto $P(3, 0, 1)$.
+
+9. Determinar la ecuación paramétrica de un plano que contenga la recta:  
+$$
+\begin{cases}
+x = 1 + t, \\
+y = 2 - t, \\
+z = 3 + 2t,
+\end{cases}
+$$  
+y sea perpendicular al vector $ \mathbf{n} = (0, 1, -1)$.
+
+10. Dados los puntos:  
+$$
+P(0,0,0), \quad Q(1,2,3) \quad \text{y} \quad R(4,0,1),
+$$  
+encuentra la ecuación del plano que pasa por ellos y discute la orientación del mismo.
+
+## Sección 3: Rectas
+
+11. Determinar la ecuación vectorial de la recta que pasa por el punto $P(2, -1, 3)$ con dirección $ \mathbf{d} = (1, 4, -2)$.
+
+12. Encontrar la forma simétrica de la recta que tiene como ecuación paramétrica:  
+$$
+\begin{cases}
+x = -1 + 3t, \\
+y = 2 - t, \\
+z = 4 + 2t.
+\end{cases}
+$$
+
+13. Dadas las rectas:  
+$$
+r_1: \begin{cases}
+x = 1 + t, \\
+y = -2 + 2t, \\
+z = 3 - t,
+\end{cases} \quad
+r_2: \begin{cases}
+x = 2 - s, \\
+y = 0 + s, \\
+z = 1 + 3s,
+\end{cases}
+$$  
+determinar si son coplanares y, en caso afirmativo, encontrar su punto de intersección (si existe).
+
+14. Hallar la distancia entre el punto $P(1,2,3)$ y la recta de ecuación:  
+$$
+\mathbf{r}(t) = (0, 1, -1) + t(2, 0, 4).
+$$
+
+15. Encuentra la intersección (si existe) entre la recta:  
+$$
+\mathbf{r}_1(t) = (1, 0, 2) + t(3, -1, 1)
+$$  
+y el plano definido por la ecuación:  
+$$
+4x - 2y + z = 7.
+$$
+
+# Ejercicios Adicionales: Falso o Verdadero
+
+A continuación se presentan 5 enunciados. Indica si cada afirmación es **verdadera** o **falsa** y justifica la respuesta.
+
+16. El producto cruz de dos vectores paralelos es un vector nulo.  
+   
+17. La ecuación general de un plano siempre puede escribirse en la forma $Ax + By + Cz + D = 0$, donde $(A, B, C)$ es un vector normal al plano.  
+   
+18. Dos rectas en el espacio siempre se cortan, ya que existen en tres dimensiones.  
+
+
+19. El producto cruz es conmutativo, es decir, $\mathbf{u} \times \mathbf{v} = \mathbf{v} \times \mathbf{u}$.  
+
+
+20.  Si una recta es paralela a un plano, entonces la dirección de la recta es ortogonal al vector normal del plano.  
+   
